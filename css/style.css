@@ -146,15 +146,30 @@ body {
     .grid-2-col__grid-img {
       position: absolute;
       width: 100%; }
-      .grid-2-col__grid-img div {
+      .grid-2-col__grid-img-div {
         position: absolute;
         top: 0%;
         width: 98%;
         height: 100%;
         background-color: #000000;
+        color: #ffffff;
+        font-family: brown;
         opacity: 0;
-        margin-left: 2rem; }
-        .grid-2-col__grid-img div:hover {
+        margin-left: 2rem;
+        transition: all .8s; }
+        .grid-2-col__grid-img-div p {
+          margin: 45% 0 0 3rem;
+          font-size: 4rem;
+          line-height: 3rem;
+          width: 1rem;
+          cursor: context-menu; }
+        .grid-2-col__grid-img-div i {
+          position: absolute;
+          bottom: 10%;
+          right: 8%;
+          font-size: 2.4rem;
+          cursor: pointer; }
+        .grid-2-col__grid-img-div:hover {
           opacity: 0.8; }
     .grid-2-col__grid img {
       width: 98%;

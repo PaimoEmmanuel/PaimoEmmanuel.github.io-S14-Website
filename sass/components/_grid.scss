@@ -12,16 +12,37 @@
             position: absolute;
             width: 100%;
             //box-shadow: 20px 20px 0px 0 blue;
-            & div{
+            &-div{
                 position: absolute;
                 top: 0%;
                 width: 98%;
                 height: 100%;
                 background-color: #000000;
+                color: $color-white;
+                font-family: brown;
                 opacity: 0;
                 margin-left: 2rem;
+                transition: all .8s;
+                
+                & p{
+                    margin: 45% 0 0 3rem;
+                    font-size: 4rem;
+                    line-height: 3rem;
+                    width: 1rem;
+                    cursor: context-menu;
+                    //transform: translate(-100%);
+                }
+                & i{
+                    position: absolute;
+                    bottom: 10%;
+                    right: 8%;
+                    font-size: 2.4rem;
+                    cursor: pointer;
+                    //float: right;
+                }
 
                 &:hover{
+                    //display: flex;
                     opacity: 0.8;
                 }
             }

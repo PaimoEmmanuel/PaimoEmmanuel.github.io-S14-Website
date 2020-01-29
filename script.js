@@ -22,3 +22,5 @@ var typeTimer = setInterval(function() {
     }, 500);
   };
 }, 60)
+
+//For the perform patnership visibility
