@@ -1,0 +1,12 @@
+.heading{
+    font-size: 5rem;
+    font-family: brown;
+    padding: $heading-padding;
+    &__primary{
+        font-weight: bold;
+    }
+
+    &__secondary{
+        font-weight: normal;
+    }
+}

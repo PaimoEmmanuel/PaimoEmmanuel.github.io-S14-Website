@@ -1,0 +1,18 @@
+.homepage-heading-primary{
+    &__text{
+    font-size: 4.5rem;
+    line-height: 15rem;
+    position: absolute;
+    top: 0;
+    &-parent{
+        width: 90rem
+    }
+    }
+    &__bg{
+        background-color: $color-yellow;
+        width: 60rem;
+        height: 12rem;
+        transform: rotate(-7.1deg);
+        margin-left: 12rem;
+    } 
+}

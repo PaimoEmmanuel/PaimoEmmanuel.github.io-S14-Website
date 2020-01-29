@@ -1,0 +1,47 @@
+.africlick{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 4rem;
+    margin-left: 8rem;
+    font-family: brown;
+    &__grid{
+        position: relative;
+        
+
+        &-bg{
+            background-color: $color-pink;
+            height: 40rem;
+            width: 93.5%;
+        }
+
+
+        & img{
+            top: -6%;
+            left: -3%;
+            width: 94%;
+            box-shadow: 20px 20px 0px 0 $color-pink;
+        }
+    }
+
+    &__text{
+        margin-right: 10rem;
+
+        & h3{
+            font-size: 4rem;
+        }
+
+        & p{
+            margin: 5rem 0;
+            font-size: $font-smaller;
+            font-weight: bold;
+        }
+
+        & a{
+            color: $color-pink;
+            font-size: 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+    
+}

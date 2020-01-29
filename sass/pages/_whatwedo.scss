@@ -1,0 +1,123 @@
+.section-background{
+    //height: 100rem;
+    background-color: $color-black;
+    color: $color-white;
+    font-family: brown;
+    transform: skewY(-5deg);
+
+    &__text{
+        display: block;
+        //font-family: brown;
+        //float: right;
+        //margin-right: 5rem;
+        font-family: brown;
+        font-size: $font-small;
+        margin: 4rem 7rem;
+        transform: skewY(5deg);
+        @include clearfix;
+        & h3{
+            float: right;
+        }
+    }
+
+    &__grid{
+        font-family: brown;
+        font-size: $font-small;
+        transform: skewY(5deg);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        position: relative;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+        &-1{
+            padding: 3rem;
+            //@include clearfix;
+
+            &-a{
+                width: 100%;
+
+                &-text{
+                    position: absolute;
+                    font-size: 14.4rem;
+                    transform: rotate(-90deg);
+                    left: -6%;
+
+                &-sub{
+                    position: absolute;
+                    font-size: 14.4rem;
+                    transform: rotate(-90deg);
+                    right: 6%;
+                }
+                }
+
+                & img{
+                    width: 100%;
+                }
+            }
+
+            &-b{
+                padding: 2rem 10rem 10rem 2rem;
+                &2{
+                    padding: 4rem 0 8rem 10rem; 
+                }
+            }
+        }
+    }
+}
+.section-work{
+    height: 100vh;
+    margin-top: 7rem;
+
+    &__heading{
+        //background-color: red;
+        @include clearfix;
+        color: $color-grey-light;
+        & h3{
+            float: right;
+            margin-right: 7rem;
+            font-family: brown;
+            font-size: $font-small;
+        }
+    }
+
+    &__main{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-left: 10rem;
+        margin-right: 7rem;
+        margin-top: 5rem;
+        font-family: brown;
+        font-size: $font-small;
+        &-subject{
+            font-size: 9.6rem;
+            font-weight: bold;
+            line-height: 9rem;
+
+            :not(:first-child){
+                color: $color-grey-light;
+            }
+        }
+
+        &-content{
+            position: relative;
+            margin-left: 7rem;
+            &-bg{
+                background-color: #25F2FF;
+                height: 25rem;
+                margin-top: 10%;
+            }
+
+            &-text{
+                position: absolute;
+                top: 0%;
+                padding: 0 8rem;
+
+                & p{
+                    margin-top: 5rem;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,33 @@
+.header{
+    //height: 95vh;
+    //width: 80vw;
+    padding: $heading-padding;
+    //background-color: red;
+    font-family: brown;
+    &__nav{
+        //background-color: blue;
+        &-logo{
+            height: 3.5rem;
+        }
+        &-logo-box{
+        //position: absolute;
+        //display: inline-block;
+        }
+        &-list{
+            float: right;
+
+            &-parent{
+                list-style: none;
+                & li{
+                    display: inline-block;
+                    & a{
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                        color: $nav-text-color;
+                        margin-left: 3rem; 
+                    }
+                }
+            }
+        }
+    }
+}
