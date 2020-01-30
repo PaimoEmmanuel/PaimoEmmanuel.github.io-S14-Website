@@ -5,9 +5,14 @@
 .u-margin-bottom-huge{margin-bottom: 16rem;}
 .u-absolute{position: absolute;}
 .u-relative{position: relative;}
+.u-fixed{position: fixed;}
 .u-underline{text-decoration: underline;}
 .u-color-pink{color: $color-pink;}
 .u-box-shadow-green{box-shadow: 20px 20px 0px 0 $color-lemon-green;}
 .u-box-shadow-blue{box-shadow: 20px 20px 0px 0 $color-blue;}
 .u-box-shadow-yellow{box-shadow: 20px 20px 0px 0 #FFCF25;}
 .u-box-shadow-pink{box-shadow: 20px 20px 0px 0 $color-pink;}
+
+.u-color-white{color: $color-white;}
+.u-active{color: #BDBDBD;}
+.u-100vh{height: 100vh; top: 0%; width: 100vh;}

@@ -12,6 +12,7 @@
         &-logo-box{
         //position: absolute;
         //display: inline-block;
+        color: $nav-text-color;
         }
         &-list{
             float: right;
@@ -19,11 +20,12 @@
             &-parent{
                 list-style: none;
                 & li{
+                    
                     display: inline-block;
                     & a{
                         text-decoration: none;
                         font-size: 1.5rem;
-                        color: $nav-text-color;
+                        
                         margin-left: 3rem; 
                     }
                 }

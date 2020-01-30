@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: brown sans-serif; }
+  font-family: brown; }
 
 .u-margin-top-big {
   margin-top: 8rem; }
@@ -30,6 +30,9 @@ body {
 .u-relative {
   position: relative; }
 
+.u-fixed {
+  position: fixed; }
+
 .u-underline {
   text-decoration: underline; }
 
@@ -47,6 +50,17 @@ body {
 
 .u-box-shadow-pink {
   box-shadow: 20px 20px 0px 0 #FF2546; }
+
+.u-color-white {
+  color: #ffffff; }
+
+.u-active {
+  color: #BDBDBD; }
+
+.u-100vh {
+  height: 100vh;
+  top: 0%;
+  width: 100vh; }
 
 .africlick {
   display: grid;
@@ -151,7 +165,7 @@ body {
         top: 0%;
         width: 98%;
         height: 100%;
-        background-color: #000000;
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
         color: #ffffff;
         font-family: brown;
         opacity: 0;
@@ -182,6 +196,8 @@ body {
   font-family: brown; }
   .header__nav-logo {
     height: 3.5rem; }
+  .header__nav-logo-box {
+    color: #333333; }
   .header__nav-list {
     float: right; }
     .header__nav-list-parent {
@@ -191,7 +207,6 @@ body {
         .header__nav-list-parent li a {
           text-decoration: none;
           font-size: 1.5rem;
-          color: #333333;
           margin-left: 3rem; }
 
 .heading {
@@ -306,3 +321,60 @@ body {
         padding: 0 8rem; }
         .section-work__main-content-text p {
           margin-top: 5rem; }
+
+.post-page__heading {
+  position: fixed;
+  top: 0;
+  z-index: -99;
+  padding: 0%;
+  width: 100%; }
+  .post-page__heading-text {
+    font-size: 7.6rem;
+    line-height: 9rem;
+    width: 80vw;
+    margin-top: 13%; }
+    .post-page__heading-text h3 {
+      width: 60rem; }
+
+.post-page__bg {
+  width: 100%; }
+
+.post-page__nav {
+  top: 5%;
+  left: 10%;
+  color: #ffffff;
+  z-index: 99999999; }
+
+.product-info {
+  margin-top: 100vh;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  height: 100vh;
+  background-color: #000000;
+  padding: 8rem 15rem 8rem 10rem;
+  color: #ffffff;
+  font-size: 2.4rem; }
+  .product-info-box {
+    display: grid;
+    grid-template-columns: 25% 75%; }
+    .product-info-box2 {
+      margin-left: 10rem; }
+      .product-info-box2__text1 {
+        color: #56CCF2;
+        margin-bottom: 8rem; }
+      .product-info-box2__text2 {
+        margin-bottom: 8rem; }
+      .product-info-box2 a {
+        color: #ffffff;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border: 2px solid #ffffff;
+        padding: .5rem; }
+        .product-info-box2 a:hover {
+          background-color: #ffffff;
+          color: #000000; }
+  .product-info-img {
+    background-color: #E5E5E5; }
+    .product-info-img img {
+      height: 80%; }
