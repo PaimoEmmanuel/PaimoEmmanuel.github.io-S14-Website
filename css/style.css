@@ -62,6 +62,14 @@ body {
   top: 0%;
   width: 100vh; }
 
+.u-parent {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; }
+
+.u-crop {
+  scroll-snap-align: center; }
+
 .africlick {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -281,7 +289,6 @@ body {
           padding: 4rem 0 8rem 10rem; }
 
 .section-work {
-  height: 100vh;
   margin-top: 7rem; }
   .section-work__heading {
     color: #BDBDBD; }
@@ -305,12 +312,16 @@ body {
     .section-work__main-subject {
       font-size: 9.6rem;
       font-weight: bold;
-      line-height: 9rem; }
+      line-height: 9rem;
+      position: fixed;
+      top: 10%;
+      z-index: -1; }
       .section-work__main-subject :not(:first-child) {
         color: #BDBDBD; }
     .section-work__main-content {
       position: relative;
-      margin-left: 7rem; }
+      margin-left: 7rem;
+      height: 100vh; }
       .section-work__main-content-bg {
         background-color: #25F2FF;
         height: 25rem;
@@ -321,6 +332,9 @@ body {
         padding: 0 8rem; }
         .section-work__main-content-text p {
           margin-top: 5rem; }
+
+.u-snap-scroll {
+  scroll-snap-align: start; }
 
 .post-page__heading {
   position: fixed;
