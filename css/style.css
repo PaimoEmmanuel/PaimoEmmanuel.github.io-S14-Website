@@ -1,3 +1,22 @@
+/*
+0-600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+1200-1800px: Our normal desktop styles
+1800px +: big desktop
+
+ORDER:  Base + typography > general layout + grid >
+        page layout > components
+
+$breakpoint arguments choices:
+-phone-small
+-phone
+-tab-prt
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +26,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
@@ -18,11 +49,20 @@ body {
 .u-margin-top-normal {
   margin-top: 4rem; }
 
+.u-margin-bottom-small {
+  margin-bottom: 4rem; }
+
 .u-margin-bottom {
   margin-bottom: 8rem; }
 
 .u-margin-bottom-huge {
   margin-bottom: 16rem; }
+
+.u-margin-left-small {
+  margin-left: 4%; }
+  @media (max-width: 28.125em) {
+    .u-margin-left-small {
+      margin-left: 0; } }
 
 .u-absolute {
   position: absolute; }
@@ -39,6 +79,12 @@ body {
 .u-color-pink {
   color: #FF2546; }
 
+.u-width-120 {
+  width: 100%; }
+  @media (max-width: 56.25em) {
+    .u-width-120 {
+      width: 250%; } }
+
 .u-box-shadow-green {
   box-shadow: 20px 20px 0px 0 #85FF25; }
 
@@ -53,6 +99,9 @@ body {
 
 .u-color-white {
   color: #ffffff; }
+
+.u-color-yellow {
+  color: #FFCF25; }
 
 .u-active {
   color: #BDBDBD; }
@@ -72,23 +121,39 @@ body {
 
 .africlick {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 40%;
   margin: 4rem;
   margin-left: 8rem;
-  font-family: brown; }
+  font-family: brown;
+  height: 50rem; }
+  @media (max-width: 56.25em) {
+    .africlick {
+      width: 80%;
+      padding-left: 10%;
+      display: inline-block;
+      margin: 4rem;
+      height: auto; } }
+  @media (max-width: 28.125em) {
+    .africlick {
+      padding-left: 0; } }
   .africlick__grid {
-    position: relative; }
-    .africlick__grid-bg {
-      background-color: #FF2546;
-      height: 40rem;
-      width: 93.5%; }
-    .africlick__grid img {
-      top: -6%;
-      left: -3%;
-      width: 94%;
-      box-shadow: 20px 20px 0px 0 #FF2546; }
+    position: relative;
+    box-shadow: 20px 20px 0px 0 #FF2546;
+    height: 100%;
+    background-image: url(../img/africlick.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%; }
+    @media (max-width: 56.25em) {
+      .africlick__grid {
+        height: 30rem; } }
   .africlick__text {
-    margin-right: 10rem; }
+    margin-left: 6rem;
+    margin-top: 20%; }
+    @media (max-width: 56.25em) {
+      .africlick__text {
+        margin-left: 0;
+        margin-top: 3rem; } }
     .africlick__text h3 {
       font-size: 4rem; }
     .africlick__text p {
@@ -135,6 +200,9 @@ body {
         padding: 0px 35px 0px 35px;
         line-height: 1.4rem;
         text-align: center; }
+    @media (max-width: 56.25em) {
+      .footer__main-grid2 {
+        margin-right: 5rem; } }
     .footer__main-grid2-content {
       margin-top: 4rem;
       font-size: 1.6rem; }
@@ -154,59 +222,117 @@ body {
       cursor: pointer; }
 
 .whitespace {
-  height: .1rem;
+  height: 1.1px;
   background-color: #ffffff; }
 
 .grid-2-col {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 48%;
   padding: 0rem 15rem; }
+  @media (max-width: 56.25em) {
+    .grid-2-col {
+      display: block; } }
+  @media (max-width: 37.5em) {
+    .grid-2-col {
+      padding: 0rem 5rem; } }
   .grid-2-col__grid {
     margin-right: 2rem;
     height: 40rem;
     position: relative; }
-    .grid-2-col__grid-img {
-      position: absolute;
-      width: 100%; }
-      .grid-2-col__grid-img-div {
+    .grid-2-col__grid-1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/Casestudy1.1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 30%; }
+      .grid-2-col__grid-1:hover {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.png); }
+      @media (max-width: 37.5em) {
+        .grid-2-col__grid-1 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.png); } }
+    .grid-2-col__grid-1:hover .grid-2-col__grid-text {
+      visibility: visible; }
+    .grid-2-col__grid-2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/Casestudy1.2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 30%; }
+      .grid-2-col__grid-2:hover {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.2.png); }
+      @media (max-width: 37.5em) {
+        .grid-2-col__grid-2 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.2.png); } }
+    .grid-2-col__grid-2:hover .grid-2-col__grid-text {
+      visibility: visible; }
+    .grid-2-col__grid-3 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/Case-study1.3.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 30%; }
+      .grid-2-col__grid-3:hover {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Case-study1.3.png); }
+      @media (max-width: 37.5em) {
+        .grid-2-col__grid-3 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Case-study1.3.png); } }
+    .grid-2-col__grid-3:hover .grid-2-col__grid-text {
+      visibility: visible; }
+    .grid-2-col__grid-4 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/Casestudy1.4.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 30%; }
+      .grid-2-col__grid-4:hover {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.4.png); }
+      @media (max-width: 37.5em) {
+        .grid-2-col__grid-4 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.4.png); } }
+    .grid-2-col__grid-4:hover .grid-2-col__grid-text {
+      visibility: visible; }
+    .grid-2-col__grid-text {
+      color: #ffffff;
+      visibility: hidden; }
+      @media (max-width: 37.5em) {
+        .grid-2-col__grid-text {
+          display: block; } }
+      .grid-2-col__grid-text p {
         position: absolute;
-        top: 0%;
-        width: 98%;
-        height: 100%;
-        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-        color: #ffffff;
-        font-family: brown;
-        opacity: 0;
-        margin-left: 2rem;
-        transition: all .8s; }
-        .grid-2-col__grid-img-div p {
-          margin: 45% 0 0 3rem;
-          font-size: 4rem;
-          line-height: 3rem;
-          width: 1rem;
-          cursor: context-menu; }
-        .grid-2-col__grid-img-div i {
-          position: absolute;
-          bottom: 10%;
-          right: 8%;
-          font-size: 2.4rem;
-          cursor: pointer; }
-        .grid-2-col__grid-img-div:hover {
-          opacity: 0.8; }
-    .grid-2-col__grid img {
-      width: 98%;
-      margin-left: 2rem; }
-      .grid-2-col__grid img:hover {
-        background: rgba(0, 0, 0, 0.9); }
+        font-size: 4rem;
+        line-height: 3rem;
+        width: 1rem;
+        bottom: 8%;
+        left: 2%;
+        cursor: context-menu; }
+      .grid-2-col__grid-text i {
+        position: absolute;
+        bottom: 12%;
+        right: 8%;
+        font-size: 2.4rem;
+        cursor: pointer; }
 
 .header {
   padding: 3rem 10rem;
   font-family: brown; }
+  .header__nav::after {
+    content: "";
+    display: table;
+    clear: both; }
   .header__nav-logo {
     height: 3.5rem; }
   .header__nav-logo-box {
     color: #333333; }
   .header__nav-list {
+    margin-top: -3rem;
     float: right; }
     .header__nav-list-parent {
       list-style: none; }
@@ -221,6 +347,10 @@ body {
   font-size: 5rem;
   font-family: brown;
   padding: 3rem 10rem; }
+  @media (max-width: 56.25em) {
+    .heading {
+      font-size: 4rem;
+      padding: 3rem 5rem; } }
   .heading__primary {
     font-weight: bold; }
   .heading__secondary {
@@ -267,8 +397,13 @@ body {
     position: relative;
     padding-top: 7rem;
     padding-bottom: 7rem; }
+    @media (max-width: 56.25em) {
+      .section-background__grid {
+        grid-template-columns: auto;
+        width: 80%;
+        margin-left: 10%; } }
     .section-background__grid-1 {
-      padding: 3rem; }
+      padding: 0 3rem; }
       .section-background__grid-1-a {
         width: 100%; }
         .section-background__grid-1-a-text {
@@ -276,17 +411,51 @@ body {
           font-size: 14.4rem;
           transform: rotate(-90deg);
           left: -6%; }
+          @media (max-width: 28.125em) {
+            .section-background__grid-1-a-text {
+              font-size: 10rem; } }
           .section-background__grid-1-a-text-sub {
             position: absolute;
             font-size: 14.4rem;
             transform: rotate(-90deg);
             right: 6%; }
+            @media (max-width: 56.25em) {
+              .section-background__grid-1-a-text-sub {
+                right: 0%;
+                bottom: 25%; } }
+            @media (max-width: 37.5em) {
+              .section-background__grid-1-a-text-sub {
+                bottom: 20%; } }
+            @media (max-width: 28.125em) {
+              .section-background__grid-1-a-text-sub {
+                font-size: 10rem;
+                bottom: 15%; } }
         .section-background__grid-1-a img {
           width: 100%; }
       .section-background__grid-1-b {
         padding: 2rem 10rem 10rem 2rem; }
+        @media (max-width: 56.25em) {
+          .section-background__grid-1-b {
+            width: 80%;
+            float: left;
+            padding: 0;
+            padding-bottom: 5rem; } }
+        @media (max-width: 37.5em) {
+          .section-background__grid-1-b {
+            width: 100%; } }
         .section-background__grid-1-b2 {
           padding: 4rem 0 8rem 10rem; }
+          @media (max-width: 56.25em) {
+            .section-background__grid-1-b2 {
+              width: 80%;
+              float: right;
+              padding: 5rem 0;
+              text-align: right; } }
+          @media (max-width: 37.5em) {
+            .section-background__grid-1-b2 {
+              float: left;
+              width: 100%;
+              text-align: left; } }
 
 .section-work {
   margin-top: 7rem; }
@@ -337,17 +506,24 @@ body {
 
 .post-page__heading {
   position: fixed;
+  background-image: url(../img/africlick.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
   top: 0;
-  z-index: -99;
-  padding: 0%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .post-page__heading-text {
+    position: fixed;
+    margin-left: 10%;
     font-size: 7.6rem;
     line-height: 9rem;
-    width: 80vw;
-    margin-top: 13%; }
-    .post-page__heading-text h3 {
-      width: 60rem; }
+    width: 60vw;
+    top: 20%;
+    color: #ffffff; }
+    @media (max-width: 28.125em) {
+      .post-page__heading-text {
+        font-size: 6.6rem; } }
 
 .post-page__bg {
   width: 100%; }
@@ -390,4 +566,5 @@ body {
   .product-info-img {
     background-color: #E5E5E5; }
     .product-info-img img {
-      height: 80%; }
+      height: 80%;
+      display: block; }

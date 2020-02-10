@@ -6,6 +6,7 @@
     font-family: brown;
     &__nav{
         //background-color: blue;
+        @include clearfix;
         &-logo{
             height: 3.5rem;
         }
@@ -15,8 +16,8 @@
         color: $nav-text-color;
         }
         &-list{
+            margin-top: -3rem;
             float: right;
-
             &-parent{
                 list-style: none;
                 & li{

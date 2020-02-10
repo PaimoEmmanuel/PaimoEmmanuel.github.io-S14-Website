@@ -42,6 +42,10 @@
 
         &-grid2{
 
+            @include respond(tab-port){
+                margin-right: 5rem;
+            }
+
             &-content{
                 margin-top: 4rem;
                 font-size: 1.6rem;
@@ -69,6 +73,6 @@
     }
 }
 .whitespace{
-    height: .1rem;
+    height: 1.1px;
     background-color: $color-white;
 }

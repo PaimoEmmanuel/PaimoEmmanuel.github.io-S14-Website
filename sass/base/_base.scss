@@ -5,8 +5,22 @@
     padding: 0;
     box-sizing: inherit;
 }html{
-    //Defines what 1rem is.
+    //Defines what 1rem is. 1rem = 10px
     font-size: 62.5%;
+
+    @include respond(big-desktop){
+        font-size: 75%; //12/16 = 75
+    }
+    @include respond(tab-land){
+        font-size: 56.25%; //9/16 = 56.25
+    }
+    @include respond(tab-port){
+        font-size: 50%; //8/16 = 50
+    }
+    @include respond(phone){
+        font-size: 40%; //8/16 = 50
+    }
+
 } body {
     box-sizing: border-box;
     font-family: brown;

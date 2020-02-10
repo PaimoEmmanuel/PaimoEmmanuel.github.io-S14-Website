@@ -30,8 +30,14 @@
         padding-top: 7rem;
         padding-bottom: 7rem;
 
+        @include respond(tab-port){
+            grid-template-columns: auto;
+            width: 80%;
+            margin-left: 10%;
+        }
+
         &-1{
-            padding: 3rem;
+            padding: 0 3rem;
             //@include clearfix;
 
             &-a{
@@ -42,12 +48,26 @@
                     font-size: 14.4rem;
                     transform: rotate(-90deg);
                     left: -6%;
+                    @include respond(phone-small){
+                        font-size: 10rem;
+                    }
 
                 &-sub{
                     position: absolute;
                     font-size: 14.4rem;
                     transform: rotate(-90deg);
                     right: 6%;
+
+                    @include respond(tab-port){
+                        right: 0%;
+                        bottom: 25%;
+                    }
+                    @include respond(phone){
+                        bottom: 20%;
+                    }@include respond(phone-small){
+                        font-size: 10rem;
+                        bottom: 15%;
+                    }
                 }
                 }
 
@@ -58,8 +78,31 @@
 
             &-b{
                 padding: 2rem 10rem 10rem 2rem;
+                @include respond(tab-port){
+                    width: 80%;
+                    float: left;
+                    padding: 0;
+                    padding-bottom: 5rem;
+                }
+
+                @include respond(phone){
+                    width: 100%;
+                }
                 &2{
                     padding: 4rem 0 8rem 10rem; 
+
+                    @include respond(tab-port){
+                        width: 80%;
+                        float: right;
+                        padding: 5rem 0;
+                        text-align: right;
+                        //padding-top: 5rem;
+                    }
+                    @include respond(phone){
+                        float: left;
+                        width: 100%;
+                        text-align: left;
+                    }
                 }
             }
         }

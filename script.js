@@ -24,3 +24,5 @@ var typeTimer = setInterval(function() {
 }, 60)
 
 //For the perform patnership visibility
+
+// FOr the build, UiUx tabs

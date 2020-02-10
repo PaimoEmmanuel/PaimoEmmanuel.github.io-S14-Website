@@ -1,58 +1,80 @@
 .grid-2-col{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
     padding: 0rem 15rem;
+
+    @include respond(tab-port){
+        display: block;
+    }
+
+    @include respond(phone){
+        padding: 0rem 5rem;
+    }
 
     &__grid{
         margin-right: 2rem;
         height: 40rem;
         position: relative;
+        //transition: all .2s;
+        &-1{
+            @include grid-structure(url(../img/Casestudy1.1.png));
+        }
+        &-1:hover &-text{
+            visibility: visible;
+        }
 
-        &-img{
-            position: absolute;
-            width: 100%;
-            //box-shadow: 20px 20px 0px 0 blue;
-            &-div{
+        &-2{
+            @include grid-structure(url(../img/Casestudy1.2.png));
+        }
+        &-2:hover &-text{
+            visibility: visible;
+        }
+        &-3{
+            @include grid-structure(url(../img/Case-study1.3.png))
+        }
+        &-3:hover &-text{
+            visibility: visible;
+        }
+        &-4{
+            @include grid-structure(url(../img/Casestudy1.4.png))
+        }
+        &-4:hover &-text{
+            visibility: visible;
+        }
+
+
+
+        &-text{
+
+            color: $color-white;
+            //height: 100%;
+            visibility: hidden;
+            @include respond(phone){
+                display: block;
+            }
+            
+            & p{
                 position: absolute;
-                top: 0%;
-                width: 98%;
-                height: 100%;
-                background-image: linear-gradient(to right bottom, rgba($color-black, 0.80), rgba($color-black, 0.80));
-                color: $color-white;
-                font-family: brown;
-                opacity: 0;
-                margin-left: 2rem;
-                transition: all .8s;
-                
-                & p{
-                    margin: 45% 0 0 3rem;
-                    font-size: 4rem;
-                    line-height: 3rem;
-                    width: 1rem;
-                    cursor: context-menu;
-                    //transform: translate(-100%);
-                }
-                & i{
-                    position: absolute;
-                    bottom: 10%;
-                    right: 8%;
-                    font-size: 2.4rem;
-                    cursor: pointer;
-                    //float: right;
-                }
-
-                &:hover{
-                    //display: flex;
-                    opacity: 0.8;
-                }
+                font-size: 4rem;
+                line-height: 3rem;
+                width: 1rem;
+                bottom: 8%;
+                left: 2%;
+                cursor: context-menu;
+                //transform: translate(-100%);
+            }
+            & i{
+                position: absolute;
+                bottom: 12%;
+                right: 8%;
+                font-size: 2.4rem;
+                cursor: pointer;
+                //float: right;
             }
         }
-        & img{
-            width: 98%;
-            margin-left: 2rem;            
-            &:hover{
-                background: rgba(0, 0, 0, 0.9);
-            }
+        
+        
+            //box-shadow: 20px 20px 0px 0 blue;
+            
         }
     }
-}

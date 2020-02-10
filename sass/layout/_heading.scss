@@ -2,6 +2,11 @@
     font-size: 5rem;
     font-family: brown;
     padding: $heading-padding;
+
+    @include respond(tab-port){
+        font-size: 4rem;
+        padding: $heading-padding-small;
+    }
     &__primary{
         font-weight: bold;
     }
