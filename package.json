@@ -4,6 +4,7 @@
   "description": "Studio 14 Official Website",
   "main": "index.js",
   "scripts": {
+    "start": "node script.js",
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Paimo Emmanuel",
