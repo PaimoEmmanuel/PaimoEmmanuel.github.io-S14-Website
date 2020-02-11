@@ -7,6 +7,7 @@
         top:0;
         width: 100%;
         height: 100%;
+        z-index: -99;
 
         &-text{
             position: fixed;
@@ -15,6 +16,7 @@
             line-height: 9rem;
             width: 60vw;
             top: 20%;
+            z-index: -50;
             color: $color-white;
 
             @include respond(phone-small){
@@ -43,19 +45,33 @@
     background-color: $color-black;
     //margin-top: -1rem;
     padding: 8rem 15rem 8rem 10rem;
-    color: $color-white;
+    color: #BDBDBD;
     font-size: $font-small;
-    @include respond(phone){
-        //margin-top: 125vh;
-        //width: 120%;
+    @include respond(phone-small){
+        padding: 8rem 5rem;
     }
+    @media only screen and (max-height: 25em) { //400px
+        padding: 2rem;
+    };
 
     &-box{
         display: grid;
         grid-template-columns: 25% 75%;
-
+        @include respond(tab-port){
+            display: block;
+        }
+        &1{
+            @include respond(tab-port){
+                margin-bottom: 8rem;
+            }
+        }
         &2{
             margin-left: 10rem;
+            @include respond(tab-port){
+                margin-bottom: 8rem;
+                margin-left: 0rem;
+            }
+    
 
             &__text1{
                 color: #56CCF2;
@@ -65,8 +81,9 @@
                 margin-bottom: 8rem;
             }
 
-            & a{
+            & button{
                 color: $color-white;
+                background-color: $color-black;
                 font-size: 1.8rem;
                 text-decoration: none;
                 border: 2px solid $color-white;
@@ -85,7 +102,8 @@
         //width: 100%;
         //padding: 10rem 80rem;
         & img{
-            height: 80%;
+            width: 80%;
+            margin-left: 10%;
             display: block;
         }
        
