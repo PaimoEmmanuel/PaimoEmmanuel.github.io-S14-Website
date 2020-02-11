@@ -1,4 +1,4 @@
-var headerText = document.getElementById('home-header-text');
+/*var headerText = document.getElementById('home-header-text');
 
 headerText.innerHTML = '';
 var n = 0;
@@ -22,7 +22,7 @@ var typeTimer = setInterval(function() {
     }, 500);
   };
 }, 60)
-
+*/
 //For the perform patnership visibility
 
 // FOr the build, UiUx tabs
