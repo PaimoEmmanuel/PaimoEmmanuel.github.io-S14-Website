@@ -176,9 +176,20 @@ body {
     font-size: 2.4rem;
     color: #ffffff;
     padding: 7rem 10rem; }
+    @media (max-width: 28.125em) {
+      .footer__main {
+        display: block;
+        padding: 2rem; } }
+    @media (max-width: 56.25em) {
+      .footer__main {
+        grid-template-columns: 50% 30% 20%;
+        padding: 5rem; } }
     .footer__main-grid1 {
       margin-right: 18rem;
       font-size: 2.4rem; }
+      @media (max-width: 28.125em) {
+        .footer__main-grid1 {
+          margin-right: 0rem; } }
       .footer__main-grid1 p {
         margin: 2rem 0;
         font-size: 1.6rem; }
@@ -215,11 +226,18 @@ body {
     padding: 2rem 10rem;
     padding-right: 20rem;
     background-color: #000000; }
+    @media (max-width: 56.25em) {
+      .footer-sub {
+        padding: 1rem; } }
     .footer-sub span {
       float: right;
       padding-left: 5rem;
       text-decoration: underline;
       cursor: pointer; }
+      @media (max-width: 28.125em) {
+        .footer-sub span {
+          float: left;
+          padding-left: 2rem; } }
 
 .whitespace {
   height: 1.1px;
@@ -304,7 +322,8 @@ body {
       visibility: hidden; }
       @media (max-width: 37.5em) {
         .grid-2-col__grid-text {
-          display: block; } }
+          display: block;
+          visibility: visible; } }
       .grid-2-col__grid-text p {
         position: absolute;
         font-size: 4rem;
@@ -356,20 +375,77 @@ body {
   .heading__secondary {
     font-weight: normal; }
 
-.homepage-heading-primary__text {
-  font-size: 4.5rem;
-  line-height: 15rem;
-  position: absolute;
-  top: 0; }
-  .homepage-heading-primary__text-parent {
-    width: 90rem; }
+.homepage-heading-primary {
+  height: 60vh;
+  margin-top: 30%; }
+  .homepage-heading-primary__text {
+    font-size: 4.5rem;
+    line-height: 15rem;
+    position: absolute;
+    top: -100%; }
+    .homepage-heading-primary__text-parent {
+      width: 90rem; }
+  .homepage-heading-primary__bg {
+    background-color: #FFCF25;
+    width: 60rem;
+    height: 12rem;
+    transform: rotate(-7.1deg);
+    margin-left: 12rem; }
 
-.homepage-heading-primary__bg {
+.clients {
   background-color: #FFCF25;
-  width: 60rem;
-  height: 12rem;
-  transform: rotate(-7.1deg);
-  margin-left: 12rem; }
+  width: 100%;
+  height: 30rem;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  transform: skewY(-2deg); }
+  .clients__text {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: bold;
+    width: 25rem;
+    transform: skewY(2deg);
+    margin-top: -5rem;
+    color: #000000; }
+    .clients__text a {
+      color: #000000; }
+      .clients__text a:hover {
+        color: #FF2546; }
+  .clients__carousel {
+    font-size: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 15% 0rem;
+    transform: skewY(2deg); }
+  .clients__images {
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    padding: 0 3rem; }
+  .clients__image {
+    width: 100%; }
+    .clients__image:not(:last-child) {
+      padding-right: 2rem; }
+
+.our-world {
+  margin: 10%; }
+  .our-world__heading {
+    font-size: 4rem;
+    font-weight: bold; }
+  .our-world__container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%); }
+  .our-world__grid {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 1rem; }
+    .our-world__grid-heading {
+      color: #FF2546;
+      font-size: 1.8rem; }
+    .our-world__grid img {
+      margin-top: 1.5rem;
+      width: 100%; }
 
 .section-background {
   background-color: #000000;
@@ -549,7 +625,7 @@ body {
   @media (max-width: 28.125em) {
     .product-info {
       padding: 8rem 5rem; } }
-  @media only screen and (max-height: 25em) {
+  @media only screen and (max-height: 37.5em) {
     .product-info {
       padding: 2rem; } }
   .product-info-box {

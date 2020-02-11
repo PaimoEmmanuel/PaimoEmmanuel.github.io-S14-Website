@@ -8,9 +8,23 @@
         @include font-normal;
         //text-align: center;
         padding: 7rem 10rem;
+
+        @include respond(phone-small){
+            display: block;
+            padding: 2rem;
+        }
+        @include respond(tab-port){
+            grid-template-columns: 50% 30% 20%;
+            padding: 5rem;
+        }
+
         &-grid1{
             margin-right: 18rem;
             font-size: $font-small;
+
+            @include respond(phone-small){
+                margin-right: 0rem;
+            }
             & p{
                 margin: 2rem 0;
                 font-size: $font-smaller;
@@ -63,12 +77,19 @@
         padding: 2rem 10rem;
         padding-right: 20rem;
         background-color: $color-black;
+        @include respond(tab-port){
+            padding: 1rem;
+        }
 
         span{
             float: right;
             padding-left: 5rem;
             text-decoration: underline;
             cursor: pointer;
+            @include respond(phone-small){
+                float: left;
+                padding-left: 2rem;
+            }
         }
     }
 }
