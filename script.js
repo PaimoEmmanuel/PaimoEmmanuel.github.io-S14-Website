@@ -1,5 +1,5 @@
-/*var headerText = document.getElementById('home-header-text');
-
+//FOR THE TYPEWRITER EFFECT
+var headerText = document.getElementById('home-header-text');
 headerText.innerHTML = '';
 var n = 0;
 var str = 'We create innovative digital solutions';
@@ -21,14 +21,11 @@ var typeTimer = setInterval(function() {
       };
     }, 500);
   };
-}, 60);*/
+}, 100);
 
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL
 var window_width = $(window).width() - $('#wavy').width();
-
-
 var document_height = $(document).height() + 700;
-
 $(function () {
     $(window).scroll(function () {
         var scroll_position = $(window).scrollTop() + 400;
@@ -41,10 +38,7 @@ $(function () {
 
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL
 var window_width2 = $(window).width() - $('#wavy2').width();
-
-
 var document_height2 = $(document).height() -1000 ;
-
 $(function () {
     $(window).scroll(function () {
         var scroll_position2 = $(window).scrollTop() ;
@@ -54,6 +48,22 @@ $(function () {
         });
     });
 });
-//For the perform patnership visibility
 
+//For the client carousel
+let next = document.getElementsByClassName("next")[0];
+let prev = document.getElementsByClassName("prev")[0];
+let srcArr = ["img/bcc.png", "img/fb.png", "img/pp.png"];
+let clientLogoPosition = document.getElementsByClassName("clients__image");
+next.onclick = function(){
+    srcArr.push(srcArr.shift())
+    for(let i =0; i < clientLogoPosition.length; i++){
+        clientLogoPosition[i].src = srcArr[i];
+    }
+}
+prev.onclick = function(){
+  srcArr.unshift(srcArr.pop());
+  for(let i =0; i < clientLogoPosition.length; i++){
+      clientLogoPosition[i].src = srcArr[i];
+  }
+}
 // FOr the build, UiUx tabs

@@ -1,21 +1,27 @@
 .homepage-heading-primary{
     height: 60vh;
     margin-top: 30%;
+
     &__text{
     font-size: 4.5rem;
-    line-height: 15rem;
+    //line-height: 15rem;
     position: absolute;
     top: -100%;
+    
+
     &-parent{
-        width: 90rem
+        width: 100%;
+    }
+    @include respond(phone){
+        width: 1rem;
     }
     }
+
     &__bg{
         background-color: $color-yellow;
-        width: 60rem;
         height: 12rem;
         transform: rotate(-7.1deg);
-        margin-left: 12rem;
+        //margin-left: 12rem;
     } 
 }
 .clients{
