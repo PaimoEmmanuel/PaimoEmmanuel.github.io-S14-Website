@@ -2,6 +2,9 @@
     //height: 95vh;
     //width: 80vw;
     padding: $heading-padding;
+    @include respond(tab-port){
+        padding-left: 5rem;
+    }
     //background-color: red;
     font-family: brown;
     &__nav{
