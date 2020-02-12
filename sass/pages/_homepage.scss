@@ -21,13 +21,15 @@
 .clients{
     background-color: $color-yellow;
     width: 100%;
-    height: 30rem;
     padding: 0 10%;
     display: grid;
     grid-template-columns: 30% 70%;
     transform: skewY(-2deg);
+    @include respond(phone){
+        display: inline-block;
+    }   
 
-    &__text{
+    &__text p{
         font-size: 5rem;
         line-height: 5rem;
         font-weight: bold;
@@ -35,6 +37,10 @@
         transform: skewY(2deg);
         margin-top: -5rem;
         color: $color-black;
+        @include respond(phone){
+            width: 40rem;
+            margin-left: 20%;
+        }   
 
         a{
             color: $color-black;
@@ -50,17 +56,29 @@
         grid-template-columns: repeat(3, auto);
         padding: 15% 0rem;
         transform: skewY(2deg);
+
+        span{
+            transform: skewY(2deg);
+        }
     }
     &__images{
         display: grid;
         grid-template-columns: repeat(3, 33.333%);
         padding: 0 3rem;
+        @include respond(tab-port){
+            display: block;
+        }        
     }
-    &__image{
+    &__image1, &__image2, &__image3{
         width: 100%;
         &:not(:last-child){
           padding-right: 2rem;  
         }
+    }
+    &__image2, &__image3{
+        @include respond(tab-port){
+           display: none;
+        }  
     }
 }
 
@@ -75,12 +93,18 @@
         margin-top: 4rem;
         display: grid;
         grid-template-columns: repeat(3, 33.333%);
+
+        @include respond(tab-port){
+            display: block;
+        }
     }
     &__grid{
         font-size: 2.5rem;
         font-weight: bold;
         margin: 0 1rem;
-
+        @include respond(tab-port){
+            margin-bottom: 5rem;
+        }
         &-heading{
             color: $color-pink;
             font-size: 1.8rem;

@@ -20,26 +20,26 @@
             @include grid-structure(url(../img/Casestudy1.1.png));
         }
         &-1:hover &-text{
-            visibility: visible;
+            opacity: 1;
         }
 
         &-2{
             @include grid-structure(url(../img/Casestudy1.2.png));
         }
         &-2:hover &-text{
-            visibility: visible;
+            opacity: 1;
         }
         &-3{
             @include grid-structure(url(../img/Case-study1.3.png))
         }
         &-3:hover &-text{
-            visibility: visible;
+            opacity: 1;
         }
         &-4{
             @include grid-structure(url(../img/Casestudy1.4.png))
         }
         &-4:hover &-text{
-            visibility: visible;
+            opacity: 1;
         }
 
 
@@ -48,10 +48,11 @@
 
             color: $color-white;
             //height: 100%;
-            visibility: hidden;
+            opacity: 0;
+            transition: all 1s;
             @include respond(phone){
                 display: block;
-                visibility: visible;
+                opacity: 1;
             }
             
             & p{

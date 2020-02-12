@@ -14,10 +14,6 @@
         //position: absolute;
         //display: inline-block;
         color: $nav-text-color;
-        @include respond(tab-port){
-            position: fixed;
-            z-index: 15000000;
-        }
         }
         &-list{
             @include respond(tab-port){

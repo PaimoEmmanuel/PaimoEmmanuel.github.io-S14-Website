@@ -271,7 +271,7 @@ body {
         .grid-2-col__grid-1 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.png); } }
     .grid-2-col__grid-1:hover .grid-2-col__grid-text {
-      visibility: visible; }
+      opacity: 1; }
     .grid-2-col__grid-2 {
       position: relative;
       width: 100%;
@@ -286,7 +286,7 @@ body {
         .grid-2-col__grid-2 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.2.png); } }
     .grid-2-col__grid-2:hover .grid-2-col__grid-text {
-      visibility: visible; }
+      opacity: 1; }
     .grid-2-col__grid-3 {
       position: relative;
       width: 100%;
@@ -301,7 +301,7 @@ body {
         .grid-2-col__grid-3 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Case-study1.3.png); } }
     .grid-2-col__grid-3:hover .grid-2-col__grid-text {
-      visibility: visible; }
+      opacity: 1; }
     .grid-2-col__grid-4 {
       position: relative;
       width: 100%;
@@ -316,14 +316,15 @@ body {
         .grid-2-col__grid-4 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.4.png); } }
     .grid-2-col__grid-4:hover .grid-2-col__grid-text {
-      visibility: visible; }
+      opacity: 1; }
     .grid-2-col__grid-text {
       color: #ffffff;
-      visibility: hidden; }
+      opacity: 0;
+      transition: all 1s; }
       @media (max-width: 37.5em) {
         .grid-2-col__grid-text {
           display: block;
-          visibility: visible; } }
+          opacity: 1; } }
       .grid-2-col__grid-text p {
         position: absolute;
         font-size: 4rem;
@@ -350,10 +351,6 @@ body {
     height: 3.5rem; }
   .header__nav-logo-box {
     color: #333333; }
-    @media (max-width: 56.25em) {
-      .header__nav-logo-box {
-        position: fixed;
-        z-index: 15000000; } }
   .header__nav-list {
     margin-top: -3rem;
     float: right; }
@@ -503,12 +500,14 @@ body {
 .clients {
   background-color: #FFCF25;
   width: 100%;
-  height: 30rem;
   padding: 0 10%;
   display: grid;
   grid-template-columns: 30% 70%;
   transform: skewY(-2deg); }
-  .clients__text {
+  @media (max-width: 37.5em) {
+    .clients {
+      display: inline-block; } }
+  .clients__text p {
     font-size: 5rem;
     line-height: 5rem;
     font-weight: bold;
@@ -516,9 +515,13 @@ body {
     transform: skewY(2deg);
     margin-top: -5rem;
     color: #000000; }
-    .clients__text a {
+    @media (max-width: 37.5em) {
+      .clients__text p {
+        width: 40rem;
+        margin-left: 20%; } }
+    .clients__text p a {
       color: #000000; }
-      .clients__text a:hover {
+      .clients__text p a:hover {
         color: #FF2546; }
   .clients__carousel {
     font-size: 4rem;
@@ -526,14 +529,22 @@ body {
     grid-template-columns: repeat(3, auto);
     padding: 15% 0rem;
     transform: skewY(2deg); }
+    .clients__carousel span {
+      transform: skewY(2deg); }
   .clients__images {
     display: grid;
     grid-template-columns: repeat(3, 33.333%);
     padding: 0 3rem; }
-  .clients__image {
+    @media (max-width: 56.25em) {
+      .clients__images {
+        display: block; } }
+  .clients__image1, .clients__image2, .clients__image3 {
     width: 100%; }
-    .clients__image:not(:last-child) {
+    .clients__image1:not(:last-child), .clients__image2:not(:last-child), .clients__image3:not(:last-child) {
       padding-right: 2rem; }
+  @media (max-width: 56.25em) {
+    .clients__image2, .clients__image3 {
+      display: none; } }
 
 .our-world {
   margin: 10%; }
@@ -544,10 +555,16 @@ body {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 33.333%); }
+    @media (max-width: 56.25em) {
+      .our-world__container {
+        display: block; } }
   .our-world__grid {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0 1rem; }
+    @media (max-width: 56.25em) {
+      .our-world__grid {
+        margin-bottom: 5rem; } }
     .our-world__grid-heading {
       color: #FF2546;
       font-size: 1.8rem; }
