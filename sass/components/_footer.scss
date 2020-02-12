@@ -78,7 +78,7 @@
         padding-right: 20rem;
         background-color: $color-black;
         @include respond(tab-port){
-            padding: 1rem;
+            padding: 2.5rem;
         }
 
         span{
@@ -88,7 +88,7 @@
             cursor: pointer;
             @include respond(phone-small){
                 float: left;
-                padding-left: 2rem;
+                padding: 0 2rem;
             }
         }
     }

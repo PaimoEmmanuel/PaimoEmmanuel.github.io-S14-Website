@@ -29,7 +29,9 @@
         display: inline-block;
     }   
 
-    &__text p{
+    &__text {
+        width: 100%;
+        p{
         font-size: 5rem;
         line-height: 5rem;
         font-weight: bold;
@@ -39,7 +41,7 @@
         color: $color-black;
         @include respond(phone){
             width: 40rem;
-            margin-left: 20%;
+            margin-left: 10%;
         }   
 
         a{
@@ -49,6 +51,7 @@
             }
         }
     }
+}
 
     &__carousel{
         font-size: 4rem;

@@ -228,7 +228,7 @@ body {
     background-color: #000000; }
     @media (max-width: 56.25em) {
       .footer-sub {
-        padding: 1rem; } }
+        padding: 2.5rem; } }
     .footer-sub span {
       float: right;
       padding-left: 5rem;
@@ -237,7 +237,7 @@ body {
       @media (max-width: 28.125em) {
         .footer-sub span {
           float: left;
-          padding-left: 2rem; } }
+          padding: 0 2rem; } }
 
 .whitespace {
   height: 1.1px;
@@ -379,6 +379,18 @@ body {
   .heading__secondary {
     font-weight: normal; }
 
+.wavy {
+  position: fixed;
+  top: 15%;
+  right: 10%;
+  z-index: 10000000; }
+
+.wavy2 {
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  z-index: 10000000; }
+
 .navigation {
   display: none; }
   @media (max-width: 56.25em) {
@@ -447,6 +459,8 @@ body {
         transform: translateX(1rem); }
       .navigation__checkbox:checked ~ .navigation__background {
         transform: scale(80); }
+      .navigation__checkbox:checked .post-page__heading-text {
+        visibility: hidden; }
       .navigation__checkbox:checked ~ .navigation__nav {
         opacity: 1;
         width: 100vw; }
@@ -507,22 +521,24 @@ body {
   @media (max-width: 37.5em) {
     .clients {
       display: inline-block; } }
-  .clients__text p {
-    font-size: 5rem;
-    line-height: 5rem;
-    font-weight: bold;
-    width: 25rem;
-    transform: skewY(2deg);
-    margin-top: -5rem;
-    color: #000000; }
-    @media (max-width: 37.5em) {
-      .clients__text p {
-        width: 40rem;
-        margin-left: 20%; } }
-    .clients__text p a {
+  .clients__text {
+    width: 100%; }
+    .clients__text p {
+      font-size: 5rem;
+      line-height: 5rem;
+      font-weight: bold;
+      width: 25rem;
+      transform: skewY(2deg);
+      margin-top: -5rem;
       color: #000000; }
-      .clients__text p a:hover {
-        color: #FF2546; }
+      @media (max-width: 37.5em) {
+        .clients__text p {
+          width: 40rem;
+          margin-left: 10%; } }
+      .clients__text p a {
+        color: #000000; }
+        .clients__text p a:hover {
+          color: #FF2546; }
   .clients__carousel {
     font-size: 4rem;
     display: grid;
