@@ -1,10 +1,12 @@
 //FOR THE TYPEWRITER EFFECT
-(function typewriter(){
 
-  var headerText = document.getElementById('home-header-text');
+var headerText = document.getElementById('home-header-text');
+
+function typewriter(string){
+
 headerText.innerHTML = '';
 var n = 0;
-var str = 'We create innovative digital solutions';
+var str = string;
 var typeTimer = setInterval(function() {
   n = n + 1;
   headerText.innerHTML = "" + str.slice(0, n);
@@ -24,7 +26,9 @@ var typeTimer = setInterval(function() {
     }, 500);
   };
 }, 80);
-})();
+};
+typewriter("We create innovative digital solutions");
+
 
 
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL

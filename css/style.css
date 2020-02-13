@@ -504,17 +504,27 @@ body {
         transform: rotate(-135deg); } }
 
 .homepage-heading-primary {
-  height: 60vh;
-  margin-top: 30%; }
+  margin: 15% 0;
+  position: relative; }
+  @media (max-width: 75em) {
+    .homepage-heading-primary {
+      margin: 25% 0 15% 0;
+      padding: 2rem; } }
+  @media (max-width: 28.125em) {
+    .homepage-heading-primary {
+      margin: 25% 0 15% 0;
+      padding: 2rem;
+      padding-top: 20rem; } }
   .homepage-heading-primary__text {
     font-size: 4.5rem;
     position: absolute;
-    top: -100%; }
-    .homepage-heading-primary__text-parent {
-      width: 100%; }
+    top: 50%;
+    transform: translateY(-50%); }
     @media (max-width: 37.5em) {
       .homepage-heading-primary__text {
-        width: 1rem; } }
+        font-size: 4rem; } }
+  .homepage-heading-primary-parent {
+    width: 100%; }
   .homepage-heading-primary__bg {
     background-color: #FFCF25;
     height: 12rem;
