@@ -58,11 +58,17 @@ body {
 .u-margin-bottom-huge {
   margin-bottom: 16rem; }
 
+.u-text-bold {
+  font-weight: bold; }
+
 .u-margin-left-small {
   margin-left: 4%; }
   @media (max-width: 28.125em) {
     .u-margin-left-small {
       margin-left: 0; } }
+
+.u-font-small {
+  font-size: 3rem; }
 
 .u-absolute {
   position: absolute; }
@@ -78,12 +84,6 @@ body {
 
 .u-color-pink {
   color: #FF2546; }
-
-.u-width-120 {
-  width: 100%; }
-  @media (max-width: 56.25em) {
-    .u-width-120 {
-      width: 250%; } }
 
 .u-box-shadow-green {
   box-shadow: 20px 20px 0px 0 #85FF25; }
@@ -111,21 +111,15 @@ body {
   top: 0%;
   width: 100vh; }
 
-.u-parent {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; }
-
-.u-crop {
-  scroll-snap-align: center; }
-
 .africlick {
   display: grid;
   grid-template-columns: 55% 40%;
   margin: 4rem;
   margin-left: 8rem;
-  font-family: brown;
-  height: 50rem; }
+  font-family: brown; }
+  @media (min-width: 112.5em) {
+    .africlick {
+      height: 50rem; } }
   @media (max-width: 56.25em) {
     .africlick {
       width: 80%;
@@ -339,6 +333,46 @@ body {
         right: 8%;
         font-size: 2.4rem;
         cursor: pointer; }
+
+.form {
+  background-color: #FFCF25;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 8rem;
+  background-image: linear-gradient(to right, transparent 0%, transparent 60%, white 50%); }
+  @media (max-width: 56.25em) {
+    .form {
+      display: block; } }
+  @media (max-width: 37.5em) {
+    .form {
+      padding-left: 2rem;
+      padding-top: 3rem; } }
+  .form__text {
+    font-size: 9.6rem;
+    line-height: 12rem;
+    width: 1rem; }
+    @media (max-width: 75em) {
+      .form__text {
+        font-size: 7.6rem;
+        line-height: 8rem; } }
+    @media (max-width: 75em) {
+      .form__text {
+        margin-bottom: 4rem; } }
+  .form__input {
+    font-size: 1.8rem;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #333333; }
+  .form button {
+    font-size: 1.8rem;
+    padding: 1.4rem 4rem;
+    color: #ffffff;
+    border: none;
+    background-color: #000000; }
 
 .header {
   padding: 3rem 10rem;
@@ -824,3 +858,39 @@ body {
       width: 80%;
       margin-left: 10%;
       display: block; }
+
+.location {
+  margin-bottom: 8rem;
+  display: grid;
+  grid-template-columns: 33% 67%;
+  padding-left: 5%;
+  height: 70rem; }
+  @media (max-width: 56.25em) {
+    .location {
+      display: block;
+      height: auto;
+      padding-left: 0%; } }
+  .location__address {
+    background-color: #FF2546;
+    color: #ffffff;
+    padding: 4rem 8rem 0 8rem;
+    height: 80%; }
+    @media (max-width: 75em) {
+      .location__address {
+        padding: 2rem 2rem 0 2rem; } }
+    @media (max-width: 56.25em) {
+      .location__address {
+        padding: 4rem 8rem 4rem 8rem;
+        height: auto;
+        width: 80%; } }
+  .location__heading {
+    font-size: 4.8rem;
+    margin-bottom: 4rem; }
+  .location__heading2 {
+    font-size: 2rem; }
+  .location__map iframe {
+    width: 100%;
+    height: 100%; }
+    @media (max-width: 56.25em) {
+      .location__map iframe {
+        height: 45rem; } }

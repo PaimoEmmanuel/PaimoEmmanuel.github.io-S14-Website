@@ -1,0 +1,49 @@
+.form{
+    background-color: $color-yellow;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 8rem;
+    background-image: linear-gradient(to right, transparent 0%, 
+                    transparent 60%, 
+                    rgba(255,255,255, 1) 50%);
+
+    @include respond(tab-port){
+        display: block;
+    }
+    @include respond(phone){
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+    &__text{
+        font-size: 9.6rem;
+        line-height: 12rem;
+        width: 1rem;
+
+        @include respond(tab-land){
+            font-size: 7.6rem;
+            line-height: 8rem;
+        }
+        @include respond(tab-land){
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__input{
+        font-size: 1.8rem;
+        display: block;
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        border-bottom: 2px solid #333333;
+    }
+
+    button{
+        font-size: 1.8rem;
+        padding: 1.4rem 4rem;
+        color: $color-white;
+        border: none;
+        background-color: $color-black;
+    }
+}

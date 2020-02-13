@@ -1,10 +1,8 @@
 //FOR THE TYPEWRITER EFFECT
 
-var headerText = document.getElementById('home-header-text');
 
 function typewriter(string){
-
-headerText.innerHTML = '';
+var headerText = document.getElementById('home-header-text');
 var n = 0;
 var str = string;
 var typeTimer = setInterval(function() {
@@ -71,9 +69,9 @@ function nextFn(){
   }
 }
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   myVar = setInterval("nextFn()", 1000);
-});
+});*/
 next.onclick = nextFn()
 prev.onclick = function(){
   srcArr.unshift(srcArr.pop());
@@ -81,4 +79,9 @@ prev.onclick = function(){
       clientLogoPosition[i].src = srcArr[i];
   }
 }
+
+
+//FOR BLINKING DOT ON CONTACT PAGE
+
+
 // FOr the build, UiUx tabs

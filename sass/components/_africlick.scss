@@ -4,8 +4,10 @@
     margin: 4rem;
     margin-left: 8rem;
     font-family: brown;
-    height: 50rem;
 
+    @include respond(big-desktop){
+        height: 50rem;
+    }
     @include respond(tab-port){
         width: 80%;
         padding-left: 10%;

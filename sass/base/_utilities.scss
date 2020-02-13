@@ -5,11 +5,15 @@
 .u-margin-bottom{margin-bottom: 8rem;}
 .u-margin-bottom-huge{margin-bottom: 16rem;}
 
+.u-text-bold{font-weight: bold;}
+
 .u-margin-left-small{margin-left: 4%;
   @include respond(phone-small){
     margin-left: 0;
 }
 }
+
+.u-font-small{font-size: 3rem;}
 
 .u-absolute{position: absolute;}
 .u-relative{position: relative;}
@@ -17,12 +21,6 @@
 
 .u-underline{text-decoration: underline;}
 .u-color-pink{color: $color-pink;}
-
-.u-width-120{
-  width: 100%;
-  @include respond(tab-port){
-    width: 250%;
-  }}
 
 .u-box-shadow-green{box-shadow: 20px 20px 0px 0 $color-lemon-green;}
 .u-box-shadow-blue{box-shadow: 20px 20px 0px 0 $color-blue;}
@@ -33,13 +31,3 @@
 .u-color-yellow{color: #FFCF25;}
 .u-active{color: #BDBDBD;}
 .u-100vh{height: 100vh; top: 0%; width: 100vh;}
-
-
-.u-parent{
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-  .u-crop{
-    scroll-snap-align: center;
-  }
