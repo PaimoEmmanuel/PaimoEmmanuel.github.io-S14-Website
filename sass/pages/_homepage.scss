@@ -93,7 +93,6 @@
         color: $color-black;
         @include respond(phone){
             width: 40rem;
-            //margin-left: 10%;
         }   
 
         a{
