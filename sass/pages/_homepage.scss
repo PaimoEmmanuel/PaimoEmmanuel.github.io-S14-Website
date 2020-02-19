@@ -4,8 +4,12 @@
     position: relative;
 
     @include respond(tab-land){
-        margin: 25% 0 15% 0;
+        margin: 18% 0 10% 0;
         padding: 2rem;
+        padding-left: 0;
+    }
+    @include respond(tab-port){
+        margin: 18% 0 40% 0;
     }
 
     @include respond(phone-small){
@@ -14,12 +18,25 @@
         padding-top: 20rem;
     }
 
+    &__text-parent{
+        width: auto;
+    }
     &__text{
     font-size: 4.5rem;
     //line-height: 15rem;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0%;
+    //transform: translateY(-50%);
+    width: 100rem;
+
+    @media (max-width: 62.5em) { //600px
+        //.homepage-heading-primary__text{
+            width: 90rem;
+       // }
+    };
+    @include respond(tab-port){
+        width: auto;
+    }
     @include respond(phone){
         font-size: 4rem;
         }
@@ -37,39 +54,51 @@
 
     &__bg{
         background-color: $color-yellow;
-        height: 12rem;
+        height: 16rem;
+        width: 70rem;
+        margin: 5rem 0 0 18rem;
         transform: rotate(-7.1deg);
-        //margin-left: 12rem;
+        @include respond(tab-port){
+            width: 60rem;
+            margin: 5rem 0 0 0rem;
+        }
+
+        @include respond(phone-small){
+            width: 40rem;
+        }
     } 
 }
 .clients{
     background-color: $color-yellow;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 7rem;
     display: grid;
+    height: 35rem;
     grid-template-columns: 30% 70%;
     transform: skewY(-2deg);
     @include respond(phone){
         display: inline-block;
+        height: 50rem;
     }   
 
     &__text {
         width: 100%;
         p{
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 5.9rem;
+        line-height: 6.5rem;
         font-weight: bold;
         width: 25rem;
         transform: skewY(2deg);
-        margin-top: -5rem;
+        margin-top: -7rem;
         color: $color-black;
         @include respond(phone){
             width: 40rem;
-            margin-left: 10%;
+            //margin-left: 10%;
         }   
 
         a{
             color: $color-black;
+            transition: all .3s;
             &:hover{
                 color: $color-pink;
             }
@@ -81,12 +110,20 @@
         font-size: 4rem;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        padding: 15% 0rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) skewY(2deg) scale(2);
+        @include respond(phone){
+        position: relative;
+        left: 0%;
+        width: 80%;
+        margin-top: 10rem;
         transform: skewY(2deg);
-
-        span{
-            transform: skewY(2deg);
-        }
+        } 
+        @include respond(phone-small){
+            width: 100%;
+         } 
     }
     &__images{
         display: grid;
@@ -94,6 +131,7 @@
         padding: 0 3rem;
         @include respond(tab-port){
             display: block;
+            //width: 25rem;
         }        
     }
     &__image1, &__image2, &__image3{
@@ -101,18 +139,29 @@
         &:not(:last-child){
           padding-right: 2rem;  
         }
+        @include respond(phone){
+           width: 80%;
+           padding-left: 10%;
+         } 
     }
     &__image2, &__image3{
         @include respond(tab-port){
            display: none;
         }  
     }
+    
 }
-
+.arr-img{
+    margin-top: 50%;
+    @include respond(phone){
+        margin-top: 150%;
+     }  
+}
 .our-world{
-    margin: 10%;
+    margin: 10% 7rem 10% 5rem;
 
     &__heading{
+        margin-left: 2rem;
         font-size: 4rem;
         font-weight: bold;
     }
@@ -128,7 +177,7 @@
     &__grid{
         font-size: 2.5rem;
         font-weight: bold;
-        margin: 0 1rem;
+        margin-left: 2rem;
         @include respond(tab-port){
             margin-bottom: 5rem;
         }

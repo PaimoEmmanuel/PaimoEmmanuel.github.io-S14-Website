@@ -11,7 +11,8 @@
         //background-color: blue;
         @include clearfix;
         &-logo{
-            height: 3.5rem;
+            height: 5.5rem;
+            width: 5.5rem;
         }
         &-logo-box{
         //position: absolute;
@@ -32,8 +33,7 @@
                     & a{
                         text-decoration: none;
                         font-size: 1.5rem;
-                        
-                        margin-left: 3rem; 
+                        margin-left: 5.2rem; 
                     }
                 }
             }

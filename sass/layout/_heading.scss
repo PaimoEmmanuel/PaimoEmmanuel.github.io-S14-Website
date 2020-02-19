@@ -18,8 +18,12 @@
 .wavy{
     position: fixed;
     top: 15%;
-    right: 10%;
+    left: calc(100% - 7rem);
     z-index: 10000000;
+
+    img{
+        height: 6.9rem;
+    }
     @include respond(tab-port){
         display: none;
     }
@@ -27,8 +31,13 @@
 .wavy2{
     position: fixed;
     bottom: 5%;
-    left: 10%;
+    left: 7rem;
     z-index: 10000000;
+
+    img{
+        height: 7.7rem;
+    }
+
     @include respond(tab-port){
         display: none;
     }

@@ -1,22 +1,21 @@
 .africlick{
     display: grid;
     grid-template-columns: 55% 40%;
-    margin: 4rem;
-    margin-left: 8rem;
+    margin-bottom: 4rem;
     font-family: brown;
 
-    @include respond(big-desktop){
-        height: 50rem;
-    }
     @include respond(tab-port){
         width: 80%;
         padding-left: 10%;
         display: inline-block;
-        margin: 4rem;
         height: auto;
     }
     @include respond(phone-small){
-        padding-left: 0;
+        padding-left: 10%;
+    }
+    @include respond(big-desktop){
+        height: 50rem;
+        margin-left: 5rem;
     }
     &__grid{
         position: relative;
@@ -31,8 +30,7 @@
     }
 
     &__text{
-        margin-left: 6rem;
-        margin-top: 20%;
+        margin: 7rem 0 7rem 10rem;
         @include respond(tab-port){
             margin-left: 0;
             margin-top: 3rem;
@@ -43,9 +41,9 @@
         }
 
         & p{
-            margin: 5rem 0;
-            font-size: 2.2rem;
-            font-weight: bold;
+            margin: 3rem 0;
+            font-size: 1.6rem;
+            font-weight: light;
         }
 
         & a{

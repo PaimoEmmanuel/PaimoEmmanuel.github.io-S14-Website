@@ -7,7 +7,7 @@
         grid-template-columns: 60% 20% 20%;
         @include font-normal;
         //text-align: center;
-        padding: 7rem 10rem;
+        padding: 7rem;
 
         @include respond(phone-small){
             display: block;
@@ -44,6 +44,7 @@
 
             & button{
                 padding: 1rem 1rem;
+                border: none;
                 background-color: $color-pink;
                 color: $color-white;
                 font-size: $font-smaller;
