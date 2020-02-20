@@ -106,6 +106,9 @@ body {
 .u-color-yellow {
   color: #FFCF25; }
 
+.u-color-black {
+  color: #000000; }
+
 .u-active {
   color: #BDBDBD; }
 
@@ -409,6 +412,8 @@ body {
         .header__nav-list-parent li a {
           text-decoration: none;
           font-size: 1.5rem;
+          font-weight: bold;
+          color: #000000;
           margin-left: 5.2rem; }
 
 .heading {
