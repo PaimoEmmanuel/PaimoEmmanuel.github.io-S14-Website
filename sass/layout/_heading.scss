@@ -24,9 +24,9 @@
     img{
         height: 6.9rem;
     }
-    @include respond(tab-port){
+    /*@include respond(tab-port){
         display: none;
-    }
+    }*/
 }
 .wavy2{
     position: fixed;
@@ -38,7 +38,7 @@
         height: 7.7rem;
     }
 
-    @include respond(tab-port){
+    /*@include respond(tab-port){
         display: none;
-    }
+    }*/
 }
