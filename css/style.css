@@ -89,16 +89,16 @@ body {
   color: #FF2546; }
 
 .u-box-shadow-green {
-  box-shadow: 20px 20px 0px 0 #85FF25; }
+  box-shadow: 12px 12px 0px 0 #85FF25; }
 
 .u-box-shadow-blue {
-  box-shadow: 20px 20px 0px 0 #18B1E2; }
+  box-shadow: 12px 12px 0px 0 #18B1E2; }
 
 .u-box-shadow-yellow {
-  box-shadow: 20px 20px 0px 0 #FFCF25; }
+  box-shadow: 12px 12px 0px 0 #FFCF25; }
 
 .u-box-shadow-pink {
-  box-shadow: 20px 20px 0px 0 #FF2546; }
+  box-shadow: 12px 12px 0px 0 #FF2546; }
 
 .u-color-white {
   color: #ffffff; }
@@ -135,7 +135,7 @@ body {
       margin-left: 5rem; } }
   .africlick__grid {
     position: relative;
-    box-shadow: 20px 20px 0px 0 #FF2546;
+    box-shadow: 12px 12px 0px 0 #FF2546;
     height: 100%;
     background-image: url(../img/africlick.png);
     background-size: cover;
