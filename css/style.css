@@ -320,7 +320,7 @@ body {
     .grid-2-col__grid-text {
       color: #ffffff;
       opacity: 0;
-      transition: all 1s; }
+      transition: all .7s; }
       @media (max-width: 37.5em) {
         .grid-2-col__grid-text {
           display: block;
