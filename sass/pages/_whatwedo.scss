@@ -4,6 +4,7 @@
     color: $color-white;
     font-family: brown;
     transform: skewY(-5deg);
+    margin-top: 22rem;
 
     &__text{
         display: block;
@@ -17,18 +18,20 @@
         @include clearfix;
         & h3{
             float: right;
+            font-weight: 300;
+        font-size: 2.4rem;
         }
     }
 
     &__grid{
         font-family: brown;
-        font-size: $font-small;
+        font-size: 1.9rem;
         transform: skewY(5deg);
         display: grid;
         grid-template-columns: 50% 50%;
         position: relative;
         padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-bottom: 10rem;
 
         @include respond(tab-port){
             grid-template-columns: auto;
@@ -37,8 +40,11 @@
         }
 
         &-1{
-            padding: 0 3rem;
+            &:not(:last-child){
+            padding: 0 3rem 0 0;
             //@include clearfix;
+            }
+            
 
             &-a{
                 width: 100%;
@@ -48,6 +54,9 @@
                     font-size: 14.4rem;
                     transform: rotate(-90deg);
                     left: -6%;
+                    font-weight: bolder;
+                    letter-spacing: -8px;
+                    top: 10%;
                     @include respond(phone-small){
                         font-size: 10rem;
                     }
@@ -56,7 +65,9 @@
                     position: absolute;
                     font-size: 14.4rem;
                     transform: rotate(-90deg);
-                    right: 6%;
+                    right: 0;
+                    font-weight: bolder;
+                    letter-spacing: -8px;
 
                     @include respond(tab-port){
                         right: 0%;
@@ -89,7 +100,7 @@
                     width: 100%;
                 }
                 &2{
-                    padding: 4rem 0 8rem 10rem; 
+                    padding: 4rem 0 8rem 7rem; 
 
                     @include respond(tab-port){
                         width: 80%;
@@ -115,12 +126,14 @@
     &__heading{
         //background-color: red;
         @include clearfix;
-        color: $color-grey-light;
+        color: $color-black;
         & h3{
             float: right;
             margin-right: 7rem;
             font-family: brown;
             font-size: $font-small;
+            font-weight: 300;
+            font-size: 2.4rem;
         }
     }
 

@@ -1,10 +1,12 @@
 .heading{
-    font-size: 5rem;
+    font-size: 4.5rem;
+    line-height: 5.9rem;
+    letter-spacing: -1px;
     font-family: brown;
     padding: $heading-padding;
 
     @include respond(tab-port){
-        font-size: 4rem;
+        font-size: 3.5rem;
         padding: $heading-padding-small;
     }
     &__primary{
@@ -12,11 +14,11 @@
     }
 
     &__secondary{
-        font-weight: normal;
+        font-weight: 300;
     }
 }
 .wavy{
-    position: fixed;
+    position: absolute;
     top: 15%;
     left: calc(100% - 7rem);
     z-index: 10000000;
