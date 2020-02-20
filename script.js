@@ -30,7 +30,7 @@ typewriter("We create innovative digital solutions");
 
 
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL
-var window_width = $(window).width() - $('#wavy').width();
+/*var window_width = $(window).width() - $('#wavy').width();
 var document_height = $(document).height() + 700;
 $(function () {
     $(window).scroll(function () {
@@ -40,7 +40,7 @@ $(function () {
             'top': object_position_left
         });
     });
-});
+});*/
 
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL
 var window_width2 = $(window).width() - $('#wavy2').width();
@@ -72,7 +72,7 @@ function nextFn(){
 /*$(document).ready(function(){
   myVar = setInterval("nextFn()", 1000);
 });*/
-next.onclick = nextFn()
+next.onclick = nextFn;
 prev.onclick = function(){
   srcArr.unshift(srcArr.pop());
   for(let i =0; i < clientLogoPosition.length; i++){

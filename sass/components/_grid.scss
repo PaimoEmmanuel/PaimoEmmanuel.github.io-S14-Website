@@ -58,16 +58,17 @@
             & p{
                 position: absolute;
                 font-size: 4rem;
-                line-height: 3rem;
-                width: 1rem;
-                bottom: 8%;
-                left: 2%;
+                letter-spacing: -2px;
+                line-height: 4rem;
+                bottom: 5rem;
+                left: 5rem;
+                font-weight: bold;
                 cursor: context-menu;
                 //transform: translate(-100%);
             }
             & img{
                 position: absolute;
-                bottom: 12%;
+                bottom: 20%;
                 right: 8%;
                 font-size: 2.4rem;
                 cursor: pointer;

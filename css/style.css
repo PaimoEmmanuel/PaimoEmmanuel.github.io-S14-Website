@@ -70,6 +70,9 @@ body {
 .u-font-small {
   font-size: 3rem; }
 
+.u-font-tiny {
+  font-size: 1.2rem; }
+
 .u-absolute {
   position: absolute; }
 
@@ -115,7 +118,8 @@ body {
   display: grid;
   grid-template-columns: 55% 40%;
   margin-bottom: 4rem;
-  font-family: brown; }
+  font-family: brown;
+  height: 47rem; }
   @media (max-width: 56.25em) {
     .africlick {
       width: 80%;
@@ -147,7 +151,8 @@ body {
         margin-left: 0;
         margin-top: 3rem; } }
     .africlick__text h3 {
-      font-size: 4rem; }
+      font-size: 4rem;
+      letter-spacing: -2px; }
     .africlick__text p {
       margin: 3rem 0;
       font-size: 1.6rem;
@@ -212,6 +217,8 @@ body {
       font-size: 1.6rem; }
       .footer__main-grid2-content div {
         margin-top: 2rem; }
+    .footer__main-grid3 {
+      margin-left: auto; }
   .footer-sub {
     font-family: brown;
     font-size: 1.1rem;
@@ -321,14 +328,15 @@ body {
       .grid-2-col__grid-text p {
         position: absolute;
         font-size: 4rem;
-        line-height: 3rem;
-        width: 1rem;
-        bottom: 8%;
-        left: 2%;
+        letter-spacing: -2px;
+        line-height: 4rem;
+        bottom: 5rem;
+        left: 5rem;
+        font-weight: bold;
         cursor: context-menu; }
       .grid-2-col__grid-text img {
         position: absolute;
-        bottom: 12%;
+        bottom: 20%;
         right: 8%;
         font-size: 2.4rem;
         cursor: pointer; }
@@ -542,16 +550,13 @@ body {
         transform: rotate(-135deg); } }
 
 .homepage-heading-primary {
-  margin: 15% 0;
+  margin: 10% 0;
   position: relative; }
   @media (max-width: 75em) {
     .homepage-heading-primary {
-      margin: 18% 0 10% 0;
+      margin: 10% 0 10% 0;
       padding: 2rem;
       padding-left: 0; } }
-  @media (max-width: 56.25em) {
-    .homepage-heading-primary {
-      margin: 18% 0 40% 0; } }
   @media (max-width: 28.125em) {
     .homepage-heading-primary {
       margin: 25% 0 15% 0;
@@ -561,6 +566,7 @@ body {
     width: auto; }
   .homepage-heading-primary__text {
     font-size: 4.5rem;
+    letter-spacing: -2px;
     position: absolute;
     top: 0%;
     width: 100rem; }
@@ -594,7 +600,7 @@ body {
   width: 100%;
   padding: 0 7rem;
   display: grid;
-  height: 35rem;
+  height: 33rem;
   grid-template-columns: 30% 70%;
   transform: skewY(-2deg); }
   @media (max-width: 37.5em) {
@@ -607,8 +613,9 @@ body {
       font-size: 5.9rem;
       line-height: 6.5rem;
       font-weight: bold;
-      width: 25rem;
+      width: 50rem;
       transform: skewY(2deg);
+      letter-spacing: -2px;
       margin-top: -7rem;
       color: #000000; }
       @media (max-width: 37.5em) {
@@ -657,7 +664,9 @@ body {
       display: none; } }
 
 .arr-img {
-  margin-top: 50%; }
+  margin-top: 50%;
+  height: 10px;
+  width: 10px; }
   @media (max-width: 37.5em) {
     .arr-img {
       margin-top: 150%; } }
@@ -667,6 +676,7 @@ body {
   .our-world__heading {
     margin-left: 2rem;
     font-size: 4rem;
+    letter-spacing: -2px;
     font-weight: bold; }
   .our-world__container {
     margin-top: 4rem;
@@ -678,15 +688,17 @@ body {
   .our-world__grid {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    letter-spacing: -1px; }
     @media (max-width: 56.25em) {
       .our-world__grid {
         margin-bottom: 5rem; } }
     .our-world__grid-heading {
       color: #FF2546;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      margin-bottom: 2rem; }
     .our-world__grid img {
-      margin-top: 1.5rem;
+      margin-top: 2.6rem;
       width: 100%; }
 
 .section-background {

@@ -3,6 +3,7 @@
     grid-template-columns: 55% 40%;
     margin-bottom: 4rem;
     font-family: brown;
+    height: 47rem;
 
     @include respond(tab-port){
         width: 80%;
@@ -38,6 +39,7 @@
 
         & h3{
             font-size: 4rem;
+            letter-spacing: -2px;
         }
 
         & p{
