@@ -1,8 +1,10 @@
 .post-page{
     &__heading{
         position:fixed;
-        @include background-image(url(../img/africlick.png));
-
+        background-image: linear-gradient(to right, rgba($color-black, .3), rgba($color-black, .3)), url(../img/africlick.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 30%;
         //background-color: #000;
         top:0;
         width: 100%;
@@ -15,7 +17,7 @@
             line-height: 9rem;
             letter-spacing: -2px;
             width: 60vw;
-            top: 20%;
+            top: 30%;
             z-index: -50;
             color: $color-white;
 
@@ -45,9 +47,9 @@
     background-color: $color-black;
     //margin-top: -1rem;
     padding: 7rem;
-    color: #BDBDBD;
+    
     font-size: $font-small;
-    letter-spacing: -1px;
+    //letter-spacing: -1px;
     @include respond(phone-small){
         padding: 8rem 5rem;
     }
@@ -56,13 +58,16 @@
     };
 
     &-box{
+        color: #BDBDBD;
         display: grid;
+        //padding-top: 4rem;
         grid-template-columns: 25% 75%;
         @include respond(tab-port){
             display: block;
         }
         &1{
             font-size: 1.8rem;
+            margin-top: 4rem;
             @include respond(tab-port){
                 margin-bottom: 8rem;
             }
@@ -77,16 +82,22 @@
 
             &__text1{
                 color: #56CCF2;
-                margin-bottom: 8rem;
+                margin-top: 4rem;
+                margin-bottom: 5rem;
+                font-weight: bold;
             }
             &__text2{
                 margin-bottom: 8rem;
+                font-weight: 200;
+                line-height: 3.5rem;
+                color: $color-white;
             }
 
             & a{
                 color: $color-white;
                 background-color: $color-black;
                 font-size: 1.8rem;
+                letter-spacing: 0;
                 text-decoration: none;
                 border: 2px solid $color-white;
                 padding: 2.3rem 3.2rem;
@@ -107,7 +118,10 @@
         //width: 100%;
         padding: 10rem 7rem;
         & img{
-            width: 60%;
+            margin-left: 10%;
+            width: 80%;
+            height: 100vh;
+            //width: 60%;
             margin-bottom: 5rem;
         }
        

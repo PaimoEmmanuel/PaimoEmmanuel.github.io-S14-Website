@@ -2,9 +2,9 @@
     background-color: $color-yellow;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 8rem;
+    padding: 12rem 8rem;
     background-image: linear-gradient(to right, transparent 0%, 
-                    transparent 60%, 
+                    transparent 66%, 
                     rgba(255,255,255, 1) 50%);
 
     @include respond(tab-port){
@@ -15,9 +15,8 @@
         padding-top: 3rem;
     }
     &__text{
-        font-size: 9.6rem;
-        line-height: 12rem;
-        width: 1rem;
+        font-size: 8rem;
+        line-height: 9rem;
 
         @include respond(tab-land){
             font-size: 7.6rem;
@@ -31,12 +30,18 @@
     &__input{
         font-size: 1.8rem;
         display: block;
+        color: $color-black;
         background-color: transparent;
         width: 100%;
         border: none;
         padding: 2rem;
         margin-bottom: 3rem;
         border-bottom: 2px solid #333333;
+
+        &::placeholder{
+            color: $color-black;
+            font-weight: 500;
+        }
     }
 
     button{
@@ -44,6 +49,7 @@
         padding: 1.4rem 4rem;
         color: $color-white;
         border: none;
+        cursor: pointer;
         background-color: $color-black;
     }
 }

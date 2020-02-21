@@ -358,8 +358,8 @@ body {
   background-color: #FFCF25;
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 8rem;
-  background-image: linear-gradient(to right, transparent 0%, transparent 60%, white 50%); }
+  padding: 12rem 8rem;
+  background-image: linear-gradient(to right, transparent 0%, transparent 66%, white 50%); }
   @media (max-width: 56.25em) {
     .form {
       display: block; } }
@@ -368,9 +368,8 @@ body {
       padding-left: 2rem;
       padding-top: 3rem; } }
   .form__text {
-    font-size: 9.6rem;
-    line-height: 12rem;
-    width: 1rem; }
+    font-size: 8rem;
+    line-height: 9rem; }
     @media (max-width: 75em) {
       .form__text {
         font-size: 7.6rem;
@@ -381,17 +380,22 @@ body {
   .form__input {
     font-size: 1.8rem;
     display: block;
+    color: #000000;
     background-color: transparent;
     width: 100%;
     border: none;
     padding: 2rem;
     margin-bottom: 3rem;
     border-bottom: 2px solid #333333; }
+    .form__input::placeholder {
+      color: #000000;
+      font-weight: 500; }
   .form button {
     font-size: 1.8rem;
     padding: 1.4rem 4rem;
     color: #ffffff;
     border: none;
+    cursor: pointer;
     background-color: #000000; }
 
 .header {
@@ -422,7 +426,7 @@ body {
         .header__nav-list-parent li a {
           text-decoration: none;
           font-size: 1.4rem;
-          font-weight: bold;
+          font-weight: 500;
           color: #000000;
           margin-left: 3.7rem; }
 
@@ -877,7 +881,7 @@ body {
 
 .post-page__heading {
   position: fixed;
-  background-image: url(../img/africlick.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/africlick.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
@@ -891,7 +895,7 @@ body {
     line-height: 9rem;
     letter-spacing: -2px;
     width: 60vw;
-    top: 20%;
+    top: 30%;
     z-index: -50;
     color: #ffffff; }
     @media (max-width: 28.125em) {
@@ -915,9 +919,7 @@ body {
   height: 100vh;
   background-color: #000000;
   padding: 7rem;
-  color: #BDBDBD;
-  font-size: 2.4rem;
-  letter-spacing: -1px; }
+  font-size: 2.4rem; }
   @media (max-width: 28.125em) {
     .product-info {
       padding: 8rem 5rem; } }
@@ -925,13 +927,15 @@ body {
     .product-info {
       padding: 2rem; } }
   .product-info-box {
+    color: #BDBDBD;
     display: grid;
     grid-template-columns: 25% 75%; }
     @media (max-width: 56.25em) {
       .product-info-box {
         display: block; } }
     .product-info-box1 {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      margin-top: 4rem; }
       @media (max-width: 56.25em) {
         .product-info-box1 {
           margin-bottom: 8rem; } }
@@ -943,13 +947,19 @@ body {
           margin-left: 0rem; } }
       .product-info-box2__text1 {
         color: #56CCF2;
-        margin-bottom: 8rem; }
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        font-weight: bold; }
       .product-info-box2__text2 {
-        margin-bottom: 8rem; }
+        margin-bottom: 8rem;
+        font-weight: 200;
+        line-height: 3.5rem;
+        color: #ffffff; }
       .product-info-box2 a {
         color: #ffffff;
         background-color: #000000;
         font-size: 1.8rem;
+        letter-spacing: 0;
         text-decoration: none;
         border: 2px solid #ffffff;
         padding: 2.3rem 3.2rem;
@@ -963,15 +973,25 @@ body {
     background-color: #fff;
     padding: 10rem 7rem; }
     .product-info-img img {
-      width: 60%;
+      margin-left: 10%;
+      width: 80%;
+      height: 100vh;
       margin-bottom: 5rem; }
+
+.contact__heading {
+  padding-bottom: 8rem; }
+  .contact__heading--secondary {
+    line-height: 4rem;
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-size: 2.4rem; }
 
 .location {
   margin-bottom: 8rem;
   display: grid;
   grid-template-columns: 33% 67%;
-  padding-left: 5%;
-  height: 70rem; }
+  padding-left: 2rem;
+  height: 100vh; }
   @media (max-width: 56.25em) {
     .location {
       display: block;
@@ -980,7 +1000,7 @@ body {
   .location__address {
     background-color: #FF2546;
     color: #ffffff;
-    padding: 4rem 8rem 0 8rem;
+    padding: 8rem 8rem 0 8rem;
     height: 80%; }
     @media (max-width: 75em) {
       .location__address {
@@ -992,9 +1012,13 @@ body {
         width: 80%; } }
   .location__heading {
     font-size: 4.8rem;
-    margin-bottom: 4rem; }
+    font-weight: bold;
+    margin-bottom: 4rem;
+    line-height: 4.5rem; }
   .location__heading2 {
-    font-size: 2rem; }
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    font-weight: 300; }
   .location__map iframe {
     width: 100%;
     height: 100%; }
