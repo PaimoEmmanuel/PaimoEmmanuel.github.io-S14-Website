@@ -23,7 +23,7 @@
             @include respond(tab-port){
                 display: none;
             }
-            margin-top: -3rem;
+            margin-top: -4.4rem;
             float: right;
             &-parent{
                 list-style: none;
@@ -32,10 +32,10 @@
                     display: inline-block;
                     & a{
                         text-decoration: none;
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         font-weight: bold;
                         color: $color-black;
-                        margin-left: 5.2rem; 
+                        margin-left: 3.7rem; 
                     }
                 }
             }

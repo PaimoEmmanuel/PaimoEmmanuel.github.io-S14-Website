@@ -50,13 +50,16 @@ body {
   margin-top: 4rem; }
 
 .u-margin-bottom-small {
-  margin-bottom: 4rem; }
+  margin-bottom: 2.7rem; }
 
 .u-margin-bottom {
   margin-bottom: 8rem; }
 
 .u-margin-bottom-huge {
   margin-bottom: 16rem; }
+
+.u-margin-right-small {
+  margin-right: 2rem; }
 
 .u-text-bold {
   font-weight: bold; }
@@ -99,6 +102,9 @@ body {
 
 .u-box-shadow-pink {
   box-shadow: 20px 20px 0px 0 #FF2546; }
+
+.u-box-shadow-pink-sm {
+  box-shadow: 12px 12px 0px 0 #FF2546; }
 
 .u-color-white {
   color: #ffffff; }
@@ -262,7 +268,6 @@ body {
     .grid-2-col {
       padding: 0rem 5rem; } }
   .grid-2-col__grid {
-    margin-right: 2rem;
     height: 40rem;
     position: relative; }
     .grid-2-col__grid-1 {
@@ -278,7 +283,7 @@ body {
       @media (max-width: 37.5em) {
         .grid-2-col__grid-1 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.png); } }
-    .grid-2-col__grid-1:hover .grid-2-col__grid-text {
+    .grid-2-col__grid-1:hover .grid-2-col__grid-text p {
       opacity: 1; }
     .grid-2-col__grid-2 {
       position: relative;
@@ -293,7 +298,7 @@ body {
       @media (max-width: 37.5em) {
         .grid-2-col__grid-2 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.2.png); } }
-    .grid-2-col__grid-2:hover .grid-2-col__grid-text {
+    .grid-2-col__grid-2:hover .grid-2-col__grid-text p {
       opacity: 1; }
     .grid-2-col__grid-3 {
       position: relative;
@@ -308,7 +313,7 @@ body {
       @media (max-width: 37.5em) {
         .grid-2-col__grid-3 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Case-study1.3.png); } }
-    .grid-2-col__grid-3:hover .grid-2-col__grid-text {
+    .grid-2-col__grid-3:hover .grid-2-col__grid-text p {
       opacity: 1; }
     .grid-2-col__grid-4 {
       position: relative;
@@ -323,12 +328,10 @@ body {
       @media (max-width: 37.5em) {
         .grid-2-col__grid-4 {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.4.png); } }
-    .grid-2-col__grid-4:hover .grid-2-col__grid-text {
+    .grid-2-col__grid-4:hover .grid-2-col__grid-text p {
       opacity: 1; }
     .grid-2-col__grid-text {
-      color: #ffffff;
-      opacity: 0;
-      transition: all .7s; }
+      color: #ffffff; }
       @media (max-width: 37.5em) {
         .grid-2-col__grid-text {
           display: block;
@@ -336,12 +339,14 @@ body {
       .grid-2-col__grid-text p {
         position: absolute;
         font-size: 4rem;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         line-height: 4rem;
         bottom: 5rem;
         left: 5rem;
-        font-weight: bold;
-        cursor: context-menu; }
+        font-weight: 400;
+        opacity: 0;
+        cursor: context-menu;
+        transition: all .7s; }
       .grid-2-col__grid-text img {
         position: absolute;
         bottom: 20%;
@@ -405,7 +410,7 @@ body {
   .header__nav-logo-box {
     color: #333333; }
   .header__nav-list {
-    margin-top: -3rem;
+    margin-top: -4.4rem;
     float: right; }
     @media (max-width: 56.25em) {
       .header__nav-list {
@@ -416,17 +421,17 @@ body {
         display: inline-block; }
         .header__nav-list-parent li a {
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           font-weight: bold;
           color: #000000;
-          margin-left: 5.2rem; }
+          margin-left: 3.7rem; }
 
 .heading {
   font-size: 4.5rem;
   line-height: 5.9rem;
   letter-spacing: -1px;
   font-family: brown;
-  padding: 4rem 7rem; }
+  padding: 11rem 7rem 18rem 7rem; }
   @media (max-width: 56.25em) {
     .heading {
       font-size: 3.5rem;
@@ -729,14 +734,15 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-family: brown;
-  transform: skewY(-5deg);
-  margin-top: 97vh; }
+  transform: skewY(-3deg);
+  margin-top: 97vh;
+  padding-top: 1rem; }
   .section-background__text {
     display: block;
     font-family: brown;
     font-size: 2.4rem;
     margin: 4rem 7rem;
-    transform: skewY(5deg); }
+    transform: skewY(3deg); }
     .section-background__text::after {
       content: "";
       display: table;
@@ -748,7 +754,7 @@ body {
   .section-background__grid {
     font-family: brown;
     font-size: 1.9rem;
-    transform: skewY(5deg);
+    transform: skewY(3deg);
     display: grid;
     grid-template-columns: 50% 50%;
     position: relative;
