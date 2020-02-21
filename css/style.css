@@ -110,7 +110,7 @@ body {
   color: #ffffff; }
 
 .u-color-yellow {
-  color: #FFCF25; }
+  color: #FFCF25 !important; }
 
 .u-color-black {
   color: #000000; }
@@ -964,7 +964,7 @@ body {
     padding: 10rem 7rem; }
     .product-info-img img {
       width: 60%;
-      margin-bottom: 10rem; }
+      margin-bottom: 5rem; }
 
 .location {
   margin-bottom: 8rem;
