@@ -820,7 +820,8 @@ body {
             text-align: left; } }
 
 .section-work {
-  padding-top: 7rem;
+  padding-top: 12rem;
+  margin-top: -8rem;
   background-color: #fff; }
   .section-work__heading {
     color: #000000; }
