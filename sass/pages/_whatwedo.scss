@@ -1,10 +1,19 @@
-.section-background{
+.about-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+}.about-heading{
+    position: fixed;
+    top: 35rem;
+    z-index: -999;
+}.section-background{
     //height: 100rem;
     background-color: $color-black;
     color: $color-white;
     font-family: brown;
     transform: skewY(-5deg);
-    margin-top: 22rem;
+    margin-top: 97vh;
 
     &__text{
         display: block;
@@ -121,7 +130,8 @@
 }
 .section-work{
     //height: 100vh;
-    margin-top: 7rem;
+    padding-top: 7rem;
+    background-color: #fff;
 
     &__heading{
         //background-color: red;
@@ -154,7 +164,7 @@
             line-height: 9rem;
             //position: fixed;
             top: 10%;
-            z-index: -1;
+            //z-index: -1;
 
             :not(:first-child){
                 color: $color-grey-light;
