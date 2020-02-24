@@ -28,7 +28,16 @@ var typeTimer = setInterval(function() {
 typewriter("We create innovative digital solutions.");
 
 
-
+//MOVING BACKGROUND WITH MOUSE DIRECTION
+var moveA = 90;
+$('.header').mousemove(function(e){
+  var moveX = (e.pageX * -1 / 15);
+  var moveY = (e.pageY * -1 / 15);
+  moveA++;
+  console.log('working!')
+  $('.homepage-heading-primary__bg').css('background-position', moveX + 'px ' + moveY + 'px');
+  $('.wavy-a').css('margin-left', moveX + 'px');
+})
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL
 /*var window_width = $(window).width() - $('#wavy').width();
 var document_height = $(document).height() + 700;
