@@ -107,7 +107,7 @@ body {
   box-shadow: 12px 12px 0px 0 #FF2546; }
 
 .u-color-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .u-color-yellow {
   color: #FFCF25 !important; }
@@ -175,7 +175,10 @@ body {
       color: #FF2546;
       font-size: 1.8rem;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      transition: all .3s; }
+      .africlick__text a:hover {
+        color: #000000; }
 
 .footer {
   width: 100%;
@@ -347,12 +350,15 @@ body {
         opacity: 0;
         cursor: context-menu;
         transition: all .7s; }
-      .grid-2-col__grid-text img {
+      .grid-2-col__grid-text svg {
         position: absolute;
         bottom: 20%;
         right: 8%;
         font-size: 2.4rem;
+        fill: #ffffff;
         cursor: pointer; }
+        .grid-2-col__grid-text svg:hover {
+          fill: #FF2546; }
 
 .form {
   background-color: #FFCF25;
@@ -467,6 +473,17 @@ body {
   .wavy2 img {
     height: 7.7rem; }
 
+.wavy3 {
+  position: fixed;
+  bottom: 5%;
+  right: 7rem;
+  z-index: -10;
+  /*@include respond(tab-port){
+        display: none;
+    }*/ }
+  .wavy3 img {
+    height: 15rem; }
+
 .navigation {
   display: none; }
   @media (max-width: 56.25em) {
@@ -569,6 +586,9 @@ body {
       .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
         top: 0;
         transform: rotate(-135deg); } }
+
+#blinking-cursor {
+  font-weight: 100; }
 
 .homepage-heading-primary {
   margin: 10% 0 10% 0;
@@ -731,7 +751,7 @@ body {
 
 .about-heading {
   position: fixed;
-  top: 20rem;
+  top: 13.5rem;
   z-index: -999; }
 
 .section-background {
@@ -757,7 +777,8 @@ body {
       font-size: 2.4rem; }
   .section-background__grid {
     font-family: brown;
-    font-size: 1.9rem;
+    font-size: 2.4rem;
+    font-weight: 300;
     transform: skewY(3deg);
     display: grid;
     grid-template-columns: 50% 50%;
@@ -778,7 +799,7 @@ body {
         font-size: 14.4rem;
         transform: rotate(-90deg);
         left: -6%;
-        font-weight: bolder;
+        font-weight: bold;
         letter-spacing: -8px;
         top: 10%; }
         @media (max-width: 28.125em) {
@@ -789,7 +810,7 @@ body {
           font-size: 14.4rem;
           transform: rotate(-90deg);
           right: 0;
-          font-weight: bolder;
+          font-weight: bold;
           letter-spacing: -8px; }
           @media (max-width: 56.25em) {
             .section-background__grid-1-a-text-sub {

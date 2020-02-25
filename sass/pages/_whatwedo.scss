@@ -5,7 +5,7 @@
     z-index: -999;
 }.about-heading{
     position: fixed;
-    top: 20rem;
+    top: 13.5rem;
     z-index: -999;
 }.section-background{
     //height: 100rem;
@@ -35,7 +35,8 @@
 
     &__grid{
         font-family: brown;
-        font-size: 1.9rem;
+        font-size: 2.4rem;
+        font-weight: 300;
         transform: skewY(3deg);
         display: grid;
         grid-template-columns: 50% 50%;
@@ -64,7 +65,7 @@
                     font-size: 14.4rem;
                     transform: rotate(-90deg);
                     left: -6%;
-                    font-weight: bolder;
+                    font-weight: bold;
                     letter-spacing: -8px;
                     top: 10%;
                     @include respond(phone-small){
@@ -76,7 +77,7 @@
                     font-size: 14.4rem;
                     transform: rotate(-90deg);
                     right: 0;
-                    font-weight: bolder;
+                    font-weight: bold;
                     letter-spacing: -8px;
 
                     @include respond(tab-port){

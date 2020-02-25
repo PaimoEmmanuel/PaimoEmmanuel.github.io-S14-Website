@@ -25,7 +25,7 @@ var typeTimer = setInterval(function() {
   };
 }, 80);
 };
-typewriter("We create innovative digital solutions.");
+typewriter("We create innovative digital solutions");
 
 
 //MOVING BACKGROUND WITH MOUSE DIRECTION

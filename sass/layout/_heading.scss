@@ -44,3 +44,17 @@
         display: none;
     }*/
 }
+.wavy3{
+    position: fixed;
+    bottom: 5%;
+    right: 7rem;
+    z-index: -10;
+
+    img{
+        height: 15rem;
+    }
+
+    /*@include respond(tab-port){
+        display: none;
+    }*/
+}
