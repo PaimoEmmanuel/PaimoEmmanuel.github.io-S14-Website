@@ -10,9 +10,12 @@
         padding-left: 10%;
         display: inline-block;
         height: auto;
+        margin-top: 5rem;
     }
     @include respond(phone-small){
-        padding-left: 10%;
+        margin-top: 10rem;
+        padding-left: 5%;
+        width: 90%;
     }
     @include respond(big-desktop){
         height: 50rem;
@@ -62,6 +65,9 @@
             font-weight: bold;
             transition: all .3s;
             &:hover{
+                &, #afri-svg{
+                    fill: $color-black;
+                }
                 color: $color-black;
             }
         }

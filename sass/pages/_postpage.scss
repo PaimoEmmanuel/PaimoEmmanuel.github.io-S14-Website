@@ -101,7 +101,16 @@
                 text-decoration: none;
                 border: 2px solid $color-white;
                 padding: 2.3rem 3.2rem;
-                img{
+                transition: all .3s;
+
+                &:hover{
+                    background-color: $color-white;
+                    color: $color-black;
+                    &, #see-complete-arr{
+                    fill: $color-black;
+                    }
+                }
+                svg{
                     margin-left: 3.2rem;
                 }
 

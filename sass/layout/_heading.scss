@@ -23,7 +23,7 @@
     left: calc(100% - 7rem);
     z-index: 10000000;
 
-    img{
+    svg{
         height: 6.9rem;
     }
     /*@include respond(tab-port){
@@ -36,7 +36,7 @@
     left: 7rem;
     z-index: 10000000;
 
-    img{
+    imsvgg{
         height: 7.7rem;
     }
 
@@ -50,7 +50,7 @@
     right: 7rem;
     z-index: -10;
 
-    img{
+    svg{
         height: 15rem;
     }
 
