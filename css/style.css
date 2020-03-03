@@ -710,8 +710,8 @@ body {
           letter-spacing: 0px; } }
       @media only screen and (max-width: 28.125em) {
         .clients__text p {
-          font-size: 4rem;
-          line-height: 5rem; } }
+          font-size: 5rem;
+          line-height: 6rem; } }
       .clients__text p a {
         color: #000000;
         transition: all .3s; }
@@ -767,7 +767,7 @@ body {
       margin: 10% 5rem 10% 5rem; } }
   .our-world__heading {
     margin-left: 2rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: -2px;
     font-weight: bold; }
     @media only screen and (max-width: 37.5em) {
@@ -802,7 +802,7 @@ body {
         font-size: 3rem; } }
     .our-world__grid-heading {
       color: #FF2546;
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .our-world__grid-heading {

@@ -113,8 +113,8 @@
             letter-spacing: 0px;
         }   
         @include respond(phone-small){
-            font-size: 4rem;
-        line-height: 5rem;
+            font-size: 5rem;
+        line-height: 6rem;
          } 
 
         a{
@@ -191,7 +191,7 @@
     }
     &__heading{
         margin-left: 2rem;
-        font-size: 4rem;
+        font-size: 4.5rem;
         letter-spacing: -2px;
         font-weight: bold;
         @include respond(phone){
@@ -229,7 +229,7 @@
         }
         &-heading{
             color: $color-pink;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
             @include respond(phone){
                 margin-bottom: 3rem;
