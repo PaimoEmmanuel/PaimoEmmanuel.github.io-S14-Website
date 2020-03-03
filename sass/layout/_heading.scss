@@ -40,9 +40,9 @@
         height: 7.7rem;
     }
 
-    /*@include respond(tab-port){
+    @include respond(phone){
         display: none;
-    }*/
+    }
 }
 .wavy3{
     position: fixed;

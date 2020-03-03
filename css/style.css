@@ -532,12 +532,12 @@ body {
   position: fixed;
   bottom: 5%;
   left: 7rem;
-  z-index: 10000000;
-  /*@include respond(tab-port){
-        display: none;
-    }*/ }
+  z-index: 10000000; }
   .wavy2 svg {
     height: 7.7rem; }
+  @media only screen and (max-width: 37.5em) {
+    .wavy2 {
+      display: none; } }
 
 .wavy3 {
   position: fixed;
