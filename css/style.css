@@ -87,6 +87,9 @@ body {
 
 .u-font-tiny {
   font-size: 1.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .u-font-tiny {
+      font-size: 2.2rem; } }
 
 .u-absolute {
   position: absolute; }
@@ -221,6 +224,9 @@ body {
     padding: 7rem; }
     @media only screen and (max-width: 28.125em) {
       .footer__main {
+        font-size: 3.4rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .footer__main {
         display: block;
         padding: 2rem; } }
     @media only screen and (max-width: 56.25em) {
@@ -230,12 +236,16 @@ body {
     .footer__main-grid1 {
       margin-right: 18rem;
       font-size: 2.4rem; }
-      @media only screen and (max-width: 28.125em) {
+      @media only screen and (max-width: 37.5em) {
         .footer__main-grid1 {
-          margin-right: 0rem; } }
+          margin-right: 0rem;
+          font-size: 3.4rem; } }
       .footer__main-grid1 p {
-        margin: 4rem 0 2rem 0;
+        margin: 4rem 0 3rem 0;
         font-size: 1.6rem; }
+        @media only screen and (max-width: 37.5em) {
+          .footer__main-grid1 p {
+            font-size: 2rem; } }
       .footer__main-grid1 input {
         padding: 1rem 1rem;
         width: 35rem;
@@ -245,6 +255,12 @@ body {
         font-family: Brown;
         font-size: 1.6rem;
         height: 4.8rem; }
+        @media only screen and (max-width: 37.5em) {
+          .footer__main-grid1 input {
+            font-size: 2rem;
+            width: 100%;
+            padding: 3.5rem 3rem;
+            margin-bottom: 3rem; } }
       .footer__main-grid1 button {
         padding: 1rem 1rem;
         border: none;
@@ -255,16 +271,27 @@ body {
         padding: 0px 35px 0px 35px;
         line-height: 1.4rem;
         text-align: center; }
+        @media only screen and (max-width: 37.5em) {
+          .footer__main-grid1 button {
+            font-size: 2rem;
+            padding: 3.5rem 3rem;
+            margin-bottom: 5rem; } }
     @media only screen and (max-width: 56.25em) {
       .footer__main-grid2 {
         margin-right: 5rem; } }
     .footer__main-grid2-content {
       margin-top: 4rem;
       font-size: 1.6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__main-grid2-content {
+          font-size: 2rem; } }
       .footer__main-grid2-content div {
         margin-top: 2rem; }
     .footer__main-grid3 {
       margin-left: auto; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__main-grid3 {
+          margin-top: 5rem; } }
   .footer-sub {
     font-family: brown;
     font-size: 1.1rem;
@@ -692,7 +719,7 @@ body {
   transform: skewY(-3deg); }
   @media only screen and (max-width: 37.5em) {
     .clients {
-      padding: 0 5rem; } }
+      padding: 2rem 5rem; } }
   .clients__text {
     width: 100%; }
     .clients__text p {
@@ -733,7 +760,9 @@ body {
         transform: skewY(3deg); } }
     @media only screen and (max-width: 28.125em) {
       .clients__carousel {
-        width: 100%; } }
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 1rem; } }
   .clients__images {
     display: grid;
     grid-template-columns: repeat(3, 33.333%);
@@ -741,6 +770,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .clients__images {
         display: block; } }
+    @media only screen and (max-width: 37.5em) {
+      .clients__images {
+        padding: 0 2rem; } }
   .clients__image1, .clients__image2, .clients__image3 {
     width: 100%; }
     .clients__image1:not(:last-child), .clients__image2:not(:last-child), .clients__image3:not(:last-child) {
@@ -765,6 +797,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .our-world {
       margin: 10% 5rem 10% 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .our-world {
+      margin: 15% 5rem 10% 5rem; } }
   .our-world__heading {
     margin-left: 2rem;
     font-size: 4.5rem;
@@ -806,7 +841,7 @@ body {
       margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .our-world__grid-heading {
-          margin-bottom: 3rem;
+          margin-bottom: 1rem;
           letter-spacing: 0; } }
     .our-world__grid img {
       margin-top: 2.6rem;

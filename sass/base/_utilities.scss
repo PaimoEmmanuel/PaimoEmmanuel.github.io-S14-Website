@@ -19,7 +19,10 @@
 }
 
 .u-font-small{font-size: 3rem;}
-.u-font-tiny{font-size: 1.2rem;}
+.u-font-tiny{font-size: 1.2rem;
+  @include respond(phone){
+    font-size: 2.2rem
+}}
 
 .u-absolute{position: absolute;}
 .u-relative{position: relative;}

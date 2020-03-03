@@ -94,7 +94,8 @@
      @include respond(phone){
     //     display: inline-block;
     //     height: 50rem;
-         padding: 0 5rem;
+         padding: 2rem 5rem;
+         //shape-margin: 5rem 0;
      }   
 
     &__text {
@@ -143,7 +144,9 @@
         transform: skewY(3deg);
         } 
         @include respond(phone-small){
-            width: 100%;
+            width: 85%;
+            margin-left: 15%;
+            margin-top: 1rem;
          } 
     }
     &__images{
@@ -153,6 +156,8 @@
         @include respond(tab-port){
             display: block;
             //width: 25rem;
+        }  @include respond(phone){
+            padding: 0 2rem;
         }        
     }
     &__image1, &__image2, &__image3{
@@ -188,6 +193,9 @@
 
     @include respond(tab-port){
         margin: 10% 5rem 10% 5rem;
+    }
+    @include respond(phone){
+        margin: 15% 5rem 10% 5rem;
     }
     &__heading{
         margin-left: 2rem;
@@ -232,7 +240,7 @@
             font-size: 2rem;
             margin-bottom: 2rem;
             @include respond(phone){
-                margin-bottom: 3rem;
+                margin-bottom: 1rem;
                 letter-spacing: 0;
             }
         }
