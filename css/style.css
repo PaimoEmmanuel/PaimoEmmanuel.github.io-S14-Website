@@ -519,6 +519,9 @@ body {
       line-height: 6rem; } }
   .heading__primary {
     font-weight: bold; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__primary span {
+        display: inline; } }
   .heading__secondary {
     font-weight: 300; }
 

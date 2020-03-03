@@ -16,6 +16,13 @@
     }
     &__primary{
         font-weight: bold;
+
+        & span{
+            @include respond(phone){
+                display: inline;
+            }
+            
+        }
     }
 
     &__secondary{
