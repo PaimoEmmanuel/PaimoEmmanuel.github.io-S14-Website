@@ -872,7 +872,7 @@ body {
   padding-top: 1rem; }
   @media only screen and (max-width: 37.5em) {
     .section-background {
-      padding-bottom: 32rem;
+      padding-bottom: 35rem;
       margin-top: 65vh; } }
   .section-background__text {
     display: block;
@@ -956,7 +956,7 @@ body {
         .section-background__grid-1-b {
           width: 100%;
           position: absolute;
-          top: 105%;
+          top: 112%;
           line-height: 4rem; } }
       .section-background__grid-1-b2 {
         padding: 4rem 0 8rem 7rem; }
@@ -971,7 +971,8 @@ body {
             float: left;
             width: 100%;
             text-align: left;
-            line-height: 4rem; } }
+            line-height: 4rem;
+            padding: 5rem 0 11rem 0; } }
 
 .section-work {
   padding-top: 12rem;
