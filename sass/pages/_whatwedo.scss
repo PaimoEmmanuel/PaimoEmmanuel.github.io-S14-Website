@@ -22,6 +22,9 @@
     transform: skewY(-3deg);
     margin-top: 97vh;
     padding-top: 1rem;
+    @include respond(phone){
+        padding-bottom: 25rem;
+    }
 
     &__text{
         display: block;
@@ -60,12 +63,18 @@
         &-1{
             &:not(:last-child){
             padding: 0 3rem 0 0;
+            position: relative;
             //@include clearfix;
+            @include respond(tab-port){
+                //position: relative;
+            }
             }
             
 
             &-a{
                 width: 100%;
+                position: relative;
+                
 
                 &-text{
                     position: absolute;
@@ -75,6 +84,12 @@
                     font-weight: bold;
                     letter-spacing: -8px;
                     top: 10%;
+                    @include respond(phone){
+                        font-size: 10rem;
+                        top: 0%;
+                        left: -15%;
+                        letter-spacing: -3px;
+                    }
                     @include respond(phone-small){
                         font-size: 10rem;
                     }
@@ -92,10 +107,9 @@
                         bottom: 25%;
                     }
                     @include respond(phone){
-                        bottom: 20%;
-                    }@include respond(phone-small){
                         font-size: 10rem;
-                        bottom: 15%;
+                        bottom: 60%;
+                        letter-spacing: -3px;
                     }
                 }
                 }
@@ -107,6 +121,7 @@
 
             &-b{
                 padding: 2rem 10rem 16rem 2rem;
+                
                 @include respond(tab-port){
                     width: 80%;
                     float: left;
@@ -116,6 +131,8 @@
 
                 @include respond(phone){
                     width: 100%;
+                    position: absolute;
+                    top: 105%;
                 }
                 &2{
                     padding: 4rem 0 8rem 7rem; 
