@@ -23,7 +23,8 @@
     margin-top: 97vh;
     padding-top: 1rem;
     @include respond(phone){
-        padding-bottom: 25rem;
+        padding-bottom: 32rem;
+        margin-top: 65vh;
     }
 
     &__text{
@@ -87,7 +88,7 @@
                     @include respond(phone){
                         font-size: 10rem;
                         top: 0%;
-                        left: -15%;
+                        left: -10%;
                         letter-spacing: -3px;
                     }
                     @include respond(phone-small){
@@ -133,6 +134,7 @@
                     width: 100%;
                     position: absolute;
                     top: 105%;
+                    line-height: 4rem;
                 }
                 &2{
                     padding: 4rem 0 8rem 7rem; 
@@ -148,6 +150,7 @@
                         float: left;
                         width: 100%;
                         text-align: left;
+                        line-height: 4rem;
                     }
                 }
             }

@@ -514,9 +514,9 @@ body {
       padding: 3rem 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading {
-      font-size: 5.5rem;
+      font-size: 5rem;
       padding: 3rem 5rem;
-      line-height: 6.9rem; } }
+      line-height: 6rem; } }
   .heading__primary {
     font-weight: bold; }
   .heading__secondary {
@@ -872,7 +872,8 @@ body {
   padding-top: 1rem; }
   @media only screen and (max-width: 37.5em) {
     .section-background {
-      padding-bottom: 25rem; } }
+      padding-bottom: 32rem;
+      margin-top: 65vh; } }
   .section-background__text {
     display: block;
     font-family: brown;
@@ -920,7 +921,7 @@ body {
           .section-background__grid-1-a-text {
             font-size: 10rem;
             top: 0%;
-            left: -15%;
+            left: -10%;
             letter-spacing: -3px; } }
         @media only screen and (max-width: 28.125em) {
           .section-background__grid-1-a-text {
@@ -955,7 +956,8 @@ body {
         .section-background__grid-1-b {
           width: 100%;
           position: absolute;
-          top: 105%; } }
+          top: 105%;
+          line-height: 4rem; } }
       .section-background__grid-1-b2 {
         padding: 4rem 0 8rem 7rem; }
         @media only screen and (max-width: 56.25em) {
@@ -968,7 +970,8 @@ body {
           .section-background__grid-1-b2 {
             float: left;
             width: 100%;
-            text-align: left; } }
+            text-align: left;
+            line-height: 4rem; } }
 
 .section-work {
   padding-top: 12rem;

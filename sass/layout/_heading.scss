@@ -10,9 +10,9 @@
         padding: $heading-padding-small;
     }
     @include respond(phone){
-        font-size: 5.5rem;
+        font-size: 5rem;
         padding: $heading-padding-small;
-        line-height: 6.9rem;
+        line-height: 6rem;
     }
     &__primary{
         font-weight: bold;
