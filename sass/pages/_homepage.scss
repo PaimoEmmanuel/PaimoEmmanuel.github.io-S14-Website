@@ -48,6 +48,7 @@
     }
     @include respond(phone){
         font-size: 4rem;
+        letter-spacing: 0;
         }
         @include respond(phone-small){
             font-size: 3.4rem;
@@ -109,6 +110,7 @@
         color: $color-black;
         @include respond(phone){
             width: 40rem;
+            letter-spacing: 0px;
         }   
         @include respond(phone-small){
             font-size: 4rem;
@@ -185,13 +187,18 @@
     margin: 10% 7rem 10% 5rem;
 
     @include respond(tab-port){
-        margin-left: 5rem;
+        margin: 10% 5rem 10% 5rem;
     }
     &__heading{
         margin-left: 2rem;
         font-size: 4rem;
         letter-spacing: -2px;
         font-weight: bold;
+        @include respond(phone){
+            margin-left: 0rem;
+            letter-spacing: 0px;
+            font-size: 6rem;
+        }
     }
     &__container{
         margin-top: 4rem;
@@ -210,6 +217,9 @@
         line-height: 3rem;
         @include respond(tab-port){
             margin-bottom: 5rem;
+        }
+        @include respond(phone){
+            margin-left: 0rem;
         }
         &-heading{
             color: $color-pink;

@@ -75,6 +75,9 @@
                 @media (hover:none){
                     opacity: 1;
                 }
+                @include respond(phone){
+                    letter-spacing: 0px;
+                }
                 //transform: translate(-100%);
             }
             & svg{
