@@ -1,7 +1,7 @@
 .post-page{
     &__heading{
         position:fixed;
-        background-image: linear-gradient(to right, rgba($color-black, .3), rgba($color-black, .3)), url(../img/africlick.png);
+        background-image: linear-gradient(to right, rgba($color-black, .1), rgba($color-black, .1)), url(../img/africlick.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 30%;
@@ -44,7 +44,7 @@
     z-index: 1000;
     position: relative;
     height: 100vh;
-    background-color: $color-black;
+    background-color: #F7F7F7;
     //margin-top: -1rem;
     padding: 7rem;
     
@@ -68,6 +68,7 @@
         &1{
             font-size: 1.8rem;
             margin-top: 4rem;
+            color: #4F4F4F;;
             @include respond(tab-port){
                 margin-bottom: 8rem;
             }
@@ -81,7 +82,7 @@
     
 
             &__text1{
-                color: #56CCF2;
+                color: #222222;
                 margin-top: 4rem;
                 margin-bottom: 5rem;
                 font-weight: bold;
@@ -90,26 +91,26 @@
                 margin-bottom: 8rem;
                 font-weight: 200;
                 line-height: 3.5rem;
-                color: $color-white;
+                color: #333333;
             }
 
             & a{
-                color: $color-white;
-                background-color: $color-black;
+                color: #333333;
+                background-color: transparent;
                 font-size: 1.8rem;
                 letter-spacing: 0;
                 text-decoration: none;
-                border: 2px solid $color-white;
+                border: 2px solid #333333;
                 padding: 2.3rem 3.2rem;
                 transition: all .3s;
 
-                &:hover{
-                    background-color: $color-white;
-                    color: $color-black;
-                    &, #see-complete-arr{
-                    fill: $color-black;
-                    }
-                }
+                // &:hover{
+                //     background-color: $color-white;
+                //     color: $color-black;
+                //     &, #see-complete-arr{
+                //     fill: $color-black;
+                //     }
+                // }
                 svg{
                     margin-left: 3.2rem;
                 }

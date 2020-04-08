@@ -28,6 +28,8 @@
     &__text-parent{
         width: auto;
         transform-style: preserve-3d;
+        perspective: 1000;
+        -webkit-perspective: 1000;
     }
     &__text{
     font-size: 4.5rem;
@@ -64,18 +66,17 @@
     
 
     &__bg{
-        background-image: linear-gradient(to right, transparent 10%, $color-yellow 10%, 
-        $color-yellow 70%, transparent 70%, transparent 100%) ;
+        background-color: $color-yellow;
         height: 17rem;
-        width: 90vw;
+        width: 58vw;
         margin: 16rem 0 0 0rem;
         z-index: -99999999;
         transform: rotate(-7.1deg) matrix(1, 0, 0, 1, 0, 0);
         @include respond(tab-port){
             margin: 16rem 0 0 2rem;
             width: auto;
-            background-image: linear-gradient(to right, transparent 10%, $color-yellow 10%, 
-        $color-yellow 90%, transparent 90%, transparent 100%) ;
+        //     background-image: linear-gradient(to right, transparent 10%, $color-yellow 10%, 
+        // $color-yellow 90%, transparent 90%, transparent 100%) ;
         }
 
         @include respond(phone-small){

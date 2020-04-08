@@ -24,7 +24,7 @@ var typeTimer = setInterval(function() {
   };
 }, 80);
 };
-typewriter("We create innovative digital solutions");
+//typewriter("We create innovative digital solutions");
 //BLINKING DOT ON CONTACT PAGE
 /*var blinker = $('#blinker')
 (function blink(){
@@ -60,9 +60,10 @@ $('.homepage-heading-primary').mousemove(function(e){
   var moveX = (e.pageX * -1 / 15);
   var moveY = (e.pageY * -1 / 15);
   moveA++;
-  console.log('working!')
-  $('.homepage-heading-primary__bg').css('background-position', moveX + 'px ' + moveY + 'px');
-  $('.wavy-a').css('margin-left', moveX + 'px');
+  console.log('transform', `translate(${moveX}px, ${moveY}px)`)
+  $('.homepage-heading-primary__text').css('transform', `translate(${moveX}px, ${moveY}px)`);
+  $('.homepage-heading-primary__bg').css('transform',`scale(1.1) rotate(-7.1deg) translateZ(${moveX}px)`);
+  $('.wavy-a').css('transform', `translate(${moveX}px, ${moveY}px)`);
 })
 
 

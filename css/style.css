@@ -23,6 +23,25 @@ $breakpoint arguments choices:
   100% {
     background-image: linear-gradient(to left, #c1d4be, #010c08); } }
 
+@keyframes colorFadeUp {
+  0% {
+    height: 100vh;
+    margin-top: 100vh; }
+  30% {
+    margin-top: 0vh;
+    height: 100vh; }
+  50% {
+    margin-top: 0vh;
+    height: 100vh; }
+  100% {
+    height: 0vh; } }
+
+@keyframes text-transform {
+  0% {
+    visibility: hidden; }
+  99% {
+    visibility: hidden; } }
+
 *,
 *::after,
 *::before {
@@ -678,7 +697,9 @@ body {
       padding-left: 0; } }
   .homepage-heading-primary__text-parent {
     width: auto;
-    transform-style: preserve-3d; }
+    transform-style: preserve-3d;
+    perspective: 1000;
+    -webkit-perspective: 1000; }
   .homepage-heading-primary__text {
     font-size: 4.5rem;
     letter-spacing: -2px;
@@ -702,17 +723,16 @@ body {
   .homepage-heading-primary-parent {
     width: 100%; }
   .homepage-heading-primary__bg {
-    background-image: linear-gradient(to right, transparent 10%, #FFCF25 10%, #FFCF25 70%, transparent 70%, transparent 100%);
+    background-color: #FFCF25;
     height: 17rem;
-    width: 90vw;
+    width: 58vw;
     margin: 16rem 0 0 0rem;
     z-index: -99999999;
     transform: rotate(-7.1deg) matrix(1, 0, 0, 1, 0, 0); }
     @media only screen and (max-width: 56.25em) {
       .homepage-heading-primary__bg {
         margin: 16rem 0 0 2rem;
-        width: auto;
-        background-image: linear-gradient(to right, transparent 10%, #FFCF25 10%, #FFCF25 90%, transparent 90%, transparent 100%); } }
+        width: auto; } }
     @media only screen and (max-width: 28.125em) {
       .homepage-heading-primary__bg {
         margin: 12rem 0 0 0; } }
@@ -855,6 +875,14 @@ body {
       margin-top: 2.6rem;
       width: 100%; }
 
+.fade-up {
+  background-color: #000000;
+  height: 0vh;
+  width: 100vw;
+  top: 0;
+  animation-name: colorFadeUp;
+  animation-duration: 1.5s; }
+
 .about-header {
   position: fixed;
   top: 0;
@@ -864,7 +892,10 @@ body {
 .about-heading {
   position: fixed;
   top: 23.5rem;
-  z-index: -999; }
+  z-index: -999;
+  perspective: 1000;
+  animation-name: text-transform;
+  animation-duration: 2s; }
 
 .section-background {
   background-color: #000000;
@@ -1029,7 +1060,7 @@ body {
 
 .post-page__heading {
   position: fixed;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/africlick.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/africlick.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
@@ -1065,7 +1096,7 @@ body {
   z-index: 1000;
   position: relative;
   height: 100vh;
-  background-color: #000000;
+  background-color: #F7F7F7;
   padding: 7rem;
   font-size: 2.4rem; }
   @media only screen and (max-width: 28.125em) {
@@ -1083,7 +1114,8 @@ body {
         display: block; } }
     .product-info-box1 {
       font-size: 1.8rem;
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      color: #4F4F4F; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box1 {
           margin-bottom: 8rem; } }
@@ -1094,7 +1126,7 @@ body {
           margin-bottom: 8rem;
           margin-left: 0rem; } }
       .product-info-box2__text1 {
-        color: #56CCF2;
+        color: #222222;
         margin-top: 4rem;
         margin-bottom: 5rem;
         font-weight: bold; }
@@ -1102,25 +1134,20 @@ body {
         margin-bottom: 8rem;
         font-weight: 200;
         line-height: 3.5rem;
-        color: #ffffff; }
+        color: #333333; }
       .product-info-box2 a {
-        color: #ffffff;
-        background-color: #000000;
+        color: #333333;
+        background-color: transparent;
         font-size: 1.8rem;
         letter-spacing: 0;
         text-decoration: none;
-        border: 2px solid #ffffff;
+        border: 2px solid #333333;
         padding: 2.3rem 3.2rem;
         transition: all .3s;
         /*&:hover{
                     background-color: $color-white;
                     color: $color-black;
                 }*/ }
-        .product-info-box2 a:hover {
-          background-color: #ffffff;
-          color: #000000; }
-          .product-info-box2 a:hover, .product-info-box2 a:hover #see-complete-arr {
-            fill: #000000; }
         .product-info-box2 a svg {
           margin-left: 3.2rem; }
   .product-info-img {
@@ -1130,8 +1157,19 @@ body {
     align-content: center;
     justify-content: center; }
 
+.contact-fadeup {
+  position: fixed;
+  background-color: #FFCF25;
+  height: 0vh;
+  width: 100vw;
+  top: 0;
+  animation-name: colorFadeUp;
+  animation-duration: 1.5s; }
+
 .contact__heading {
-  padding-bottom: 8rem; }
+  padding-bottom: 8rem;
+  animation-name: text-transform;
+  animation-duration: 2s; }
   .contact__heading--secondary {
     line-height: 3rem;
     letter-spacing: 0px;

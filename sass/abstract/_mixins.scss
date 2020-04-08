@@ -19,6 +19,15 @@
     background-position: 30%;
 }
 
+@mixin fade-up-mixin ($color) {
+    background-color: $color;
+    height: 0vh;
+    width: 100vw;
+    top: 0;
+    animation-name: colorFadeUp;
+    animation-duration: 1.5s;
+}
+
 // For the 2 column grids
 @mixin grid-structure ($link) {
         position: relative;

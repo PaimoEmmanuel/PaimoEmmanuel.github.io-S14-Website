@@ -7,3 +7,36 @@
     }
 }
 //transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+//For the initial color fade up on some pages
+@keyframes colorFadeUp {
+    0%{
+        height: 100vh;
+        margin-top: 100vh;
+    }
+    30%{
+        margin-top: 0vh;
+        height: 100vh;
+        
+    }
+    50%{
+        margin-top: 0vh;
+        height: 100vh;
+        
+    }
+    100%{
+        height: 0vh;
+    }
+}
+
+
+@keyframes text-transform {
+    0%{
+        visibility: hidden;
+       }
+    99%{
+        visibility: hidden;
+       }
+    
+    
+}
