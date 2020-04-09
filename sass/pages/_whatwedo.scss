@@ -11,17 +11,6 @@
     top: 23.5rem;
     z-index: -999;
     perspective: 1000;
-    // animation-name: text-transform;
-    // animation-duration: 0s;
-    
-    
-// }.about-heading > * {
-//     animation-name: text-transform;
-//     animation-duration: 2.5s;
-//     -webkit-background-clip: text;
-//         background-clip: text;
-        
-//
  }
 .section-background{
     //height: 100rem;
@@ -170,6 +159,11 @@
         }
     }
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    //width: 100%;
+  }
 .section-work{
     //height: 100vh;
     padding-top: 12rem;

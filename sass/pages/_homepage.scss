@@ -11,6 +11,7 @@
     @include respond(tab-land){
         margin: 1rem 0 10% 5rem;
         padding: 2rem;
+        padding-top: 0;
         padding-left: 0;
     }
     @include respond(tab-port){
@@ -27,9 +28,9 @@
 
     &__text-parent{
         width: auto;
-        transform-style: preserve-3d;
-        perspective: 1000;
-        -webkit-perspective: 1000;
+        // transform-style: preserve-3d;
+        // perspective: 1000;
+        // -webkit-perspective: 1000;
     }
     &__text{
     font-size: 4.5rem;

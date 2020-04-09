@@ -104,13 +104,13 @@
                 padding: 2.3rem 3.2rem;
                 transition: all .3s;
 
-                // &:hover{
-                //     background-color: $color-white;
-                //     color: $color-black;
-                //     &, #see-complete-arr{
-                //     fill: $color-black;
-                //     }
-                // }
+                &:hover{
+                    background-color: #333333;
+                    color: #BDBDBD;
+                    &, #see-complete-arr{
+                    fill: #BDBDBD;
+                    }
+                }
                 svg{
                     margin-left: 3.2rem;
                 }
@@ -124,32 +124,33 @@
     }
 }
 .portfolio{
+    background-color: #fff;
 
     &__showcase-1{
         background-color: #F2C94C;
-        height: 70vh;
+        height: 100vh;
         width: 100%;
         display: grid;
         justify-content: center;
-        padding-top: 5rem;
+        padding-top: 10rem;
 
         & img{
-            height: 85vh;
+            height: 105vh;
             max-width: 100%;
         }
     }
     &__text{
-        background-color: #F7F7F7;
-        height: auto;
+        background-color: #fff;
+        height: 120vh;
         display: flex;
-        padding-top: 8rem;
+        //padding-top: 8rem;
         padding-bottom: 35rem;
         justify-content: space-around;
         align-items: center;
 
 
         &--line{
-            height: 15px;
+            height: 7px;
             width: 50px;
             background-color: #000;
             //float: right;
@@ -164,7 +165,7 @@
             display: flex;
             flex-direction: column;
             margin-left: auto;
-            margin-right: 5rem;
+            margin-right: 10rem;
 
             p{
                 //float: right;
@@ -176,26 +177,27 @@
         &-2{
             margin-top: 50rem;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
             width: 50%;
 
             p{
-                width: 70%;
+                width: 40rem;
             }
         }
     }
 
     &__showcase-2{
         background-color:#E5E5E5;
-        height: 70vh;
         width: 100%;
         display: grid;
         justify-content: center;
         padding-top: 5rem;
+        padding-bottom: 5rem;
 
         & img{
             margin-top: -20rem;
-            height: 85vh;
+            height: 105vh;
             max-width: 100%;
         }
     }
@@ -204,10 +206,11 @@
         background-color:#F7F7F7;
         display: grid;
         justify-content: center;
+        height: 100vh;
 
         & img{
             // margin-top: -20rem;
-            // height: 85vh;
+            height: 100vh;
             max-width: 100%;
         }
     }

@@ -62,7 +62,7 @@ $('.homepage-heading-primary').mousemove(function(e){
   moveA++;
   console.log('transform', `translate(${moveX}px, ${moveY}px)`)
   $('.homepage-heading-primary__text').css('transform', `translate(${moveX}px, ${moveY}px)`);
-  $('.homepage-heading-primary__bg').css('transform',`scale(1.1) rotate(-7.1deg) translateZ(${moveX}px)`);
+  //$('.homepage-heading-primary__bg').css('transform',`rotate(-7.1deg) translateZ(${moveX}px)`);
   $('.wavy-a').css('transform', `translate(${moveX}px, ${moveY}px)`);
 })
 
@@ -80,6 +80,20 @@ $(function () {
     });
 });*/
 
+//
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementsByClassName("section-work")[0];
+var sticky = header.offsetTop;
+//console.log(sticky);
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    console.log(window.pageYOffset, sticky);
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 //FOR THE MOVING WAVY VECTOR1 ON SCROLL
 var window_width2 = $(window).width() - $('#wavy2').width();
@@ -124,3 +138,4 @@ prev.onclick = function(){
 
 
 // FOr the build, UiUx tabs
+

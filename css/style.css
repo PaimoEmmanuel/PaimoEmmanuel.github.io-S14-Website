@@ -528,7 +528,7 @@ body {
   font-family: brown;
   padding: 11rem 7rem 18rem 7rem;
   animation-name: text-transform;
-  animation-duration: 2s; }
+  animation-duration: 0s; }
   @media only screen and (max-width: 56.25em) {
     .heading {
       font-size: 3.5rem;
@@ -692,16 +692,14 @@ body {
     .homepage-heading-primary {
       margin: 1rem 0 10% 5rem;
       padding: 2rem;
+      padding-top: 0;
       padding-left: 0; } }
   @media only screen and (max-width: 56.25em) {
     .homepage-heading-primary {
       padding: 2rem;
       padding-left: 0; } }
   .homepage-heading-primary__text-parent {
-    width: auto;
-    transform-style: preserve-3d;
-    perspective: 1000;
-    -webkit-perspective: 1000; }
+    width: auto; }
   .homepage-heading-primary__text {
     font-size: 4.5rem;
     letter-spacing: -2px;
@@ -1008,6 +1006,10 @@ body {
             line-height: 4rem;
             padding: 5rem 0 11rem 0; } }
 
+.sticky {
+  position: fixed;
+  top: 0; }
+
 .section-work {
   padding-top: 12rem;
   margin-top: -8rem;
@@ -1148,68 +1150,74 @@ body {
                     background-color: $color-white;
                     color: $color-black;
                 }*/ }
+        .product-info-box2 a:hover {
+          background-color: #333333;
+          color: #BDBDBD; }
+          .product-info-box2 a:hover, .product-info-box2 a:hover #see-complete-arr {
+            fill: #BDBDBD; }
         .product-info-box2 a svg {
           margin-left: 3.2rem; }
 
-.portfolio__showcase-1 {
-  background-color: #F2C94C;
-  height: 70vh;
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  padding-top: 5rem; }
-  .portfolio__showcase-1 img {
-    height: 85vh;
-    max-width: 100%; }
-
-.portfolio__text {
-  background-color: #F7F7F7;
-  height: auto;
-  display: flex;
-  padding-top: 8rem;
-  padding-bottom: 35rem;
-  justify-content: space-around;
-  align-items: center; }
-  .portfolio__text--line {
-    height: 15px;
-    width: 50px;
-    background-color: #000; }
-  .portfolio__text-1 {
-    font-weight: bold;
-    font-size: 3.6rem;
-    line-height: 3.5rem;
+.portfolio {
+  background-color: #fff; }
+  .portfolio__showcase-1 {
+    background-color: #F2C94C;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding-top: 10rem; }
+    .portfolio__showcase-1 img {
+      height: 105vh;
+      max-width: 100%; }
+  .portfolio__text {
+    background-color: #fff;
+    height: 120vh;
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: 5rem; }
-    .portfolio__text-1 p {
-      margin-top: 5rem; }
-  .portfolio__text-2 {
-    margin-top: 50rem;
-    font-weight: 300;
-    font-size: 18px;
-    width: 50%; }
-    .portfolio__text-2 p {
-      width: 70%; }
-
-.portfolio__showcase-2 {
-  background-color: #E5E5E5;
-  height: 70vh;
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  padding-top: 5rem; }
-  .portfolio__showcase-2 img {
-    margin-top: -20rem;
-    height: 85vh;
-    max-width: 100%; }
-
-.portfolio__showcase-3 {
-  background-color: #F7F7F7;
-  display: grid;
-  justify-content: center; }
-  .portfolio__showcase-3 img {
-    max-width: 100%; }
+    padding-bottom: 35rem;
+    justify-content: space-around;
+    align-items: center; }
+    .portfolio__text--line {
+      height: 7px;
+      width: 50px;
+      background-color: #000; }
+    .portfolio__text-1 {
+      font-weight: bold;
+      font-size: 3.6rem;
+      line-height: 3.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: 10rem; }
+      .portfolio__text-1 p {
+        margin-top: 5rem; }
+    .portfolio__text-2 {
+      margin-top: 50rem;
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      width: 50%; }
+      .portfolio__text-2 p {
+        width: 40rem; }
+  .portfolio__showcase-2 {
+    background-color: #E5E5E5;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    .portfolio__showcase-2 img {
+      margin-top: -20rem;
+      height: 105vh;
+      max-width: 100%; }
+  .portfolio__showcase-3 {
+    background-color: #F7F7F7;
+    display: grid;
+    justify-content: center;
+    height: 100vh; }
+    .portfolio__showcase-3 img {
+      height: 100vh;
+      max-width: 100%; }
 
 .work-fadeup {
   background-color: #FF2546;
