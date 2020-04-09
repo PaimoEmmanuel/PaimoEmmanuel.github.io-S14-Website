@@ -4,6 +4,8 @@
     letter-spacing: -1px;
     font-family: brown;
     padding: 11rem 7rem 18rem 7rem;
+    animation-name: text-transform;
+    animation-duration: 2s;
 
     @include respond(tab-port){
         font-size: 3.5rem;

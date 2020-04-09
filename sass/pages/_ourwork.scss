@@ -1,0 +1,4 @@
+.work-fadeup{
+    @include fade-up-mixin($color-pink);
+    position: absolute;
+}

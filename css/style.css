@@ -180,7 +180,7 @@ body {
     position: relative;
     box-shadow: 20px 20px 0px 0 #FF2546;
     height: 100%;
-    background-image: url(../img/africlick.png);
+    background-image: url(../img/whichride.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%; }
@@ -526,7 +526,9 @@ body {
   line-height: 5.9rem;
   letter-spacing: -1px;
   font-family: brown;
-  padding: 11rem 7rem 18rem 7rem; }
+  padding: 11rem 7rem 18rem 7rem;
+  animation-name: text-transform;
+  animation-duration: 2s; }
   @media only screen and (max-width: 56.25em) {
     .heading {
       font-size: 3.5rem;
@@ -893,9 +895,7 @@ body {
   position: fixed;
   top: 23.5rem;
   z-index: -999;
-  perspective: 1000;
-  animation-name: text-transform;
-  animation-duration: 2s; }
+  perspective: 1000; }
 
 .section-background {
   background-color: #000000;
@@ -1060,7 +1060,7 @@ body {
 
 .post-page__heading {
   position: fixed;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/africlick.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/whichride.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
@@ -1150,12 +1150,75 @@ body {
                 }*/ }
         .product-info-box2 a svg {
           margin-left: 3.2rem; }
-  .product-info-img {
-    background-color: #fff;
-    padding: 5rem 7rem;
+
+.portfolio__showcase-1 {
+  background-color: #F2C94C;
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding-top: 5rem; }
+  .portfolio__showcase-1 img {
+    height: 85vh;
+    max-width: 100%; }
+
+.portfolio__text {
+  background-color: #F7F7F7;
+  height: auto;
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 35rem;
+  justify-content: space-around;
+  align-items: center; }
+  .portfolio__text--line {
+    height: 15px;
+    width: 50px;
+    background-color: #000; }
+  .portfolio__text-1 {
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 3.5rem;
     display: flex;
-    align-content: center;
-    justify-content: center; }
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 5rem; }
+    .portfolio__text-1 p {
+      margin-top: 5rem; }
+  .portfolio__text-2 {
+    margin-top: 50rem;
+    font-weight: 300;
+    font-size: 18px;
+    width: 50%; }
+    .portfolio__text-2 p {
+      width: 70%; }
+
+.portfolio__showcase-2 {
+  background-color: #E5E5E5;
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding-top: 5rem; }
+  .portfolio__showcase-2 img {
+    margin-top: -20rem;
+    height: 85vh;
+    max-width: 100%; }
+
+.portfolio__showcase-3 {
+  background-color: #F7F7F7;
+  display: grid;
+  justify-content: center; }
+  .portfolio__showcase-3 img {
+    max-width: 100%; }
+
+.work-fadeup {
+  background-color: #FF2546;
+  height: 0vh;
+  width: 100vw;
+  top: 0;
+  animation-name: colorFadeUp;
+  animation-duration: 1.5s;
+  position: absolute; }
 
 .contact-fadeup {
   position: fixed;
@@ -1167,9 +1230,7 @@ body {
   animation-duration: 1.5s; }
 
 .contact__heading {
-  padding-bottom: 8rem;
-  animation-name: text-transform;
-  animation-duration: 2s; }
+  padding-bottom: 8rem; }
   .contact__heading--secondary {
     line-height: 3rem;
     letter-spacing: 0px;

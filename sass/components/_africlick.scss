@@ -25,7 +25,7 @@
         position: relative;
         box-shadow: 20px 20px 0px 0 $color-pink;
         height: 100%;
-        @include background-image(url(../img/africlick.png));
+        @include background-image(url(../img/whichride.jpg));
 
         @include respond(tab-port){
             height: 35rem;
