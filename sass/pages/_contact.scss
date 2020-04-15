@@ -19,7 +19,7 @@
     margin-bottom: 8rem;
     display: grid;
     grid-template-columns: 33% 67%;
-    padding-left:2rem;
+    //padding-left:2rem;
     height: 100vh;
     @include respond(tab-port){
         display: block;
@@ -31,8 +31,8 @@
         background-color: $color-pink;
         color: $color-white;
         padding: 8rem 8rem 0 8rem;
-        height: 80%;
-        @include respond(tab-land){
+        height: 70%;
+        @include respond(tab-port){
             padding: 2rem 2rem 0 2rem;
         }
         @include respond(tab-port){

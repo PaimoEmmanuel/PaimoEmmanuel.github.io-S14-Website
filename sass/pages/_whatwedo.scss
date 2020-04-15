@@ -212,6 +212,8 @@
             position: relative;
             margin-left: 7rem;
             height: 100vh;
+            position: sticky;
+        top: 5px;
             &-bg{
                 background-color: #25F2FF;
                 height: 25rem;

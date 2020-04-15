@@ -162,7 +162,10 @@ body {
   grid-template-columns: 60% 35%;
   margin-bottom: 4rem;
   font-family: brown;
-  height: 47rem; }
+  height: 47rem;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .africlick {
       padding: 0 5rem;
@@ -240,7 +243,10 @@ body {
     font-family: brown;
     font-size: 2.4rem;
     color: #ffffff;
-    padding: 7rem; }
+    padding: 7rem;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto; }
     @media only screen and (max-width: 28.125em) {
       .footer__main {
         font-size: 3.4rem; } }
@@ -317,7 +323,10 @@ body {
     color: #828282;
     padding: 2rem 10rem;
     padding-right: 20rem;
-    background-color: #000000; }
+    background-color: #000000;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto; }
     @media only screen and (max-width: 56.25em) {
       .footer-sub {
         padding: 2.5rem; } }
@@ -338,7 +347,10 @@ body {
 .grid-2-col {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 0rem 7rem; }
+  padding: 0rem 7rem;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .grid-2-col {
       display: block; } }
@@ -407,15 +419,15 @@ body {
       position: relative;
       width: 100%;
       height: 100%;
-      background-image: url(../img/Casestudy1.4.png);
+      background-image: url(../img/africlick.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 30%; }
       .grid-2-col__grid-4:hover {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.4.png); }
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/africlick.png); }
       @media (hover: none) {
         .grid-2-col__grid-4 {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.4.png); } }
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/africlick.png); } }
     .grid-2-col__grid-4:hover .grid-2-col__grid-text p {
       opacity: 1; }
     .grid-2-col__grid-text {
@@ -686,20 +698,20 @@ body {
   font-weight: 100; }
 
 .homepage-heading-primary {
-  margin: 10% 0 10% 7rem;
+  margin: 1rem 0 10% 5rem;
+  padding: 2rem;
+  padding-top: 0;
+  padding-left: 0;
   position: relative; }
-  @media only screen and (max-width: 75em) {
-    .homepage-heading-primary {
-      margin: 1rem 0 10% 5rem;
-      padding: 2rem;
-      padding-top: 0;
-      padding-left: 0; } }
   @media only screen and (max-width: 56.25em) {
     .homepage-heading-primary {
       padding: 2rem;
       padding-left: 0; } }
   .homepage-heading-primary__text-parent {
-    width: auto; }
+    width: auto;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto; }
   .homepage-heading-primary__text {
     font-size: 4.5rem;
     letter-spacing: -2px;
@@ -740,11 +752,15 @@ body {
 .clients {
   background-color: #FFCF25;
   width: 100%;
-  padding: 0 7rem;
-  display: grid;
-  height: 33rem;
-  grid-template-columns: 30% 70%;
   transform: skewY(-3deg); }
+  .clients-div {
+    padding: 0 7rem;
+    height: 33rem;
+    max-width: 1236px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: auto;
+    margin-right: auto; }
   @media only screen and (max-width: 37.5em) {
     .clients {
       padding: 2rem 5rem; } }
@@ -821,7 +837,10 @@ body {
       margin-top: 150%; } }
 
 .our-world {
-  margin: 10% 7rem 10% 5rem; }
+  padding: 10% 7rem 10% 5rem;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .our-world {
       margin: 10% 5rem 10% 5rem; } }
@@ -1045,7 +1064,9 @@ body {
     .section-work__main-content {
       position: relative;
       margin-left: 7rem;
-      height: 100vh; }
+      height: 100vh;
+      position: sticky;
+      top: 5px; }
       .section-work__main-content-bg {
         background-color: #25F2FF;
         height: 25rem;
@@ -1076,7 +1097,7 @@ body {
     line-height: 9rem;
     letter-spacing: -2px;
     width: 60vw;
-    top: 30%;
+    top: 40%;
     z-index: -50;
     color: #ffffff; }
     @media only screen and (max-width: 28.125em) {
@@ -1178,7 +1199,7 @@ body {
     justify-content: space-around;
     align-items: center; }
     .portfolio__text--line {
-      height: 7px;
+      height: 10px;
       width: 50px;
       background-color: #000; }
     .portfolio__text-1 {
@@ -1188,11 +1209,11 @@ body {
       display: flex;
       flex-direction: column;
       margin-left: auto;
-      margin-right: 10rem; }
+      margin-right: 5rem; }
       .portfolio__text-1 p {
-        margin-top: 5rem; }
+        margin-top: 3rem; }
     .portfolio__text-2 {
-      margin-top: 50rem;
+      margin-top: 40rem;
       font-weight: 300;
       font-size: 1.8rem;
       line-height: 2.8rem;
@@ -1250,7 +1271,6 @@ body {
   margin-bottom: 8rem;
   display: grid;
   grid-template-columns: 33% 67%;
-  padding-left: 2rem;
   height: 100vh; }
   @media only screen and (max-width: 56.25em) {
     .location {
@@ -1261,8 +1281,8 @@ body {
     background-color: #FF2546;
     color: #ffffff;
     padding: 8rem 8rem 0 8rem;
-    height: 80%; }
-    @media only screen and (max-width: 75em) {
+    height: 70%; }
+    @media only screen and (max-width: 56.25em) {
       .location__address {
         padding: 2rem 2rem 0 2rem; } }
     @media only screen and (max-width: 56.25em) {

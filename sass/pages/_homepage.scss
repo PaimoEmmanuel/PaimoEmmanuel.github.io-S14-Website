@@ -4,16 +4,20 @@
 }
 .homepage-heading-primary{
     //height: 60vh;
-    margin: 10% 0 10% 7rem;
-    position: relative;
-    //transform: translate3d(0.1, 2, 4);
-
-    @include respond(tab-land){
-        margin: 1rem 0 10% 5rem;
+    margin: 1rem 0 10% 5rem;
         padding: 2rem;
         padding-top: 0;
         padding-left: 0;
-    }
+    position: relative;
+    
+    //transform: translate3d(0.1, 2, 4);
+
+    // @include respond(tab-land){
+    //     margin: 1rem 0 10% 5rem;
+    //     padding: 2rem;
+    //     padding-top: 0;
+    //     padding-left: 0;
+    // }
     @include respond(tab-port){
         //margin: 1rem 0 10% 7rem;
         padding: 2rem;
@@ -28,6 +32,9 @@
 
     &__text-parent{
         width: auto;
+        max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
         // transform-style: preserve-3d;
         // perspective: 1000;
         // -webkit-perspective: 1000;
@@ -88,11 +95,20 @@
 .clients{
     background-color: $color-yellow;
     width: 100%;
-    padding: 0 7rem;
-    display: grid;
-    height: 33rem;
-    grid-template-columns: 30% 70%;
     transform: skewY(-3deg);
+    //max-width: 1236px;
+
+    &-div{
+        padding: 0 7rem;
+    height: 33rem;
+    
+    max-width: 1236px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
      @include respond(phone){
     //     display: inline-block;
     //     height: 50rem;
@@ -191,7 +207,10 @@
      }  
 }
 .our-world{
-    margin: 10% 7rem 10% 5rem;
+    padding: 10% 7rem 10% 5rem;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include respond(tab-port){
         margin: 10% 5rem 10% 5rem;

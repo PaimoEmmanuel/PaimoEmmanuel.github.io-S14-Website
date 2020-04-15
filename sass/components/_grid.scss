@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 0rem 7rem;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
     
     @include respond(tab-port){
         display: block;
@@ -47,7 +50,7 @@
             opacity: 1;
         }
         &-4{
-            @include grid-structure(url(../img/Casestudy1.4.png))
+            @include grid-structure(url(../img/africlick.png))
         }
         &-4:hover &-text p{
             opacity: 1;
