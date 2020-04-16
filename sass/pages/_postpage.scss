@@ -197,7 +197,7 @@
 
         & img{
             margin-top: -20rem;
-            height: 105vh;
+            height: 95vh;
             max-width: 100%;
         }
     }
@@ -206,11 +206,12 @@
         background-color:#F7F7F7;
         display: grid;
         justify-content: center;
+        align-content: center;
         height: 100vh;
 
         & img{
             // margin-top: -20rem;
-            height: 100vh;
+            height: 95vh;
             max-width: 100%;
         }
     }
