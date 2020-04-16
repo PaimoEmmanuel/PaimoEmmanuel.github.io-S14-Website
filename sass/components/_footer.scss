@@ -8,9 +8,7 @@
         @include font-normal;
         //text-align: center;
         padding: 7rem;
-        max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
+        @include max-width;
         @include respond(phone-small){
             font-size: 3.4rem
         }
@@ -108,9 +106,7 @@
         padding: 2rem 10rem;
         padding-right: 20rem;
         background-color: $color-black;
-        max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
+        @include max-width;
         @include respond(tab-port){
             padding: 2.5rem;
         }

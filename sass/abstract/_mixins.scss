@@ -28,6 +28,13 @@
     animation-duration: 1.5s;
 }
 
+@mixin max-width {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 // For the 2 column grids
 @mixin grid-structure ($link) {
         position: relative;

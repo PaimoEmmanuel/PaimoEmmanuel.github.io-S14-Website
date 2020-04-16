@@ -2,9 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 0rem 7rem;
-    max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
+    @include max-width;
     
     @include respond(tab-port){
         display: block;

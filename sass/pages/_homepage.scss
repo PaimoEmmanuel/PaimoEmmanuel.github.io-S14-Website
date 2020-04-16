@@ -32,9 +32,7 @@
 
     &__text-parent{
         width: auto;
-        max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
+        @include max-width;
         // transform-style: preserve-3d;
         // perspective: 1000;
         // -webkit-perspective: 1000;
@@ -101,12 +99,9 @@
     &-div{
         padding: 0 7rem;
     height: 33rem;
-    
-    max-width: 1236px;
     display: grid;
     grid-template-columns: 30% 70%;
-    margin-left: auto;
-    margin-right: auto;
+    @include max-width;
     }
 
      @include respond(phone){
@@ -208,9 +203,7 @@
 }
 .our-world{
     padding: 10% 7rem 10% 5rem;
-    max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
+    @include max-width;
 
     @include respond(tab-port){
         margin: 10% 5rem 10% 5rem;

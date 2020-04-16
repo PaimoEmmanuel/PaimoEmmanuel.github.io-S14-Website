@@ -159,11 +159,12 @@
         }
     }
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    //width: 100%;
-  }
+// .sticky {
+//     position: sticky;
+//   position: -webkit-sticky;
+//   width: 100px;
+//   height: 100px;
+//   }
 .section-work{
     //height: 100vh;
     padding-top: 12rem;
@@ -199,20 +200,16 @@
             font-size: 9.6rem;
             font-weight: bold;
             line-height: 9rem;
-            //position: fixed;
+            position: sticky;
             top: 10%;
-            //z-index: -1;
-
-            :not(:first-child){
-                color: $color-grey-light;
-            }
+            color: $color-grey-light;
         }
 
         &-content{
             position: relative;
             margin-left: 7rem;
             height: 100vh;
-            position: sticky;
+            //position: sticky;
         top: 5px;
             &-bg{
                 background-color: #25F2FF;

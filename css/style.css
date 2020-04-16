@@ -163,7 +163,7 @@ body {
   margin-bottom: 4rem;
   font-family: brown;
   height: 47rem;
-  max-width: 1236px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
@@ -244,7 +244,7 @@ body {
     font-size: 2.4rem;
     color: #ffffff;
     padding: 7rem;
-    max-width: 1236px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto; }
     @media only screen and (max-width: 28.125em) {
@@ -324,7 +324,7 @@ body {
     padding: 2rem 10rem;
     padding-right: 20rem;
     background-color: #000000;
-    max-width: 1236px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto; }
     @media only screen and (max-width: 56.25em) {
@@ -348,7 +348,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 0rem 7rem;
-  max-width: 1236px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
@@ -538,7 +538,7 @@ body {
   line-height: 5.9rem;
   letter-spacing: -1px;
   font-family: brown;
-  padding: 11rem 7rem 18rem 7rem;
+  padding: 14rem 7rem 21rem 7rem;
   animation-name: text-transform;
   animation-duration: 0s; }
   @media only screen and (max-width: 56.25em) {
@@ -709,7 +709,7 @@ body {
       padding-left: 0; } }
   .homepage-heading-primary__text-parent {
     width: auto;
-    max-width: 1236px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto; }
   .homepage-heading-primary__text {
@@ -756,9 +756,9 @@ body {
   .clients-div {
     padding: 0 7rem;
     height: 33rem;
-    max-width: 1236px;
     display: grid;
     grid-template-columns: 30% 70%;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto; }
   @media only screen and (max-width: 37.5em) {
@@ -838,7 +838,7 @@ body {
 
 .our-world {
   padding: 10% 7rem 10% 5rem;
-  max-width: 1236px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
@@ -1025,10 +1025,6 @@ body {
             line-height: 4rem;
             padding: 5rem 0 11rem 0; } }
 
-.sticky {
-  position: fixed;
-  top: 0; }
-
 .section-work {
   padding-top: 12rem;
   margin-top: -8rem;
@@ -1058,14 +1054,13 @@ body {
       font-size: 9.6rem;
       font-weight: bold;
       line-height: 9rem;
-      top: 10%; }
-      .section-work__main-subject :not(:first-child) {
-        color: #BDBDBD; }
+      position: sticky;
+      top: 10%;
+      color: #BDBDBD; }
     .section-work__main-content {
       position: relative;
       margin-left: 7rem;
       height: 100vh;
-      position: sticky;
       top: 5px; }
       .section-work__main-content-bg {
         background-color: #25F2FF;
@@ -1259,7 +1254,7 @@ body {
   animation-duration: 1.5s; }
 
 .contact__heading {
-  padding-bottom: 8rem; }
+  padding-bottom: 15rem; }
   .contact__heading--secondary {
     line-height: 3rem;
     letter-spacing: 0px;
