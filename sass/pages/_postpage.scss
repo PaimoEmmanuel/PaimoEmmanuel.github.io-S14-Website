@@ -62,12 +62,16 @@
         display: grid;
         //padding-top: 4rem;
         grid-template-columns: 25% 75%;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         @include respond(tab-port){
             display: block;
         }
         &1{
             font-size: 1.8rem;
-            margin-top: 4rem;
+            //margin-top: 4rem;
             color: #000;
             @include respond(tab-port){
                 margin-bottom: 8rem;
@@ -75,6 +79,7 @@
         }
         &2{
             margin-left: 10rem;
+            padding-bottom: 3rem;
             @include respond(tab-port){
                 margin-bottom: 8rem;
                 margin-left: 0rem;
@@ -83,7 +88,7 @@
 
             &__text1{
                 color: #222222;
-                margin-top: 4rem;
+                //margin-top: 4rem;
                 margin-bottom: 5rem;
                 font-weight: bold;
             }

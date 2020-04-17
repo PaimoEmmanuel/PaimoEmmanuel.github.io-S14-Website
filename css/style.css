@@ -1127,26 +1127,29 @@ body {
   .product-info-box {
     color: #BDBDBD;
     display: grid;
-    grid-template-columns: 25% 75%; }
+    grid-template-columns: 25% 75%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     @media only screen and (max-width: 56.25em) {
       .product-info-box {
         display: block; } }
     .product-info-box1 {
       font-size: 1.8rem;
-      margin-top: 4rem;
       color: #000; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box1 {
           margin-bottom: 8rem; } }
     .product-info-box2 {
-      margin-left: 10rem; }
+      margin-left: 10rem;
+      padding-bottom: 3rem; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box2 {
           margin-bottom: 8rem;
           margin-left: 0rem; } }
       .product-info-box2__text1 {
         color: #222222;
-        margin-top: 4rem;
         margin-bottom: 5rem;
         font-weight: bold; }
       .product-info-box2__text2 {
