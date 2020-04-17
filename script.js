@@ -33,7 +33,7 @@ $('.homepage-heading-primary').mousemove(function(e){
   var moveX = (e.pageX * -1 / 15);
   var moveY = (e.pageY * -1 / 15);
   moveA++;
-  console.log('transform', `translate(${moveX}px, ${moveY}px)`)
+  //console.log('transform', `translate(${moveX}px, ${moveY}px)`)
   $('.homepage-heading-primary__text').css('transform', `translate(${moveX}px, ${moveY}px)`);
   //$('.homepage-heading-primary__bg').css('transform',`rotate(-7.1deg) translateZ(${moveX}px)`);
   $('.wavy-a').css('transform', `translate(${moveX}px, ${moveY}px)`);
@@ -63,12 +63,19 @@ let srcArr = ["img/bcc.png", "img/fb.png", "img/pp.png"];
 let clientLogoPosition = document.getElementsByClassName("clients__image");
 
 
-function nextFn(){
-  srcArr.push(srcArr.shift())
-  for(let i =0; i < clientLogoPosition.length; i++){
-      clientLogoPosition[i].src = srcArr[i];
-  }
-}
+// function nextFn(){
+//   srcArr.push(srcArr.shift())
+//   for(let i =0; i < clientLogoPosition.length; i++){
+//       clientLogoPosition[i].src = srcArr[i];
+//   }
+// }
+// next.onclick = nextFn;
+// prev.onclick = function(){
+//   srcArr.unshift(srcArr.pop());
+//   for(let i =0; i < clientLogoPosition.length; i++){
+//       clientLogoPosition[i].src = srcArr[i];
+//   }
+// }
 
 /*$(document).ready(function(){
   myVar = setInterval("nextFn()", 1000);

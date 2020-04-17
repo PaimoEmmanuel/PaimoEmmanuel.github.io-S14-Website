@@ -68,7 +68,7 @@
         &1{
             font-size: 1.8rem;
             margin-top: 4rem;
-            color: #4F4F4F;;
+            color: #000;
             @include respond(tab-port){
                 margin-bottom: 8rem;
             }
@@ -91,6 +91,7 @@
                 margin-bottom: 8rem;
                 font-weight: 200;
                 line-height: 3.5rem;
+                width: 78rem;
                 color: #333333;
             }
 
@@ -132,7 +133,7 @@
         width: 100%;
         display: grid;
         justify-content: center;
-        padding-top: 10rem;
+        padding-top: 18rem;
 
         & img{
             height: 105vh;
@@ -141,10 +142,11 @@
     }
     &__text{
         background-color: #fff;
-        height: 120vh;
+        height: 140vh;
         display: flex;
         //padding-top: 8rem;
-        padding-bottom: 35rem;
+        padding-bottom: 40rem;
+        padding-top: 10rem;
         justify-content: space-around;
         align-items: center;
 
@@ -166,6 +168,7 @@
             flex-direction: column;
             margin-left: auto;
             margin-right: 5rem;
+            margin-top: 10rem;
 
             p{
                 //float: right;
@@ -175,11 +178,11 @@
             
         }
         &-2{
-            margin-top: 40rem;
+            margin-top: 45rem;
             font-weight: 300;
             font-size: 1.8rem;
             line-height: 2.8rem;
-            width: 50%;
+            width: 55.8%;
 
             p{
                 width: 40rem;
@@ -188,12 +191,12 @@
     }
 
     &__showcase-2{
-        background-color:#E5E5E5;
+        background-color:#F7F7F7;
         width: 100%;
         display: grid;
         justify-content: center;
         padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-bottom: 7rem;
 
         & img{
             margin-top: -20rem;
@@ -203,11 +206,13 @@
     }
 
     &__showcase-3{
-        background-color:#F7F7F7;
+        background-color:#ffffff;
         display: grid;
         justify-content: center;
         align-content: center;
-        height: 100vh;
+        //height: 100vh;
+        padding-top: 10rem;
+    padding-bottom: 5rem;
 
         & img{
             // margin-top: -20rem;

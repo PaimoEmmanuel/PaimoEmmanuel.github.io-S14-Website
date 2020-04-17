@@ -535,7 +535,7 @@ body {
           margin-left: 3.7rem; }
 
 .heading {
-  font-size: 4.5rem;
+  font-size: 5rem;
   line-height: 5.9rem;
   letter-spacing: -1px;
   font-family: brown;
@@ -911,7 +911,7 @@ body {
 
 .about-heading {
   position: fixed;
-  top: 23.5rem;
+  top: 14rem;
   z-index: -999;
   perspective: 1000; }
 
@@ -1134,7 +1134,7 @@ body {
     .product-info-box1 {
       font-size: 1.8rem;
       margin-top: 4rem;
-      color: #4F4F4F; }
+      color: #000; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box1 {
           margin-bottom: 8rem; } }
@@ -1153,6 +1153,7 @@ body {
         margin-bottom: 8rem;
         font-weight: 200;
         line-height: 3.5rem;
+        width: 78rem;
         color: #333333; }
       .product-info-box2 a {
         color: #333333;
@@ -1183,15 +1184,16 @@ body {
     width: 100%;
     display: grid;
     justify-content: center;
-    padding-top: 10rem; }
+    padding-top: 18rem; }
     .portfolio__showcase-1 img {
       height: 105vh;
       max-width: 100%; }
   .portfolio__text {
     background-color: #fff;
-    height: 120vh;
+    height: 140vh;
     display: flex;
-    padding-bottom: 35rem;
+    padding-bottom: 40rem;
+    padding-top: 10rem;
     justify-content: space-around;
     align-items: center; }
     .portfolio__text--line {
@@ -1205,34 +1207,36 @@ body {
       display: flex;
       flex-direction: column;
       margin-left: auto;
-      margin-right: 5rem; }
+      margin-right: 5rem;
+      margin-top: 10rem; }
       .portfolio__text-1 p {
         margin-top: 3rem; }
     .portfolio__text-2 {
-      margin-top: 40rem;
+      margin-top: 45rem;
       font-weight: 300;
       font-size: 1.8rem;
       line-height: 2.8rem;
-      width: 50%; }
+      width: 55.8%; }
       .portfolio__text-2 p {
         width: 40rem; }
   .portfolio__showcase-2 {
-    background-color: #E5E5E5;
+    background-color: #F7F7F7;
     width: 100%;
     display: grid;
     justify-content: center;
     padding-top: 5rem;
-    padding-bottom: 5rem; }
+    padding-bottom: 7rem; }
     .portfolio__showcase-2 img {
       margin-top: -20rem;
       height: 95vh;
       max-width: 100%; }
   .portfolio__showcase-3 {
-    background-color: #F7F7F7;
+    background-color: #ffffff;
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 100vh; }
+    padding-top: 10rem;
+    padding-bottom: 5rem; }
     .portfolio__showcase-3 img {
       height: 95vh;
       max-width: 100%; }
@@ -1256,11 +1260,12 @@ body {
   animation-duration: 1.5s; }
 
 .contact__heading {
-  padding-bottom: 15rem; }
+  padding-bottom: 18rem;
+  padding-top: 11rem; }
   .contact__heading--secondary {
     line-height: 3rem;
     letter-spacing: 0px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2rem;
     margin-top: 1.8rem; }
 

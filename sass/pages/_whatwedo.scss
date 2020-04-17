@@ -8,7 +8,7 @@
     z-index: -999;
 }.about-heading{
     position: fixed;
-    top: 23.5rem;
+    top: 14rem;
     z-index: -999;
     perspective: 1000;
  }
@@ -193,6 +193,9 @@
         margin-top: 5rem;
         font-family: brown;
         font-size: $font-small;
+        // scroll-snap-type: y mandatory;
+        // overflow-y: scroll;
+        // scroll-snap-type: mandatory;
 
         &-subject{
 
@@ -210,7 +213,8 @@
             margin-left: 7rem;
             height: 100vh;
             //position: sticky;
-        top: 5px;
+            top: 5px;
+            //scroll-snap-align: start;
             &-bg{
                 background-color: #25F2FF;
                 height: 25rem;
