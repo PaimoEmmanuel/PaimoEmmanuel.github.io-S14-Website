@@ -1139,7 +1139,9 @@ body {
   position: relative;
   height: 100vh;
   background-color: #F7F7F7;
-  padding: 7rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 2.4rem; }
   @media only screen and (max-width: 28.125em) {
     .product-info {
@@ -1154,7 +1156,8 @@ body {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    padding: 7rem; }
     @media only screen and (max-width: 56.25em) {
       .product-info-box {
         display: block; } }
@@ -1273,8 +1276,14 @@ body {
 .enable-app-1 {
   background-color: rgba(47, 128, 237, 0.05); }
 
+.enable-portfolio__text {
+  padding-bottom: 30rem; }
+
 .enable-app-2 img {
-  height: 190vh; }
+  width: 96%;
+  height: auto;
+  margin: auto;
+  margin-top: 0; }
 
 .work-fadeup {
   background-color: #FF2546;
