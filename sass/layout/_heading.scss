@@ -6,6 +6,7 @@
     padding: 14rem 7rem 21rem 7rem;
     animation-name: text-transform;
     animation-duration: 0s;
+    @include max-width;
 
     @include respond(tab-port){
         font-size: 3.5rem;

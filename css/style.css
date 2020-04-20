@@ -458,12 +458,17 @@ body {
         fill: #ffffff;
         cursor: pointer; }
 
-.form {
+.form-section {
   background-color: #FFCF25;
+  background-image: linear-gradient(to right, transparent 0%, transparent 66%, white 50%); }
+
+.form {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 12rem 8rem;
-  background-image: linear-gradient(to right, transparent 0%, transparent 66%, white 50%); }
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .form {
       display: block; } }
@@ -541,7 +546,10 @@ body {
   font-family: brown;
   padding: 14rem 7rem 21rem 7rem;
   animation-name: text-transform;
-  animation-duration: 0s; }
+  animation-duration: 0s;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .heading {
       font-size: 3.5rem;
@@ -913,7 +921,10 @@ body {
   position: fixed;
   top: 14rem;
   z-index: -999;
-  perspective: 1000; }
+  perspective: 1000;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .section-background {
   background-color: #000000;
@@ -931,7 +942,10 @@ body {
     font-family: brown;
     font-size: 2.4rem;
     margin: 4rem 7rem;
-    transform: skewY(3deg); }
+    transform: skewY(3deg);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
     .section-background__text::after {
       content: "";
       display: table;
@@ -949,7 +963,10 @@ body {
     grid-template-columns: 50% 50%;
     position: relative;
     padding-top: 7rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 10rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
     @media only screen and (max-width: 56.25em) {
       .section-background__grid {
         grid-template-columns: auto;
@@ -1031,7 +1048,10 @@ body {
   margin-top: -8rem;
   background-color: #fff; }
   .section-work__heading {
-    color: #000000; }
+    color: #000000;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
     .section-work__heading::after {
       content: "";
       display: table;
@@ -1050,7 +1070,10 @@ body {
     margin-right: 7rem;
     margin-top: 5rem;
     font-family: brown;
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
     .section-work__main-subject {
       font-size: 9.6rem;
       font-weight: bold;
@@ -1244,6 +1267,15 @@ body {
       height: 95vh;
       max-width: 100%; }
 
+.enable-heading {
+  background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), rgba(21, 21, 21, 0.1)), url(../img/Casestudy1.2-big.png); }
+
+.enable-app-1 {
+  background-color: rgba(47, 128, 237, 0.05); }
+
+.enable-app-2 img {
+  height: 190vh; }
+
 .work-fadeup {
   background-color: #FF2546;
   height: 0vh;
@@ -1276,7 +1308,10 @@ body {
   margin-bottom: 8rem;
   display: grid;
   grid-template-columns: 33% 67%;
-  height: 100vh; }
+  height: 100vh;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .location {
       display: block;

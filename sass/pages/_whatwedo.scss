@@ -11,6 +11,7 @@
     top: 14rem;
     z-index: -999;
     perspective: 1000;
+    @include max-width;
  }
 .section-background{
     //height: 100rem;
@@ -34,6 +35,7 @@
         font-size: $font-small;
         margin: 4rem 7rem;
         transform: skewY(3deg);
+        @include max-width;
         @include clearfix;
         & h3{
             float: right;
@@ -52,6 +54,7 @@
         position: relative;
         padding-top: 7rem;
         padding-bottom: 10rem;
+        @include max-width;
 
         @include respond(tab-port){
             grid-template-columns: auto;
@@ -175,6 +178,7 @@
         //background-color: red;
         @include clearfix;
         color: $color-black;
+        @include max-width;
         & h3{
             float: right;
             margin-right: 7rem;
@@ -193,6 +197,7 @@
         margin-top: 5rem;
         font-family: brown;
         font-size: $font-small;
+        @include max-width;
         // scroll-snap-type: y mandatory;
         // overflow-y: scroll;
         // scroll-snap-type: mandatory;

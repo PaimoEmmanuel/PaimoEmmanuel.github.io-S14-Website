@@ -1,12 +1,14 @@
-.form{
+.form-section{
     background-color: $color-yellow;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 12rem 8rem;
     background-image: linear-gradient(to right, transparent 0%, 
                     transparent 66%, 
                     rgba(255,255,255, 1) 50%);
-
+}
+.form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 12rem 8rem;
+    @include max-width;
     @include respond(tab-port){
         display: block;
     }
