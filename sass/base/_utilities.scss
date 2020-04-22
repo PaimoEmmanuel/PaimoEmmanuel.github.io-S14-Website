@@ -42,3 +42,11 @@
 .u-color-black{color: $color-black;}
 .u-active{color: #BDBDBD !important;}
 .u-100vh{height: 100vh; top: 0%; width: 100vh;}
+.u-snap-scroll{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        scroll-snap-type: mandatory;
+}
+.u-snap-scroll-child{
+  scroll-snap-align: start;
+}

@@ -158,6 +158,14 @@ body {
   top: 0%;
   width: 100vh; }
 
+.u-snap-scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory; }
+
+.u-snap-scroll-child {
+  scroll-snap-align: start; }
+
 .africlick {
   display: grid;
   grid-template-columns: 60% 35%;
@@ -1046,7 +1054,9 @@ body {
 .section-work {
   padding-top: 12rem;
   margin-top: -8rem;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: -9;
+  width: 100%; }
   .section-work__heading {
     color: #000000;
     max-width: 1400px;
@@ -1070,10 +1080,7 @@ body {
     margin-right: 7rem;
     margin-top: 5rem;
     font-family: brown;
-    font-size: 2.4rem;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto; }
+    font-size: 2.4rem; }
     .section-work__main-subject {
       font-size: 9.6rem;
       font-weight: bold;
@@ -1096,9 +1103,6 @@ body {
         padding: 0 8rem; }
         .section-work__main-content-text p {
           margin-top: 5rem; }
-
-.u-snap-scroll {
-  scroll-snap-align: start; }
 
 .post-page__heading {
   position: fixed;
@@ -1279,11 +1283,13 @@ body {
 .enable-portfolio__text {
   padding-bottom: 30rem; }
 
-.enable-app-2 img {
-  width: 96%;
-  height: auto;
-  margin: auto;
-  margin-top: 0; }
+.enable-app-2 {
+  background-color: rgba(47, 128, 237, 0.05); }
+  .enable-app-2 img {
+    width: 96%;
+    height: auto;
+    margin: auto;
+    margin-top: 0; }
 
 .work-fadeup {
   background-color: #FF2546;

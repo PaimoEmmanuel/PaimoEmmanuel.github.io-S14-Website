@@ -90,7 +90,7 @@ let clientLogoPosition = document.getElementsByClassName("clients__image");
 
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight() / 2.5;
+  var elementBottom = elementTop + $(this).outerHeight() / 2;
 
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
@@ -98,11 +98,41 @@ $.fn.isInViewport = function() {
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
+$.fn.isInTotalViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementTop < viewportTop && elementBottom > viewportTop ;
+};
+
+//For about us-our expertise tab revealing underneath the section-background
+$(window).on('resize scroll', function() {
+  if ($(".section-background").isInTotalViewport()) {
+      // do something
+      console.log('Do something')
+      //$('.section-work').css('position', 'fixed');
+      $('.section-background').css('margin-bottom', '100vh');
+      $('.section-work').css('position', 'fixed');
+      $('.section-work').css('top', '0');
+      //$('.section-work').css('width', '100%');
+  } else {
+      // do something else
+      $('.section-background').css('margin-bottom', '00vh');
+      $('.section-work').css('position', 'relative');
+      $('.section-work').css('top', '0');
+  }
+});
+
 //For about us-our expertise tab
 $(window).on('resize scroll', function() {
   if ($(".sp1").isInViewport()) {
       // do something
       $('.p1').css('color', '#000000');
+      console.log('Do something better')
+
   } else {
       // do something else
       $('.p1').css('color', '#BDBDBD');
@@ -113,6 +143,10 @@ $(window).on('resize scroll', function() {
   if ($(".sp2").isInViewport()) {
       // do something
       $('.p2').css('color', '#000000');
+      $('.p2').scrollIntoView()
+      //  $('html, body').animate({
+      //   scrollTop: $('.sp2').offset().top
+      // }, 800);
   } else {
       // do something else
       $('.p2').css('color', '#BDBDBD');
