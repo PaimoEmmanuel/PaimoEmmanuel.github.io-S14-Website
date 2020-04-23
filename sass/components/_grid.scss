@@ -15,6 +15,9 @@
     &__grid{
         height: 40rem;
         position: relative;
+        @include respond(tab-port){
+            height: 55rem;
+        } 
         &:first-child{
             margin-right: 1rem;
             @include respond(tab-port){
@@ -75,6 +78,10 @@
                 
                 @media (hover:none){
                     opacity: 1;
+                }
+                @include respond(tab-port){
+                    font-size: 5rem;
+                    line-height: 5rem;
                 }
                 @include respond(phone){
                     letter-spacing: 0px;

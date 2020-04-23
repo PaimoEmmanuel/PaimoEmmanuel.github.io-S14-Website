@@ -171,7 +171,6 @@ body {
   grid-template-columns: 60% 35%;
   margin-bottom: 4rem;
   font-family: brown;
-  height: 47rem;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
@@ -184,10 +183,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .africlick {
       margin-top: 10rem; } }
-  @media only screen and (min-width: 112.5em) {
-    .africlick {
-      height: 50rem;
-      margin-left: 5rem; } }
   .africlick__grid {
     position: relative;
     box-shadow: 20px 20px 0px 0 #FF2546;
@@ -198,7 +193,7 @@ body {
     background-position: 30%; }
     @media only screen and (max-width: 56.25em) {
       .africlick__grid {
-        height: 35rem; } }
+        height: 55rem; } }
     @media only screen and (max-width: 37.5em) {
       .africlick__grid {
         box-shadow: 10px 10px 0px 0 #FF2546; } }
@@ -207,7 +202,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .africlick__text {
         margin-left: 0;
-        margin-top: 3rem; } }
+        margin-top: 7rem; } }
     @media only screen and (max-width: 37.5em) {
       .africlick__text {
         margin-top: 6rem; } }
@@ -215,6 +210,10 @@ body {
       font-size: 4rem;
       letter-spacing: -2px;
       line-height: 4.8rem; }
+      @media only screen and (max-width: 56.25em) {
+        .africlick__text h3 {
+          font-size: 6rem;
+          line-height: 6.8rem; } }
       @media only screen and (max-width: 37.5em) {
         .africlick__text h3 {
           font-size: 4.5rem;
@@ -237,7 +236,9 @@ body {
       transition: all .3s; }
       @media only screen and (max-width: 56.25em) {
         .africlick__text a {
-          font-size: 2.5rem; } }
+          font-size: 3.5rem; } }
+      .africlick__text a svg {
+        transform: scale(1.5); }
       .africlick__text a:hover {
         color: #000000; }
         .africlick__text a:hover, .africlick__text a:hover #afri-svg {
@@ -369,6 +370,9 @@ body {
   .grid-2-col__grid {
     height: 40rem;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .grid-2-col__grid {
+        height: 55rem; } }
     .grid-2-col__grid:first-child {
       margin-right: 1rem; }
       @media only screen and (max-width: 56.25em) {
@@ -455,6 +459,10 @@ body {
         @media (hover: none) {
           .grid-2-col__grid-text p {
             opacity: 1; } }
+        @media only screen and (max-width: 56.25em) {
+          .grid-2-col__grid-text p {
+            font-size: 5rem;
+            line-height: 5rem; } }
         @media only screen and (max-width: 37.5em) {
           .grid-2-col__grid-text p {
             letter-spacing: 0px; } }
@@ -504,6 +512,9 @@ body {
     padding: 2rem;
     margin-bottom: 3rem;
     border-bottom: 2px solid #333333; }
+    @media only screen and (max-width: 56.25em) {
+      .form__input {
+        font-size: 2.8rem; } }
     .form__input::placeholder {
       color: #000000;
       font-weight: 500; }
@@ -514,6 +525,9 @@ body {
     border: none;
     cursor: pointer;
     background-color: #000000; }
+    @media only screen and (max-width: 56.25em) {
+      .form button {
+        font-size: 2.8rem; } }
 
 .header {
   padding: 4rem 7rem;
@@ -560,8 +574,8 @@ body {
   margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .heading {
-      font-size: 3.5rem;
-      padding: 3rem 5rem; } }
+      font-size: 4.5rem;
+      padding: 10rem 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading {
       font-size: 5rem;
@@ -741,7 +755,8 @@ body {
         width: 90rem; } }
     @media only screen and (max-width: 56.25em) {
       .homepage-heading-primary__text {
-        width: auto; } }
+        width: auto;
+        top: 20%; } }
     @media only screen and (max-width: 37.5em) {
       .homepage-heading-primary__text {
         font-size: 4rem;
@@ -760,8 +775,7 @@ body {
     transform: rotate(-7.1deg) matrix(1, 0, 0, 1, 0, 0); }
     @media only screen and (max-width: 56.25em) {
       .homepage-heading-primary__bg {
-        margin: 16rem 0 0 2rem;
-        width: auto; } }
+        margin: 16rem 0 0 2rem; } }
     @media only screen and (max-width: 28.125em) {
       .homepage-heading-primary__bg {
         margin: 12rem 0 0 0; } }
@@ -858,9 +872,6 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
-  @media only screen and (max-width: 56.25em) {
-    .our-world {
-      margin: 10% 5rem 10% 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .our-world {
       margin: 15% 5rem 10% 5rem; } }
@@ -869,6 +880,10 @@ body {
     font-size: 4.5rem;
     letter-spacing: -2px;
     font-weight: bold; }
+    @media only screen and (max-width: 56.25em) {
+      .our-world__heading {
+        font-size: 6rem;
+        letter-spacing: -4px; } }
     @media only screen and (max-width: 37.5em) {
       .our-world__heading {
         margin-left: 0rem;
@@ -892,7 +907,8 @@ body {
     line-height: 3rem; }
     @media only screen and (max-width: 56.25em) {
       .our-world__grid {
-        margin-bottom: 5rem; } }
+        margin-bottom: 8rem;
+        font-size: 3.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .our-world__grid {
         margin-left: 0rem;
@@ -903,6 +919,10 @@ body {
       color: #FF2546;
       font-size: 2rem;
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .our-world__grid-heading {
+          font-size: 5rem;
+          margin-bottom: 3rem; } }
       @media only screen and (max-width: 37.5em) {
         .our-world__grid-heading {
           margin-bottom: 1rem;
@@ -944,7 +964,7 @@ body {
   transform: skewY(-3deg);
   margin-top: 97vh;
   padding-top: 1rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .section-background {
       padding-bottom: 35rem;
       margin-top: 65vh; } }
@@ -993,10 +1013,10 @@ body {
         position: absolute;
         font-size: 14.4rem;
         transform: rotate(-90deg);
-        left: -6%;
+        left: -7rem;
         font-weight: bold;
         letter-spacing: -8px;
-        top: 10%; }
+        top: 1rem; }
         @media only screen and (max-width: 37.5em) {
           .section-background__grid-1-a-text {
             font-size: 10rem;
@@ -1016,7 +1036,7 @@ body {
           @media only screen and (max-width: 56.25em) {
             .section-background__grid-1-a-text-sub {
               right: 0%;
-              bottom: 25%; } }
+              top: 0rem; } }
           @media only screen and (max-width: 37.5em) {
             .section-background__grid-1-a-text-sub {
               font-size: 10rem;
@@ -1028,25 +1048,14 @@ body {
       padding: 2rem 10rem 16rem 2rem; }
       @media only screen and (max-width: 56.25em) {
         .section-background__grid-1-b {
-          width: 80%;
-          float: left;
-          padding: 0;
-          padding-bottom: 5rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .section-background__grid-1-b {
           width: 100%;
           position: absolute;
           top: 112%;
-          line-height: 4rem; } }
+          line-height: 4rem;
+          padding: 0; } }
       .section-background__grid-1-b2 {
         padding: 4rem 0 8rem 7rem; }
         @media only screen and (max-width: 56.25em) {
-          .section-background__grid-1-b2 {
-            width: 80%;
-            float: right;
-            padding: 5rem 0;
-            text-align: right; } }
-        @media only screen and (max-width: 37.5em) {
           .section-background__grid-1-b2 {
             float: left;
             width: 100%;
@@ -1170,24 +1179,27 @@ body {
     left: 50%;
     -ms-transform: translateY(-50%);
     transform: translate(-50%, -50%);
+    width: 100%;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto; }
     @media only screen and (max-width: 56.25em) {
       .product-info-box {
-        display: block; } }
+        display: block;
+        padding: 7rem; } }
     .product-info-box1 {
       font-size: 1.8rem;
-      color: #000; }
+      color: #000;
+      margin-left: auto; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box1 {
-          margin-bottom: 8rem; } }
+          margin-bottom: 8rem;
+          font-size: 3rem; } }
     .product-info-box2 {
       margin-left: 10rem;
       padding-bottom: 3rem; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box2 {
-          margin-bottom: 8rem;
           margin-left: 0rem; } }
       .product-info-box2__text1 {
         color: #222222;
@@ -1197,7 +1209,7 @@ body {
         margin-bottom: 8rem;
         font-weight: 200;
         line-height: 3.5rem;
-        width: 78rem;
+        margin-right: 7rem;
         color: #333333; }
       .product-info-box2 a {
         color: #333333;
@@ -1325,10 +1337,10 @@ body {
   padding-bottom: 18rem;
   padding-top: 11rem; }
   .contact__heading--secondary {
-    line-height: 3rem;
+    line-height: 4rem;
     letter-spacing: 0px;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 1.8rem; }
 
 .location {
@@ -1366,11 +1378,19 @@ body {
     font-size: 1.6rem;
     line-height: 2.3rem;
     font-weight: 300; }
+    @media only screen and (max-width: 56.25em) {
+      .location__heading2 {
+        font-size: 3rem;
+        line-height: 4.3rem; } }
   .location__phone {
     font-size: 1.6rem;
     line-height: 2.3rem;
     font-weight: 300;
     font-weight: bold; }
+    @media only screen and (max-width: 56.25em) {
+      .location__phone {
+        font-size: 2.6rem;
+        padding-top: 1rem; } }
   .location__map iframe {
     width: 100%;
     height: 100%; }

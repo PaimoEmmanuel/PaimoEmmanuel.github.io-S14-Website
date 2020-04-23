@@ -74,23 +74,27 @@
         left: 50%;
         -ms-transform: translateY(-50%);
         transform: translate(-50%, -50%);
+        width: 100%;
         @include max-width;
         @include respond(tab-port){
             display: block;
+            padding: 7rem;
         }
         &1{
             font-size: 1.8rem;
             //margin-top: 4rem;
             color: #000;
+            margin-left: auto;
             @include respond(tab-port){
                 margin-bottom: 8rem;
+                font-size: 3rem;
             }
         }
         &2{
             margin-left: 10rem;
             padding-bottom: 3rem;
             @include respond(tab-port){
-                margin-bottom: 8rem;
+                //margin-bottom: 8rem;
                 margin-left: 0rem;
             }
     
@@ -105,7 +109,7 @@
                 margin-bottom: 8rem;
                 font-weight: 200;
                 line-height: 3.5rem;
-                width: 78rem;
+                margin-right: 7rem;
                 color: #333333;
             }
 

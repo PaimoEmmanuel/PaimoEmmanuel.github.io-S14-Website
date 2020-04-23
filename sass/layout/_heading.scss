@@ -9,8 +9,8 @@
     @include max-width;
 
     @include respond(tab-port){
-        font-size: 3.5rem;
-        padding: $heading-padding-small;
+        font-size: 4.5rem;
+        padding: 10rem 5rem;
     }
     @include respond(phone){
         font-size: 5rem;

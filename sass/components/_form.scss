@@ -39,6 +39,9 @@
         padding: 2rem;
         margin-bottom: 3rem;
         border-bottom: 2px solid #333333;
+        @include respond(tab-port){
+            font-size: 2.8rem;
+        }
 
         &::placeholder{
             color: $color-black;
@@ -53,5 +56,8 @@
         border: none;
         cursor: pointer;
         background-color: $color-black;
+        @include respond(tab-port){
+            font-size: 2.8rem;
+        }
     }
 }
