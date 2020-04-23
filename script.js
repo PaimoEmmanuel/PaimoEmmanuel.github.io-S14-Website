@@ -90,7 +90,7 @@ let clientLogoPosition = document.getElementsByClassName("clients__image");
 
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight() / 2;
+  var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
@@ -112,7 +112,7 @@ $.fn.isInTotalViewport = function() {
 $(window).on('resize scroll', function() {
   if ($(".section-background").isInTotalViewport()) {
       // do something
-      console.log('Do something')
+      //console.log('Do something')
       //$('.section-work').css('position', 'fixed');
       $('.section-background').css('margin-bottom', '100vh');
       $('.section-work').css('position', 'fixed');
@@ -128,49 +128,86 @@ $(window).on('resize scroll', function() {
 
 //For about us-our expertise tab
 $(window).on('resize scroll', function() {
-  if ($(".sp1").isInViewport()) {
+  if ($(".sp1").isInViewport() && !($(".section-background").isInTotalViewport())) {
       // do something
+      
       $('.p1').css('color', '#000000');
-      console.log('Do something better')
+      
+      if($(window).scrollTop() > $('.sp1').offset().top){
+        $('html, body').stop(true, false).animate({
+          scrollTop: $('.sp2').offset().top
+        }, 80); $('.p1').css('color', '#BDBDBD');
+        $('.p2').css('color', '#000000');
+        //console.log('Fist tab should scroll up', $(window).scrollTop(), $('.sp2').offset().top)
+      }
 
-  } else {
-      // do something else
-      $('.p1').css('color', '#BDBDBD');
   }
-});
-//Tab 2 WEB
-$(window).on('resize scroll', function() {
-  if ($(".sp2").isInViewport()) {
-      // do something
-      $('.p2').css('color', '#000000');
-      $('.p2').scrollIntoView()
-      //  $('html, body').animate({
-      //   scrollTop: $('.sp2').offset().top
-      // }, 800);
-  } else {
-      // do something else
-      $('.p2').css('color', '#BDBDBD');
-  }
-});
-
-//Tab 3 - DESIGN
-$(window).on('resize scroll', function() {
-  if ($(".sp3").isInViewport()) {
-      // do something
+  if($(".sp2").isInViewport() && !($(".sp1").isInViewport())){
+    if($(window).scrollTop() > $('.sp2').offset().top){
+      $('html, body').stop(true, false).animate({
+        scrollTop: ($('.sp3').offset().top)
+      }, 80); $('.p1').css('color', '#BDBDBD');
       $('.p3').css('color', '#000000');
-  } else {
-      // do something else
-      $('.p3').css('color', '#BDBDBD');
+      //console.log('Fist tab should scroll up', $(window).scrollTop(), $('.sp2').offset().top)
+    }
+    //  if ($(window).scrollTop() < $('.sp2').offset().top){
+    //   $('html, body').stop(true, false).animate({
+    //     scrollTop: $('.sp1').offset().top
+    //   }, 80); $('.p1').css('color', '#000000');
+    //   $('.p3').css('color', '#BDBDBD');
+    //   //console.log('Fist tab should scroll up', $(window).scrollTop(), $('.sp2').offset().top)
+    // }
   }
 });
+  
 
-// Tab 4 - UI/UX
-$(window).on('resize scroll', function() {
-  if ($(".sp4").isInViewport()) {
-      // do something
-      $('.p4').css('color', '#000000');
-  } else {
-      // do something else
-      $('.p4').css('color', '#BDBDBD');
-  }
-});
+
+// //Tab 2 WEB
+// if ($('.sp2').offset().top == parseInt($(window).scrollTop())) {
+//   // do something
+//   console.log('Change color to black')
+//   //$('.p2').css('color', '#000000');
+//   if($(window).scrollTop() > $('.sp2').offset().top){
+//     $('html, body').stop(true, false).animate({
+//       scrollTop: $('.sp3').offset().top
+//     }, 80);
+//     console.log('Fist tab should scroll up')
+//   }
+
+// }
+// //Tab 3 - DESIGN
+// $(window).on('resize scroll', function() {
+//   if ($(".sp3").isInViewport()) {
+//       // do something
+//       if($(window).scrollTop() > $('.sp3').offset().top){
+//         $('html, body').stop(true, false).animate({
+//           scrollTop: $('.sp4').offset().top
+//         }, 80);
+//       } else if($(window).scrollTop() < $('.sp3').offset().top){
+//         $('html, body').stop(true, false).animate({
+//           scrollTop: $('.sp2').offset().top
+//         }, 80);
+//       }
+//       $('.p3').css('color', '#000000');
+      
+//   } else {
+//       // do something else
+//       $('.p3').css('color', '#BDBDBD');
+//   }
+// });
+
+// // Tab 4 - UI/UX
+// $(window).on('resize scroll', function() {
+//   if ($(".sp4").isInViewport()) {
+//       // do something
+//       if($(window).scrollTop() < $('.sp4').offset().top){
+//         $('html, body').stop(true, false).animate({
+//           scrollTop: $('.sp3').offset().top
+//         }, 80);
+//       }
+//       $('.p4').css('color', '#000000');
+//   } else {
+//       // do something else
+//       $('.p4').css('color', '#BDBDBD');
+//   }
+// });

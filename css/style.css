@@ -930,9 +930,12 @@ body {
   top: 14rem;
   z-index: -999;
   perspective: 1000;
+  width: 100%;
   max-width: 1400px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  right: 50%;
+  transform: translateX(50%); }
 
 .section-background {
   background-color: #000000;
@@ -1076,11 +1079,14 @@ body {
   .section-work__main {
     display: grid;
     grid-template-columns: 25% 75%;
-    margin-left: 10rem;
-    margin-right: 7rem;
+    padding-left: 10rem;
+    padding-right: 7rem;
     margin-top: 5rem;
     font-family: brown;
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
     .section-work__main-subject {
       font-size: 9.6rem;
       font-weight: bold;
@@ -1119,13 +1125,17 @@ body {
     font-size: 7.6rem;
     line-height: 9rem;
     letter-spacing: -2px;
-    width: 60vw;
+    width: 100%;
+    max-width: 100%;
     top: 40%;
     z-index: -50;
     color: #ffffff; }
     @media only screen and (max-width: 28.125em) {
       .post-page__heading-text {
         font-size: 6.6rem; } }
+    .post-page__heading-text h3 {
+      max-width: 1260px;
+      margin: 0 auto; }
 
 .post-page__bg {
   width: 100%; }
@@ -1142,10 +1152,8 @@ body {
   z-index: 1000;
   position: relative;
   height: 100vh;
+  padding: 7rem;
   background-color: #F7F7F7;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 2.4rem; }
   @media only screen and (max-width: 28.125em) {
     .product-info {
@@ -1159,9 +1167,12 @@ body {
     grid-template-columns: 25% 75%;
     position: absolute;
     top: 50%;
+    left: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 7rem; }
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
     @media only screen and (max-width: 56.25em) {
       .product-info-box {
         display: block; } }
@@ -1287,6 +1298,7 @@ body {
   background-color: rgba(47, 128, 237, 0.05); }
   .enable-app-2 img {
     width: 96%;
+    max-width: 1440px;
     height: auto;
     margin: auto;
     margin-top: 0; }
