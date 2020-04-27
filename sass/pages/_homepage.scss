@@ -103,6 +103,9 @@
     display: grid;
     grid-template-columns: 30% 70%;
     @include max-width;
+    @include respond(phone){
+         padding: 0
+         } 
     }
 
      @include respond(phone){
@@ -210,7 +213,7 @@
     //     margin: 10% 5rem 10% 5rem;
     // }
     @include respond(phone){
-        margin: 15% 5rem 10% 5rem;
+        margin: 15% 0rem 10% 0rem;
     }
     &__heading{
         margin-left: 2rem;
@@ -224,7 +227,7 @@
         @include respond(phone){
             margin-left: 0rem;
             letter-spacing: 0px;
-            line-height: 30px;
+            line-height: 6rem;
         }
     }
     &__container{
@@ -247,20 +250,19 @@
         line-height: 3rem;
         @include respond(tab-port){
             margin-bottom: 8rem;
-            font-size: 3.5rem;
+            font-size: 5rem;
+            line-height: 5rem;
         }
         @include respond(phone){
             margin-left: 0rem;
             letter-spacing: 0px;
-        line-height: 4rem;
-        font-size: 3rem;
         }
         &-heading{
             color: $color-pink;
             font-size: 2rem;
             margin-bottom: 2rem;
             @include respond(tab-port){
-                font-size: 5rem;
+                font-size: 3.5rem;
                 margin-bottom: 3rem;
             }
             @include respond(phone){

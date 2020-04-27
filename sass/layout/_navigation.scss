@@ -13,7 +13,7 @@
             height: 7rem;
             width: 7rem;
             border-radius: 50%;
-            top: 2rem;
+            top: 4.5rem;
             right: 6rem;
             z-index: 20000;
             text-align: center;
@@ -25,11 +25,14 @@
             width: 6rem;
             border-radius: 50%;
             position: fixed;
-            top: 2.5rem;
+            top: 4.6rem;
             right: 6.5rem;
             background-image: radial-gradient($color-pink, $color-pink);
             z-index: 10000;
             transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
+            @include respond(phone){
+                top: 5rem;
+            }
         }
         &__nav{
             height: 100vh;

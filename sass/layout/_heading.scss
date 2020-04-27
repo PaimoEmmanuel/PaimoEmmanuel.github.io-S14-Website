@@ -7,6 +7,12 @@
     animation-name: text-transform;
     animation-duration: 0s;
     @include max-width;
+    span{
+        display: inline-block;
+        @include respond(phone){
+            display: inline;
+        }
+    }
 
     @include respond(tab-port){
         font-size: 4.5rem;
@@ -14,7 +20,7 @@
     }
     @include respond(phone){
         font-size: 5rem;
-        padding: $heading-padding-small;
+        //padding: $heading-padding-small;
         line-height: 6rem;
     }
     &__primary{

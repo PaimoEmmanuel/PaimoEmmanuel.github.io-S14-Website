@@ -13,7 +13,7 @@
         display: block;
     }
     @include respond(phone){
-        padding-left: 2rem;
+        padding-left: 6rem;
         padding-top: 3rem;
     }
     &__text{
@@ -23,9 +23,10 @@
         @include respond(tab-land){
             font-size: 7.6rem;
             line-height: 8rem;
-        }
-        @include respond(tab-land){
             margin-bottom: 4rem;
+        }
+        @include respond(tab-port){
+            margin-bottom: 10rem;
         }
     }
 

@@ -14,6 +14,14 @@
         &-logo{
             height: 5.5rem;
             width: 5.5rem;
+            @include respond(tab-port){
+                height: 6.5rem;
+            width: 6.5rem;
+            }
+            @include respond(tab-port){
+                height: 7.5rem;
+            width: 7.5rem;
+            }
         }
         &-logo-box{
         //position: absolute;
