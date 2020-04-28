@@ -69,6 +69,23 @@ body {
   box-sizing: border-box;
   font-family: brown; }
 
+/*default version*/
+@font-face {
+  font-family: 'brown';
+  src: url("fonts/brown.eot");
+  src: local("brown"), local("brown"), url("fonts/brown.otf") format("opentype"); }
+
+/*bold version*/
+/*@font-face {
+	font-family: 'brown';
+	src: url('fonts/lovely_font_bold.eot'); 
+	src: 
+		local('Lovely Font Bold'),
+		local('Lovely-Font-Bold'),
+		url('fonts/lovely_font_bold.otf') 
+		format('opentype');
+	font-weight: bold;
+}*/
 .u-margin-top-big {
   margin-top: 8rem; }
   @media only screen and (max-width: 56.25em) {
