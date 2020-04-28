@@ -26,7 +26,7 @@
 
 .u-absolute{position: absolute;}
 .u-relative{position: relative;}
-.u-fixed{position: fixed;}
+.u-fixed{position: fixed !important;}
 
 .u-underline{text-decoration: underline;}
 .u-color-pink{color: $color-pink;}

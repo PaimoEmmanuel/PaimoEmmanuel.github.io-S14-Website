@@ -36,6 +36,9 @@
                 transition: all .2s;
                 margin-top: 1rem;
             }
+            @include respond(tab-port){
+                margin-top: 2rem;
+            }
             margin-top: -4.4rem;
             float: right;
             &-parent{
@@ -50,13 +53,15 @@
                         color: $color-black;
                         margin-left: 3.7rem; 
                         @include respond(tab-port){
-                            font-size: 4rem;
+                            font-size: 2.5rem;
+                            margin-left: 0; 
+                            margin-right: 3.7rem; 
                         }
                         @include respond(phone){
-                            font-size: 4rem;
+                            font-size: 2.4rem;
                         }
                         @include respond(phone-small){
-                            font-size: 3rem;
+                            font-size: 2.4rem;
                         }
                     }
                 }
