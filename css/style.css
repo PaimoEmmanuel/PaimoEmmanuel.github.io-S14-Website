@@ -572,8 +572,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header__nav-list {
         display: none;
-        margin-right: 7rem;
-        transition: all .2s; } }
+        width: 100%;
+        transition: all .2s;
+        margin-top: 1rem; } }
     .header__nav-list-parent {
       list-style: none; }
       .header__nav-list-parent li {
@@ -586,10 +587,13 @@ body {
           margin-left: 3.7rem; }
           @media only screen and (max-width: 56.25em) {
             .header__nav-list-parent li a {
-              font-size: 2rem; } }
+              font-size: 4rem; } }
           @media only screen and (max-width: 37.5em) {
             .header__nav-list-parent li a {
               font-size: 4rem; } }
+          @media only screen and (max-width: 28.125em) {
+            .header__nav-list-parent li a {
+              font-size: 3rem; } }
 
 .heading {
   font-size: 5rem;

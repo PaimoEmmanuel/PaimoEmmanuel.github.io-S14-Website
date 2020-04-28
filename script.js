@@ -1,7 +1,7 @@
 
 $(".navigation__button").click(function(){
   $(".header__nav-list").toggleClass("show");
-  //$(".header__nav-logo-link").toggleClass("hide");
+  $(".header__nav-logo-link").toggleClass("hide");
  // $('.header__nav-logo-link').css('display', 'none');
 });
 
