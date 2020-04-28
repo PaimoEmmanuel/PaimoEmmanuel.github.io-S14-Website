@@ -733,11 +733,13 @@ body {
           transition: all .2s; }
         .navigation__icon::before {
           top: -2rem;
-          width: 6.2rem; }
+          width: 6.2rem;
+          margin-left: -2rem; }
         .navigation__icon::after {
           top: 2rem;
           width: 5.8rem;
-          margin-right: .4rem; }
+          margin-right: .4rem;
+          margin-left: -1.6rem; }
       .navigation__checkbox:checked + .navigation__button .navigation__icon {
         background-color: transparent; }
       .navigation__checkbox:checked + .navigation__button .navigation__icon::before {

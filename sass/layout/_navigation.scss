@@ -108,10 +108,12 @@
             &::before{
                 top: -2rem;
                 width: 6.2rem;
+                margin-left: -2rem;
             }&::after{
                 top: 2rem;
                 width: 5.8rem;
                 margin-right: .4rem;
+                margin-left: -1.6rem;
 
             }
         }
