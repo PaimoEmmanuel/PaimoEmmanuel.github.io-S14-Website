@@ -673,8 +673,8 @@ body {
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
-        top: 4.5rem;
-        right: 6rem;
+        top: 2.5rem;
+        right: 4rem;
         z-index: 20000;
         text-align: center;
         cursor: pointer; }
