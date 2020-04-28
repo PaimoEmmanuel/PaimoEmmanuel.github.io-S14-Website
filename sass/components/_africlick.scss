@@ -29,8 +29,13 @@
             //padding-top: 5rem;
         }
              @include respond(phone){
+                 height: 45rem;
             box-shadow: 10px 10px 0px 0 $color-pink;
           }
+          @include respond(phone-small){
+            height: 35rem;
+       box-shadow: 10px 10px 0px 0 $color-pink;
+     }
     }
 
     &__text{

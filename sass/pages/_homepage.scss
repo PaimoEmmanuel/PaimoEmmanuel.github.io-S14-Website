@@ -25,9 +25,7 @@
     }
 
     @include respond(phone-small){
-        //margin: 25% 0 15% 0;
-        //padding: 2rem;
-        //padding-top: 20rem;
+        margin: 1rem 0 0% 5rem;
     }
 
     &__text-parent{
@@ -56,11 +54,13 @@
         top: 20%;
     }
     @include respond(phone){
-        font-size: 4rem;
+        //font-size: 4rem;
         letter-spacing: 0;
+        font-size: 5.4rem;
+        line-height: 11rem;
         }
         @include respond(phone-small){
-            font-size: 3.4rem;
+            margin-top: -5rem;
             }
     }
 
@@ -86,8 +86,15 @@
         // $color-yellow 90%, transparent 90%, transparent 100%) ;
         }
 
+        // @include respond(phone){
+        //     transform: matrix(1, -0.19, 0.08, 0.98, 0, 0);
+        //     width: 100%;   
+        // }
         @include respond(phone-small){
-            margin: 12rem 0 0 0;
+            transform: matrix(1, -0.19, 0.08, 0.98, 0, 0);
+            margin: 25rem 0 0 7rem;
+            height: 25rem;
+            width: 100%;
         }
     } 
 }
@@ -104,7 +111,9 @@
     grid-template-columns: 30% 70%;
     @include max-width;
     @include respond(phone){
-         padding: 0
+         display: block;
+         height: auto;
+         padding: 0;
          } 
     }
 
@@ -127,12 +136,14 @@
         margin-top: -7rem;
         color: $color-black;
         @include respond(phone){
-            width: 40rem;
-            letter-spacing: 0px;
+            font-size: 9rem;
+            line-height: 10rem;
+            width: auto;
+            letter-spacing: -2px;
         }   
         @include respond(phone-small){
-            font-size: 5rem;
-        line-height: 6rem;
+        //     font-size: 5rem;
+        // line-height: 6rem;
          } 
 
         a{
@@ -157,13 +168,14 @@
         position: relative;
         left: 0%;
         width: 100%;
-        margin-top: -3rem;
+        margin-top: 13rem;
         transform: skewY(3deg);
+        display: flex;
         } 
         @include respond(phone-small){
-            width: 85%;
-            margin-left: 15%;
-            margin-top: 1rem;
+            // width: 85%;
+            // margin-left: 15%;
+            // margin-top: 1rem;
          } 
     }
     &__images{
@@ -174,7 +186,7 @@
             display: block;
             //width: 25rem;
         }  @include respond(phone){
-            padding: 0 2rem;
+            padding: 0 7rem;
         }        
     }
     &__image1, &__image2, &__image3{
@@ -202,7 +214,9 @@
     height: 10px;
     width: 10px;
     @include respond(phone){
-        margin-top: 150%;
+        margin-top: 0%;
+        height: 90px;
+    width: 25px;
      }  
 }
 .our-world{
