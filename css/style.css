@@ -784,7 +784,8 @@ body {
         line-height: 11rem; } }
     @media only screen and (max-width: 28.125em) {
       .homepage-heading-primary__text {
-        margin-top: -5rem; } }
+        margin-top: -5rem;
+        font-size: 4.4rem; } }
   .homepage-heading-primary-parent {
     width: 100%; }
   .homepage-heading-primary__bg {
