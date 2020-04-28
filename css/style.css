@@ -1004,6 +1004,10 @@ body {
   @media only screen and (max-width: 37.5em) {
     .about-heading {
       top: 25rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .about-heading {
+      top: 15rem;
+      padding-top: 7rem; } }
 
 .section-background {
   background-color: #000000;

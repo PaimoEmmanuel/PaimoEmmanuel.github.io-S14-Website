@@ -21,6 +21,10 @@
     @include respond(phone){
         top: 25rem;
     }
+    @include respond(phone-small){
+        top: 15rem;
+        padding-top: 7rem;
+    }
  }
 .section-background{
     //height: 100rem;
