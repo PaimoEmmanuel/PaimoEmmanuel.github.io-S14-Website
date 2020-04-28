@@ -71,21 +71,12 @@ body {
 
 /*default version*/
 @font-face {
-  font-family: 'brown';
-  src: url("fonts/brown.eot");
-  src: local("brown"), local("brown"), url("fonts/brown.otf") format("opentype"); }
+  font-family: "Brown";
+  src: url("../fonts/brown/Brown-Regular.eot");
+  src: local("Brown"), url("../fonts/Brown-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Regular.woff") format("woff"), url("../fonts/Brown-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
-/*bold version*/
-/*@font-face {
-	font-family: 'brown';
-	src: url('fonts/lovely_font_bold.eot'); 
-	src: 
-		local('Lovely Font Bold'),
-		local('Lovely-Font-Bold'),
-		url('fonts/lovely_font_bold.otf') 
-		format('opentype');
-	font-weight: bold;
-}*/
 .u-margin-top-big {
   margin-top: 8rem; }
   @media only screen and (max-width: 56.25em) {
