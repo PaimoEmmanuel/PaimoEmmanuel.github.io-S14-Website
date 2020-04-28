@@ -43,6 +43,8 @@
             float: right;
             &-parent{
                 list-style: none;
+                width: 100%;
+                animation: animated-menu 1s;
                 & li{
                     
                     display: inline-block;

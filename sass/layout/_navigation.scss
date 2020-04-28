@@ -15,8 +15,10 @@
             width: 7rem;
             border-radius: 50%;
             top: 4rem;
-            right: 4rem;
+            right: -2rem;
             //z-index: 20000;
+            background-color: white;
+            padding: 0 11rem 0 0rem;
             text-align: center;
             //box-shadow: 0 1rem 3rem rgba($color-black, .1);
             cursor: pointer;
@@ -113,7 +115,7 @@
                 top: 1rem;
                 width: 3.8rem;
                 //margin-right: .4rem;
-                margin-left: -0.9rem;
+                margin-left: -0.8rem;
 
             }
         }

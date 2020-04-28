@@ -17,12 +17,6 @@ $breakpoint arguments choices:
 
 1em = 16px
 */
-@keyframes heading-turn-up {
-  0% {
-    background-image: linear-gradient(to right, #7ed56f, #28b485); }
-  100% {
-    background-image: linear-gradient(to left, #c1d4be, #010c08); } }
-
 @keyframes colorFadeUp {
   0% {
     height: 100vh;
@@ -41,6 +35,12 @@ $breakpoint arguments choices:
     visibility: hidden; }
   99% {
     visibility: hidden; } }
+
+@keyframes animated-menu {
+  0% {
+    margin-left: 90rem; }
+  100% {
+    margin-left: 0rem; } }
 
 *,
 *::after,
@@ -587,7 +587,9 @@ body {
       .header__nav-list {
         margin-top: 2rem; } }
     .header__nav-list-parent {
-      list-style: none; }
+      list-style: none;
+      width: 100%;
+      animation: animated-menu 1s; }
       .header__nav-list-parent li {
         display: inline-block; }
         .header__nav-list-parent li a {
@@ -687,7 +689,9 @@ body {
         width: 7rem;
         border-radius: 50%;
         top: 4rem;
-        right: 4rem;
+        right: -2rem;
+        background-color: white;
+        padding: 0 11rem 0 0rem;
         text-align: center;
         cursor: pointer; }
       .navigation__background {
@@ -748,7 +752,7 @@ body {
         .navigation__icon::after {
           top: 1rem;
           width: 3.8rem;
-          margin-left: -0.9rem; }
+          margin-left: -0.8rem; }
       .navigation__checkbox:checked + .navigation__button .navigation__icon {
         background-color: transparent; }
       .navigation__checkbox:checked + .navigation__button .navigation__icon::before {

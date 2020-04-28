@@ -1,11 +1,4 @@
-@keyframes heading-turn-up{
-    0%{
-        background-image: linear-gradient(to right, #7ed56f, #28b485);
-    }
-    100%{
-        background-image: linear-gradient(to left, #c1d4be, #010c08);
-    }
-}
+
 //transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 //For the initial color fade up on some pages
@@ -39,4 +32,13 @@
        }
     
     
+}
+
+@keyframes animated-menu{
+    0%{
+        margin-left: 90rem;
+    }
+    100%{
+        margin-left: 0rem;
+    }
 }
