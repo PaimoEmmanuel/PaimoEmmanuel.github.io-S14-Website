@@ -38,9 +38,11 @@
     // @media only screen and (max-height: 68.7em) and (max-width: 37.5em){ //600px
     //     @content
     // }
-    @include respond(tab-port){
+    @include respond(tab-land){
         //padding-bottom: 40rem;
-        margin-top: 65vh;
+        @media (min-height: 1200px) {
+            margin-top: 65vh;
+        }
     }
 
     &__text{

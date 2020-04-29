@@ -23,7 +23,9 @@
     background-color: $color;
     height: 0vh;
     width: 100vw;
-    top: 0;
+    top: 0; 
+    position: absolute;
+    z-index: 999999;
     animation-name: colorFadeUp;
     animation-duration: 1.5s;
 }

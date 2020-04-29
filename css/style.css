@@ -988,6 +988,8 @@ body {
   height: 0vh;
   width: 100vw;
   top: 0;
+  position: absolute;
+  z-index: 999999;
   animation-name: colorFadeUp;
   animation-duration: 1.5s; }
 
@@ -1026,9 +1028,10 @@ body {
   transform: skewY(-3deg);
   margin-top: 97vh;
   padding-top: 1rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-background {
-      margin-top: 65vh; } }
+
+@media only screen and (max-width: 75em) and (min-height: 1200px) {
+  .section-background {
+    margin-top: 65vh; } }
   .section-background__text {
     display: block;
     font-family: brown;
@@ -1388,6 +1391,8 @@ body {
   height: 0vh;
   width: 100vw;
   top: 0;
+  position: absolute;
+  z-index: 999999;
   animation-name: colorFadeUp;
   animation-duration: 1.5s;
   position: absolute; }
@@ -1398,6 +1403,8 @@ body {
   height: 0vh;
   width: 100vw;
   top: 0;
+  position: absolute;
+  z-index: 999999;
   animation-name: colorFadeUp;
   animation-duration: 1.5s; }
 
