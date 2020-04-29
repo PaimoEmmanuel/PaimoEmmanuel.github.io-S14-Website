@@ -22,6 +22,12 @@
             text-align: center;
             //box-shadow: 0 1rem 3rem rgba($color-black, .1);
             cursor: pointer;
+            &-pp{
+                right: -2rem;
+            //z-index: 20000;
+            background-color: transparent;
+            position: fixed;
+            }
         }
         &__background{
             height: 9rem;
@@ -127,7 +133,7 @@
         // }
     
         &__checkbox:checked + &__button &__icon{
-            background-color: transparent;
+            background-color: transparent !important;
         }
         &__checkbox:checked + &__button &__icon::before{
             top: 0;

@@ -152,6 +152,9 @@ body {
 .u-color-white {
   color: #ffffff !important; }
 
+.u-color-white-bg, .u-color-white-bg::after, .u-color-white-bg::before {
+  background-color: #ffffff !important; }
+
 .u-color-yellow {
   color: #FFCF25 !important; }
 
@@ -278,7 +281,7 @@ body {
     @media only screen and (max-width: 28.125em) {
       .footer__main {
         font-size: 3.4rem; } }
-    @media only screen and (max-width: 28.125em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__main {
         display: block;
         padding: 2rem; } }
@@ -694,6 +697,10 @@ body {
         padding: 0 11rem 0 0rem;
         text-align: center;
         cursor: pointer; }
+        .navigation__button-pp {
+          right: -2rem;
+          background-color: transparent;
+          position: fixed; }
       .navigation__background {
         height: 9rem;
         margin-top: -8rem;
@@ -754,7 +761,7 @@ body {
           width: 3.8rem;
           margin-left: -0.8rem; }
       .navigation__checkbox:checked + .navigation__button .navigation__icon {
-        background-color: transparent; }
+        background-color: transparent !important; }
       .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
         top: 0;
         transform: rotate(135deg);
@@ -1207,7 +1214,7 @@ body {
     letter-spacing: -2px;
     width: 100%;
     max-width: 100%;
-    top: 40%;
+    top: 50%;
     z-index: -50;
     color: #ffffff; }
     @media only screen and (max-width: 28.125em) {
@@ -1232,6 +1239,8 @@ body {
   z-index: 1000;
   position: relative;
   height: 100vh;
+  min-height: 675px;
+  max-height: 1200px;
   padding: 7rem;
   background-color: #F7F7F7;
   font-size: 2.4rem; }
@@ -1282,6 +1291,9 @@ body {
         line-height: 3.5rem;
         margin-right: 7rem;
         color: #333333; }
+        @media only screen and (max-width: 56.25em) {
+          .product-info-box2__text2 {
+            margin-right: 0rem; } }
       .product-info-box2 a {
         color: #333333;
         background-color: transparent;
@@ -1308,21 +1320,56 @@ body {
   .portfolio__showcase-1 {
     background-color: #F2C94C;
     height: 100vh;
+    max-height: 1200px;
     width: 100%;
     display: grid;
     justify-content: center;
     padding-top: 18rem; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__showcase-1 {
+        height: 80vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__showcase-1 {
+        height: 70vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__showcase-1 {
+        height: 55vh;
+        padding-top: 10rem; } }
     .portfolio__showcase-1 img {
       height: 105vh;
+      max-height: 1300px;
       max-width: 100%; }
+      @media only screen and (max-width: 56.25em) {
+        .portfolio__showcase-1 img {
+          height: 85vh; } }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__showcase-1 img {
+          height: 75vh; } }
+      @media only screen and (max-width: 28.125em) {
+        .portfolio__showcase-1 img {
+          height: 55vh; } }
   .portfolio__text {
     background-color: #fff;
     height: 140vh;
+    max-height: 1300px;
     display: flex;
     padding-bottom: 40rem;
     padding-top: 10rem;
     justify-content: space-around;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__text {
+        height: 100vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__text {
+        height: 80vh;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 10rem;
+        display: block; } }
+    @media only screen and (max-width: 28.125em) {
+      .portfolio__text {
+        height: 100vh; } }
     .portfolio__text--line {
       height: 10px;
       width: 50px;
@@ -1344,8 +1391,22 @@ body {
       font-size: 1.8rem;
       line-height: 2.8rem;
       width: 55.8%; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__text-2 {
+          margin-top: 15rem;
+          width: 80%; } }
       .portfolio__text-2 p {
         width: 45rem; }
+        @media only screen and (max-width: 56.25em) {
+          .portfolio__text-2 p {
+            width: auto;
+            margin-right: 7rem;
+            font-size: 2.5rem;
+            line-height: 3.5rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .portfolio__text-2 p {
+            margin-right: 0;
+            margin-bottom: 4rem; } }
   .portfolio__showcase-2 {
     background-color: #F7F7F7;
     width: 100%;
@@ -1356,7 +1417,19 @@ body {
     .portfolio__showcase-2 img {
       margin-top: -20rem;
       height: 95vh;
+      max-height: 1100px;
       max-width: 100%; }
+      @media only screen and (max-width: 56.25em) {
+        .portfolio__showcase-2 img {
+          height: 80vh;
+          margin-top: -35rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__showcase-2 img {
+          height: 70vh;
+          margin-top: -20rem; } }
+      @media only screen and (max-width: 28.125em) {
+        .portfolio__showcase-2 img {
+          height: 60vh; } }
   .portfolio__showcase-3 {
     background-color: #ffffff;
     display: grid;
@@ -1366,7 +1439,14 @@ body {
     padding-bottom: 5rem; }
     .portfolio__showcase-3 img {
       height: 95vh;
+      max-height: 1000px;
       max-width: 100%; }
+      @media only screen and (max-width: 56.25em) {
+        .portfolio__showcase-3 img {
+          height: 60vh; } }
+      @media only screen and (max-width: 28.125em) {
+        .portfolio__showcase-3 img {
+          height: 45vh; } }
 
 .enable-heading {
   background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), rgba(21, 21, 21, 0.1)), url(../img/Casestudy1.2-big.png); }

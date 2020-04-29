@@ -18,7 +18,7 @@
             letter-spacing: -2px;
             width: 100%;
             max-width: 100%;
-            top: 40%;
+            top: 50%;
             z-index: -50;
             color: $color-white;
 
@@ -50,6 +50,8 @@
     z-index: 1000;
     position: relative;
     height: 100vh;
+    min-height: 675px;
+    max-height: 1200px;
     padding: 7rem;
     background-color: #F7F7F7;
     
@@ -111,6 +113,9 @@
                 line-height: 3.5rem;
                 margin-right: 7rem;
                 color: #333333;
+                @include respond(tab-port){
+                    margin-right: 0rem;
+                }
             }
 
             & a{
@@ -148,25 +153,62 @@
     &__showcase-1{
         background-color: #F2C94C;
         height: 100vh;
+        max-height: 1200px;
         width: 100%;
         display: grid;
         justify-content: center;
         padding-top: 18rem;
+        @include respond(tab-port){
+            height: 80vh;
+        }
+        @include respond(phone){
+            height: 70vh;
+            //margin-top: -35rem;
+        }
+        @include respond(phone){
+            height: 55vh;
+            padding-top: 10rem;
+        }
 
         & img{
             height: 105vh;
+            max-height: 1300px;
             max-width: 100%;
+            @include respond(tab-port){
+                height: 85vh;
+            }
+            @include respond(phone){
+                height: 75vh;
+                //margin-top: -35rem;
+            }
+            @include respond(phone-small){
+                height: 55vh;
+            }
         }
     }
     &__text{
         background-color: #fff;
         height: 140vh;
+        max-height: 1300px;
         display: flex;
         //padding-top: 8rem;
         padding-bottom: 40rem;
         padding-top: 10rem;
         justify-content: space-around;
         align-items: center;
+        @include respond(tab-port){
+            height: 100vh;
+        }
+        @include respond(phone){
+            height: 80vh;
+            padding-left: 5rem;
+                padding-right: 5rem;
+                padding-top: 10rem;
+                display: block;
+        }
+        @include respond(phone-small){
+            height: 100vh;
+        }
 
 
         &--line{
@@ -201,9 +243,22 @@
             font-size: 1.8rem;
             line-height: 2.8rem;
             width: 55.8%;
-
+            @include respond(phone){
+                margin-top: 15rem;
+                width: 80%;
+            }
             p{
                 width: 45rem;
+                @include respond(tab-port){
+                    width: auto;
+                    margin-right: 7rem;
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+                @include respond(phone){
+                    margin-right: 0;
+                margin-bottom: 4rem;
+                }
             }
         }
     }
@@ -219,7 +274,19 @@
         & img{
             margin-top: -20rem;
             height: 95vh;
+            max-height: 1100px;
             max-width: 100%;
+            @include respond(tab-port){
+                height: 80vh;
+                margin-top: -35rem;
+            }
+            @include respond(phone){
+                height: 70vh;
+                margin-top: -20rem;
+            }
+            @include respond(phone-small){
+                height: 60vh;
+            }
         }
     }
 
@@ -235,7 +302,15 @@
         & img{
             // margin-top: -20rem;
             height: 95vh;
+            max-height: 1000px;
             max-width: 100%;
+            @include respond(tab-port){
+                height: 60vh;
+            }
+            @include respond(phone-small){
+                height: 45vh;
+            }
+
         }
     }
 }
