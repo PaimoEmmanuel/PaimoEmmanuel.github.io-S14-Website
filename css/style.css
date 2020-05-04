@@ -1290,7 +1290,7 @@ body {
   z-index: -99; }
   @media only screen and (max-width: 37.5em) {
     .post-page__heading {
-      height: 70%; } }
+      height: 70vh; } }
   .post-page__heading-text {
     position: fixed;
     font-size: 7.6rem;
