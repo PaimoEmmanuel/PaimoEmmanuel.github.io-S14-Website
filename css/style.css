@@ -1072,9 +1072,10 @@ body {
   transform: skewY(-3deg);
   margin-top: 97vh;
   padding-top: 1rem; }
-  @media (max-height: 1400px) {
-    .section-background {
-      margin-top: 75vh; } }
+
+@media only screen and (max-width: 56.25em) and (max-height: 1400px) {
+  .section-background {
+    margin-top: 75vh; } }
   .section-background__text {
     display: block;
     font-family: brown;
