@@ -39,7 +39,7 @@
     // @media only screen and (max-height: 68.7em) and (max-width: 37.5em){ //600px
     //     @content
     // }
-    @include respond(tab-port){
+    @include respond(phone){
         @media (max-height: 1400px) {
             margin-top: 75vh;
         }
