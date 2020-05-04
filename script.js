@@ -123,12 +123,15 @@ $(window).on('resize scroll', function() {
       $('.section-background').css('margin-bottom', '100vh');
       $('.section-work').css('position', 'fixed');
       $('.section-work').css('top', '0');
+      $('.section-work').css('z-index', '-1');
+
       //$('.section-work').css('width', '100%');
   } else {
       // do something else
       $('.section-background').css('margin-bottom', '00vh');
       $('.section-work').css('position', 'relative');
       $('.section-work').css('top', '0');
+      $('.section-work').css('z-index', '9');
   }
 });
 

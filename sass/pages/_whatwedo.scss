@@ -6,6 +6,7 @@
     top: 0;
     width: 100%;
     z-index: -999;
+    @include max-width;
     @include respond(tab-port){
         z-index: 0;
     }
@@ -217,15 +218,32 @@
         }
     }
 
+    &__nowrap{
+  @include respond(tab-port){
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+       // overflow-x: scroll;
+        scroll-snap-type: mandatory;
+}
+    }
     &__main{
         display: grid;
         grid-template-columns: 25% 75%;
-        padding-left: 10rem;
+        padding-left: 7rem;
         padding-right: 7rem;
         margin-top: 5rem;
         font-family: brown;
         font-size: $font-small;
         @include max-width;
+  @include respond(tab-port){
+    grid-template-columns: 100%;
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 0rem;
+  }
 
         &-subject{
 
@@ -236,9 +254,16 @@
             position: sticky;
             top: 10%;
             color: $color-grey-light;
+            @include respond(tab-port){
+                position: relative;
+                margin-top: 2rem;
+                margin-bottom: 6rem;
+                font-size: 8.2rem;
+                //overflow: hidden;
+            }
 
             p{
-                display: inline;
+                display: inline-block;
             }
         }
 
@@ -248,17 +273,34 @@
             height: 100vh;
             //position: sticky;
             top: 5px;
+            display: inline-block;
             //scroll-snap-align: start;
+            @include respond(tab-port){
+                scroll-snap-align: start;
+                &:not(:last-child){
+                    margin-right: 7rem;
+                }
+                
+                margin-left: 0rem;
+              }
             &-bg{
                 background-color: #25F2FF;
                 height: 25rem;
+                width: 60rem;
                 margin-top: 10%;
+                @include respond(tab-port){
+                    margin-top: 20%;
+                  }
             }
 
             &-text{
                 position: absolute;
                 top: 0%;
                 padding: 0 8rem;
+                white-space: normal;
+                @include respond(tab-port){
+                    top: 0rem;
+                  }
 
                 & p{
                     margin-top: 5rem;
@@ -268,3 +310,14 @@
         
     }
 } 
+// .p1{
+//     font-size: 9.6rem;
+//     font-weight: bold;
+//     line-height: 9rem;
+//     position: sticky;
+//     top: 10%;
+//     color: #BDBDBD;
+//     @include respond(tab-port){
+//         //margin-bottom: 30rem;
+//       }
+// }

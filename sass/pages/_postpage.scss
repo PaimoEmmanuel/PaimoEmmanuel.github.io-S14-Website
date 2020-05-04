@@ -203,7 +203,7 @@
             height: 80vh;
             padding-left: 5rem;
                 padding-right: 5rem;
-                padding-top: 10rem;
+                margin-top:  auto;
                 display: block;
         }
         @include respond(phone-small){

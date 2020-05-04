@@ -2,7 +2,7 @@
     //height: 95vh;
     //width: 80vw;
     padding: $heading-padding;
-    //@include max-width;
+    @include max-width;
     @include respond(tab-port){
         padding-left: 5rem;
     }
