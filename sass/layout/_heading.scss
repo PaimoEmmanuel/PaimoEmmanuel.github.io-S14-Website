@@ -20,6 +20,7 @@
     }
     @include respond(phone){
         font-size: 5rem;
+        padding: 15rem 5rem 10rem 5rem;
         //padding: $heading-padding-small;
         line-height: 6rem;
     }

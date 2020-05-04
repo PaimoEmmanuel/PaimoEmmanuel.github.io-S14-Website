@@ -9,7 +9,11 @@
         top:0;
         width: 100%;
         height: 100%;
+        max-width: 100%;
         z-index: -99;
+        @include respond(phone){
+            height: 70%;
+        }
 
         &-text{
             position: fixed;
@@ -22,8 +26,10 @@
             z-index: -50;
             color: $color-white;
 
-            @include respond(phone-small){
+            @include respond(phone){
+                top: 30%;
                 font-size: 6.6rem;
+                padding-left: 0rem;
             }
 
             h3{
@@ -59,6 +65,10 @@
     
     font-size: $font-small;
     //letter-spacing: -1px;
+    @include respond(phone){
+        padding: 8rem 5rem;
+        margin-top: 70vh;
+    }
     @include respond(phone-small){
         padding: 8rem 5rem;
     }
@@ -80,7 +90,7 @@
         @include max-width;
         @include respond(tab-port){
             display: block;
-            padding: 7rem;
+            padding: 5rem;
         }
         &1{
             font-size: 1.8rem;
@@ -106,6 +116,12 @@
                 //margin-top: 4rem;
                 margin-bottom: 5rem;
                 font-weight: bold;
+                @include respond(tab-port){
+                    font-size: 3.5rem;
+                    span{
+                        display: inline;
+                    }
+                }
             }
             &__text2{
                 margin-bottom: 8rem;
@@ -162,7 +178,7 @@
             height: 80vh;
         }
         @include respond(phone){
-            height: 70vh;
+            height: 70rem;
             //margin-top: -35rem;
         }
         @include respond(phone){
@@ -178,7 +194,7 @@
                 height: 85vh;
             }
             @include respond(phone){
-                height: 75vh;
+                height: 65rem;
                 //margin-top: -35rem;
             }
             @include respond(phone-small){
@@ -197,17 +213,17 @@
         justify-content: space-around;
         align-items: center;
         @include respond(tab-port){
-            height: 100vh;
+            height: 100rem;
         }
         @include respond(phone){
-            height: 80vh;
+            height: 80rem;
             padding-left: 5rem;
                 padding-right: 5rem;
                 margin-top:  auto;
-                display: block;
+                flex-direction: column;
         }
         @include respond(phone-small){
-            height: 100vh;
+            height: 90rem;
         }
 
 
@@ -229,6 +245,12 @@
             margin-left: auto;
             margin-right: 5rem;
             margin-top: 10rem;
+            @include respond(phone){
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30rem;
+                width: 45rem;
+            }
 
             p{
                 //float: right;
@@ -245,7 +267,7 @@
             width: 55.8%;
             @include respond(phone){
                 margin-top: 15rem;
-                width: 80%;
+                width: 45rem;
             }
             p{
                 width: 45rem;
@@ -278,14 +300,14 @@
             max-width: 100%;
             @include respond(tab-port){
                 height: 80vh;
-                margin-top: -35rem;
+                margin-top: -24rem;
             }
             @include respond(phone){
                 height: 70vh;
                 margin-top: -20rem;
             }
             @include respond(phone-small){
-                height: 60vh;
+                height: 60rem;
             }
         }
     }
@@ -308,7 +330,7 @@
                 height: 60vh;
             }
             @include respond(phone-small){
-                height: 45vh;
+                height: 50rem;
             }
 
         }

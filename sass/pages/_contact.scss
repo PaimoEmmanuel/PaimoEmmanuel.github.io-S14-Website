@@ -5,6 +5,9 @@
 
     padding-bottom: 18rem;
     padding-top: 11rem;
+    @include respond(tab-port){
+        padding-top: 18rem;
+    }
     
     &--secondary{
         line-height: 4rem;
@@ -44,7 +47,7 @@
             padding: 2rem 2rem 0 2rem;
         }
         @include respond(tab-port){
-            padding: 4rem 8rem 4rem 8rem;
+            padding: 8rem;
             height: auto;
             width: 80%;
         }

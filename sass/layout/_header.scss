@@ -10,6 +10,7 @@
     font-family: brown;
     &__nav{
         //background-color: blue;
+        @include max-width;
         @include clearfix;
         &-logo{
             height: 5.5rem;
