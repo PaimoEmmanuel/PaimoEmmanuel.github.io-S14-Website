@@ -1365,6 +1365,9 @@ body {
         .product-info-box1 {
           margin-bottom: 8rem;
           font-size: 3rem; } }
+      @media only screen and (max-width: 28.125em) {
+        .product-info-box1 {
+          line-height: 5rem; } }
     .product-info-box2 {
       margin-left: 10rem;
       padding-bottom: 3rem; }
@@ -1380,6 +1383,9 @@ body {
             font-size: 3.5rem; }
             .product-info-box2__text1 span {
               display: inline; } }
+        @media only screen and (max-width: 28.125em) {
+          .product-info-box2__text1 {
+            line-height: 6rem; } }
       .product-info-box2__text2 {
         margin-bottom: 8rem;
         font-weight: 200;
@@ -1389,6 +1395,9 @@ body {
         @media only screen and (max-width: 56.25em) {
           .product-info-box2__text2 {
             margin-right: 0rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .product-info-box2__text2 {
+            font-weight: 300; } }
       .product-info-box2 a {
         color: #333333;
         background-color: transparent;
@@ -1547,7 +1556,7 @@ body {
           height: 60vh; } }
       @media only screen and (max-width: 28.125em) {
         .portfolio__showcase-3 img {
-          height: 50rem; } }
+          height: 45rem; } }
 
 .enable-heading {
   background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), rgba(21, 21, 21, 0.1)), url(../img/Casestudy1.2-big.png); }
@@ -1627,12 +1636,12 @@ body {
     height: 70%; }
     @media only screen and (max-width: 56.25em) {
       .location__address {
-        padding: 2rem 2rem 0 2rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .location__address {
         padding: 8rem;
         height: auto;
         width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      .location__address {
+        padding-left: 5rem; } }
   .location__heading {
     font-size: 4.8rem;
     font-weight: bold;

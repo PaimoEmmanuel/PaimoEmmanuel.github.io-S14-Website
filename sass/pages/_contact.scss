@@ -44,12 +44,12 @@
         padding: 8rem 8rem 0 8rem;
         height: 70%;
         @include respond(tab-port){
-            padding: 2rem 2rem 0 2rem;
-        }
-        @include respond(tab-port){
             padding: 8rem;
             height: auto;
             width: 80%;
+        }
+        @include respond(phone){
+            padding-left: 5rem;
         }
 
     }

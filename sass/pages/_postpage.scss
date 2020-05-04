@@ -101,6 +101,9 @@
                 margin-bottom: 8rem;
                 font-size: 3rem;
             }
+            @include respond(phone-small){
+                line-height: 5rem;
+            }
         }
         &2{
             margin-left: 10rem;
@@ -122,6 +125,9 @@
                         display: inline;
                     }
                 }
+                @include respond(phone-small){
+                    line-height: 6rem;
+                }
             }
             &__text2{
                 margin-bottom: 8rem;
@@ -131,6 +137,9 @@
                 color: #333333;
                 @include respond(tab-port){
                     margin-right: 0rem;
+                }
+                @include respond(phone){
+                    font-weight: 300;
                 }
             }
 
@@ -330,7 +339,7 @@
                 height: 60vh;
             }
             @include respond(phone-small){
-                height: 50rem;
+                height: 45rem;
             }
 
         }
