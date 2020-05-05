@@ -67,7 +67,8 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: brown; }
+  font-family: brown;
+  overflow-x: hidden; }
 
 /*default version*/
 @font-face {
