@@ -126,7 +126,7 @@
                     }
                 }
                 @include respond(phone-small){
-                    line-height: 6rem;
+                    line-height: 4.5rem;
                 }
             }
             &__text2{
@@ -350,6 +350,19 @@
 }
 .enable-app-1{
     background-color: rgba(#2F80ED, .05);
+    @include respond(tab-port){
+        height: 80rem;
+    }
+    img{
+        max-height: 800px;
+        @include respond(tab-port){
+            width: 95vw;
+    height: auto;
+        }
+        @include respond(phone-small){
+    height: auto;
+        }
+    }
 }
 .enable-portfolio__text{
     padding-bottom: 30rem;
@@ -357,7 +370,7 @@
 .enable-app-2{
     background-color: rgba(#2F80ED, .05);
     img{
-        width: 96%;
+        width: 80%;
         max-width: 1440px;
        height: auto;
        margin: auto; 

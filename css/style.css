@@ -1385,7 +1385,7 @@ body {
               display: inline; } }
         @media only screen and (max-width: 28.125em) {
           .product-info-box2__text1 {
-            line-height: 6rem; } }
+            line-height: 4.5rem; } }
       .product-info-box2__text2 {
         margin-bottom: 8rem;
         font-weight: 200;
@@ -1563,6 +1563,18 @@ body {
 
 .enable-app-1 {
   background-color: rgba(47, 128, 237, 0.05); }
+  @media only screen and (max-width: 56.25em) {
+    .enable-app-1 {
+      height: 80rem; } }
+  .enable-app-1 img {
+    max-height: 800px; }
+    @media only screen and (max-width: 56.25em) {
+      .enable-app-1 img {
+        width: 95vw;
+        height: auto; } }
+    @media only screen and (max-width: 28.125em) {
+      .enable-app-1 img {
+        height: auto; } }
 
 .enable-portfolio__text {
   padding-bottom: 30rem; }
@@ -1570,7 +1582,7 @@ body {
 .enable-app-2 {
   background-color: rgba(47, 128, 237, 0.05); }
   .enable-app-2 img {
-    width: 96%;
+    width: 80%;
     max-width: 1440px;
     height: auto;
     margin: auto;
