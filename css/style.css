@@ -430,15 +430,15 @@ body {
       position: relative;
       width: 100%;
       height: 100%;
-      background-image: url(../img/Casestudy1.1.png);
+      background-image: url(../img/Casestudy1.1.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 30%; }
       .grid-2-col__grid-1:hover {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.png); }
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.jpg); }
       @media (hover: none) {
         .grid-2-col__grid-1 {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.png); } }
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Casestudy1.1.jpg); } }
     .grid-2-col__grid-1:hover .grid-2-col__grid-text p {
       opacity: 1; }
     .grid-2-col__grid-2 {
@@ -1559,6 +1559,9 @@ body {
 
 .enable-heading {
   background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), rgba(21, 21, 21, 0.1)), url(../img/Casestudy1.2-big.png); }
+  @media only screen and (max-width: 37.5em) {
+    .enable-heading {
+      background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), rgba(21, 21, 21, 0.1)), url(../img/Casestudy1.2.png); } }
 
 .enable-app-1 {
   background-color: rgba(47, 128, 237, 0.05); }

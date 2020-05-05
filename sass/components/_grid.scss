@@ -35,7 +35,7 @@
          }
         //transition: all .2s;
         &-1{
-            @include grid-structure(url(../img/Casestudy1.1.png));
+            @include grid-structure(url(../img/Casestudy1.1.jpg));
         }
         &-1:hover &-text p{
             opacity: 1;
