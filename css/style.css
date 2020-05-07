@@ -617,6 +617,9 @@ body {
           width: 100%;
           transition: all .2s;
           margin-top: 1rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .header__nav-list {
+          margin-top: 2rem; } }
       .header__nav-list-parent {
         list-style: none;
         width: 100%;
