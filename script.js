@@ -69,19 +69,19 @@ let srcArr = ["img/bcc.png", "img/fb.png", "img/pp.png"];
 let clientLogoPosition = document.getElementsByClassName("clients__image");
 
 
-// function nextFn(){
-//   srcArr.push(srcArr.shift())
-//   for(let i =0; i < clientLogoPosition.length; i++){
-//       clientLogoPosition[i].src = srcArr[i];
-//   }
-// }
-// next.onclick = nextFn;
-// prev.onclick = function(){
-//   srcArr.unshift(srcArr.pop());
-//   for(let i =0; i < clientLogoPosition.length; i++){
-//       clientLogoPosition[i].src = srcArr[i];
-//   }
-// }
+function nextFn(){
+  srcArr.push(srcArr.shift())
+  for(let i =0; i < clientLogoPosition.length; i++){
+      clientLogoPosition[i].src = srcArr[i];
+  }
+}
+next.onclick = nextFn;
+prev.onclick = function(){
+  srcArr.unshift(srcArr.pop());
+  for(let i =0; i < clientLogoPosition.length; i++){
+      clientLogoPosition[i].src = srcArr[i];
+  }
+}
 
 /*$(document).ready(function(){
   myVar = setInterval("nextFn()", 1000);
