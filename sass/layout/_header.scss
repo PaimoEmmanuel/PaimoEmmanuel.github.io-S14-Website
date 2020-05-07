@@ -55,6 +55,7 @@
                         font-weight: 500;
                         color: $color-black;
                         margin-left: 3.7rem; 
+                        color: aqua;
                         @include respond(tab-port){
                             font-size: 2.5rem;
                             margin-left: 0; 
