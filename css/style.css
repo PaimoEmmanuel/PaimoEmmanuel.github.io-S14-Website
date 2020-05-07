@@ -619,7 +619,7 @@ body {
           margin-top: 1rem; } }
       @media only screen and (max-width: 56.25em) {
         .header__nav-list {
-          margin-top: 2.5rem; } }
+          margin-top: 2.8rem; } }
       .header__nav-list-parent {
         list-style: none;
         width: 100%;
@@ -631,8 +631,7 @@ body {
             font-size: 1.4rem;
             font-weight: 500;
             color: #000000;
-            margin-left: 3.7rem;
-            color: pink; }
+            margin-left: 3.7rem; }
             @media only screen and (max-width: 56.25em) {
               .header__nav-list-parent li a {
                 font-size: 2.5rem;
