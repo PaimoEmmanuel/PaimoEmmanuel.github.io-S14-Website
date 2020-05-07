@@ -106,7 +106,7 @@ body {
   margin-top: 4rem; }
 
 .u-margin-top-tiny {
-  margin-top: 1rem !important; }
+  margin-top: 2rem !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 2.7rem; }
@@ -619,7 +619,7 @@ body {
           margin-top: 1rem; } }
       @media only screen and (max-width: 56.25em) {
         .header__nav-list {
-          margin-top: 2rem; } }
+          margin-top: 3rem; } }
       .header__nav-list-parent {
         list-style: none;
         width: 100%;
@@ -632,7 +632,7 @@ body {
             font-weight: 500;
             color: #000000;
             margin-left: 3.7rem;
-            color: aqua; }
+            color: red; }
             @media only screen and (max-width: 56.25em) {
               .header__nav-list-parent li a {
                 font-size: 2.5rem;

@@ -38,7 +38,7 @@
                 margin-top: 1rem;
             }
             @include respond(tab-port){
-                margin-top: 2rem;
+                margin-top: 3rem;
             }
             margin-top: -4.4rem;
             float: right;
@@ -55,7 +55,7 @@
                         font-weight: 500;
                         color: $color-black;
                         margin-left: 3.7rem; 
-                        color: aqua;
+                        color: red;
                         @include respond(tab-port){
                             font-size: 2.5rem;
                             margin-left: 0; 
