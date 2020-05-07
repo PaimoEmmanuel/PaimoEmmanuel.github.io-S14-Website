@@ -105,6 +105,9 @@ body {
 .u-margin-top-normal {
   margin-top: 4rem; }
 
+.u-margin-top-tiny {
+  margin-top: 1rem !important; }
+
 .u-margin-bottom-small {
   margin-bottom: 2.7rem; }
 
@@ -614,9 +617,6 @@ body {
           width: 100%;
           transition: all .2s;
           margin-top: 1rem; } }
-      @media only screen and (max-width: 56.25em) {
-        .header__nav-list {
-          margin-top: 2rem; } }
       .header__nav-list-parent {
         list-style: none;
         width: 100%;
