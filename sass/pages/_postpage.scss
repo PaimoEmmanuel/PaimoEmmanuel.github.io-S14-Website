@@ -404,7 +404,10 @@
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     @include max-width;
-    padding: 7rem 7rem;
+    padding: 15rem 7rem;
+    @include respond(tab-port){
+        padding: 15rem 5rem;
+     }
 
     &-img{
 

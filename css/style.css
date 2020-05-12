@@ -1617,7 +1617,10 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 7rem 7rem; }
+  padding: 15rem 7rem; }
+  @media only screen and (max-width: 56.25em) {
+    .ras-1 {
+      padding: 15rem 5rem; } }
   .ras-1-img-1 {
     margin-top: 37rem;
     z-index: 2;
