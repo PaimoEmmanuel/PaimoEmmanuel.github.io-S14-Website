@@ -22,9 +22,11 @@
             letter-spacing: -2px;
             width: 100%;
             max-width: 100%;
-            top: 50%;
+            bottom: 10%;
             z-index: -50;
             color: $color-white;
+            padding-bottom: 0rem;
+            padding-left: 0rem;
 
             @include respond(phone){
                 top: 30%;
@@ -385,4 +387,78 @@
     }
     
 }
-  
+.ras-heading{
+    background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), 
+    rgba(21, 21, 21, 0.1)), url(../img/ras.png);
+    @include respond(phone){
+        background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), 
+        rgba(21, 21, 21, 0.1)), url(../img/Case-study1.3.png);
+    }
+}
+.portfolio-ras{
+    background-color: #123234;
+}
+.ras-1{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    @include max-width;
+    padding: 7rem 7rem;
+
+    &-img{
+
+        &-1{
+            margin-top: 37rem;
+            //width: 50rem;
+            z-index: 2;
+            width: 120%;
+        }
+        &-2{
+            margin-top: 14rem;
+            width: 120%;
+            margin-left: -8rem;
+        }
+        &-3{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            width: 110%;
+            z-index: 1;
+            //height: 170vh;
+
+        }
+        &-4{
+            width: 120%;
+            margin-top: 5rem;
+            margin-left: 5rem;
+            z-index: 0;
+        }
+        &-5{
+            width: 110%;
+            margin-top: -14rem;
+            margin-left: -14rem;
+            z-index: 1;
+        }
+    }
+}
+.ras-portfolio__text{
+    height: auto;
+    padding-bottom: 50rem;
+    padding-top: 0rem;
+}
+.ras-2{
+    img{
+        height: auto;
+    width: 80%;
+    margin: -45rem auto auto auto;
+    }
+    
+}
+.ras-text{
+    &-1{
+        margin-top: 0;
+    }
+    &-2{
+        margin-top: 35rem;
+    }
+}
