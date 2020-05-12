@@ -390,9 +390,10 @@
 .ras-heading{
     background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), 
     rgba(21, 21, 21, 0.1)), url(../img/ras.png);
-    @include respond(phone){
+    @include respond(tab-port){
         background-image: linear-gradient(to right, rgba(21, 21, 21, 0.1), 
-        rgba(21, 21, 21, 0.1)), url(../img/Case-study1.3.png);
+        rgba(21, 21, 21, 0.1)), url(../img/ras.png);
+        background-position: 70%;
     }
 }
 .portfolio-ras{
@@ -445,20 +446,32 @@
     height: auto;
     padding-bottom: 50rem;
     padding-top: 0rem;
+    @include respond(phone){
+        padding-bottom: 20rem;
+     }
 }
 .ras-2{
     img{
         height: auto;
     width: 80%;
     margin: -45rem auto auto auto;
+    @include respond(phone){
+        margin: -25rem auto auto auto;
+     }
     }
     
 }
 .ras-text{
     &-1{
         margin-top: 0;
+        @include respond(phone){
+           margin-top: 10rem;
+        }
     }
     &-2{
         margin-top: 35rem;
+        @include respond(phone){
+            margin-top: 10rem;
+         }
     }
 }
