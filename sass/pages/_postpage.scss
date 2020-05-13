@@ -413,14 +413,16 @@
 
         &-1{
             margin-top: 37rem;
-            //width: 50rem;
+            margin-left: 7rem;
             z-index: 2;
-            width: 120%;
+            width: 110%;
+            transition: .2s;
         }
         &-2{
-            margin-top: 14rem;
-            width: 120%;
-            margin-left: -8rem;
+            margin-top: 10rem;
+            width: 110%;
+            margin-left: -4rem;
+            transition: .2s;
         }
         &-3{
             grid-row-start: 1;
@@ -428,6 +430,7 @@
             grid-column-start: 2;
             width: 110%;
             z-index: 1;
+            transition: .2s;
             //height: 170vh;
 
         }
@@ -439,9 +442,10 @@
         // }
         &-5{
             width: 110%;
-            margin-top: -14rem;
+            margin-top: -12rem;
             margin-left: -14rem;
             z-index: 0;
+            transition: .2s;
         }
     }
 }
