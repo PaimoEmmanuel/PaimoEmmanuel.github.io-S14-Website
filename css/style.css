@@ -1635,16 +1635,11 @@ body {
     grid-column-start: 2;
     width: 110%;
     z-index: 1; }
-  .ras-1-img-4 {
-    width: 120%;
-    margin-top: 5rem;
-    margin-left: 5rem;
-    z-index: 0; }
   .ras-1-img-5 {
     width: 110%;
     margin-top: -14rem;
     margin-left: -14rem;
-    z-index: 1; }
+    z-index: 0; }
 
 .ras-portfolio__text {
   height: auto;

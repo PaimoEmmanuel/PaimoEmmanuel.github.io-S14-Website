@@ -51,8 +51,8 @@ $('.ras-1').mousemove(function(e){
   $('.ras-1-img-1').css('transform', `perspective(99px) translate3d(${moveX * (1/150) }px, ${moveY * (1/150)}px, ${moveY * (1/400) }px)`);
   $('.ras-1-img-2').css('transform', `perspective(99px) translate3d(${moveX * (-1/150) }px, ${moveY * (1/150)}px, ${moveY * (1/400) }px)`);
   $('.ras-1-img-3').css('transform', `perspective(99px) translate3d(${moveX * (0) }px, ${moveY * (0)}px,  ${moveY * (1/400) }px)`);
-  $('.ras-1-img-4').css('transform', `perspective(99px) translate3d(${moveX * (1/150) }px, ${moveY * (-1/160)}px,  ${moveY * (1/400) }px)`);
-  $('.ras-1-img-5').css('transform', `perspective(99px) translate3d(${moveX * (-1/150) }px, ${moveY * (-1/150)}px,  ${moveY * (1/400) }px)`);
+  // $('.ras-1-img-4').css('transform', `perspective(99px) translate3d(${moveX * (1/150) }px, ${moveY * (-1/160)}px,  ${moveY * (1/400) }px)`);
+  $('.ras-1-img-5').css('transform', `perspective(99px) translate3d(${moveX * (-1/150) }px, ${moveY * (-1/150)}px,  ${moveY * (1/1500) }px)`);
 })
 
 
