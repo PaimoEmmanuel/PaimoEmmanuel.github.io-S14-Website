@@ -1366,14 +1366,16 @@ body {
     .product-info-box1 {
       font-size: 1.8rem;
       color: #000;
-      margin-left: auto; }
+      margin-left: auto;
+      line-height: 3rem; }
       @media only screen and (max-width: 56.25em) {
         .product-info-box1 {
           margin-bottom: 8rem;
-          font-size: 3rem; } }
+          font-size: 3rem;
+          line-height: 4rem; } }
       @media only screen and (max-width: 28.125em) {
         .product-info-box1 {
-          line-height: 3.8rem; } }
+          line-height: 5rem; } }
     .product-info-box2 {
       margin-left: 10rem;
       padding-bottom: 3rem; }
@@ -1592,11 +1594,18 @@ body {
   padding-bottom: 30rem; }
 
 .enable-app-2 {
-  background-color: rgba(47, 128, 237, 0.05); }
+  background-color: rgba(47, 128, 237, 0.05);
+  padding-left: 7rem;
+  padding-right: 7rem; }
+  @media only screen and (max-width: 75em) {
+    .enable-app-2 {
+      padding-right: 5rem;
+      padding-left: 5rem; } }
   .enable-app-2 img {
-    width: 80%;
+    width: 100%;
     max-width: 1440px;
     height: auto;
+    max-height: unset;
     margin: auto;
     margin-top: 0; }
 
@@ -1617,34 +1626,36 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15rem 7rem; }
+  padding: 15rem 7rem;
+  padding-left: 1rem; }
   @media only screen and (max-width: 56.25em) {
     .ras-1 {
-      padding: 15rem 5rem; } }
+      padding: 15rem 5rem;
+      padding-left: 0rem; } }
   .ras-1-img-1 {
     margin-top: 37rem;
     margin-left: 7rem;
     z-index: 2;
     width: 110%;
-    transition: .2s; }
+    transition: .1s; }
   .ras-1-img-2 {
     margin-top: 10rem;
     width: 110%;
     margin-left: -4rem;
-    transition: .2s; }
+    transition: .1s; }
   .ras-1-img-3 {
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 2;
     width: 110%;
     z-index: 1;
-    transition: .2s; }
+    transition: .1s; }
   .ras-1-img-5 {
     width: 110%;
     margin-top: -12rem;
     margin-left: -14rem;
     z-index: 0;
-    transition: .2s; }
+    transition: .1s; }
 
 .ras-portfolio__text {
   height: auto;

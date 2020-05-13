@@ -99,12 +99,14 @@
             //margin-top: 4rem;
             color: #000;
             margin-left: auto;
+            line-height: 3rem;
             @include respond(tab-port){
                 margin-bottom: 8rem;
                 font-size: 3rem;
+                line-height: 4rem;
             }
             @include respond(phone-small){
-                line-height: 3.8rem;
+                line-height: 5rem;
             }
         }
         &2{
@@ -378,10 +380,17 @@
 }
 .enable-app-2{
     background-color: rgba(#2F80ED, .05);
+    padding-left: 7rem;
+    padding-right: 7rem;
+    @include respond(tab-land){
+        padding-right: 5rem;
+        padding-left: 5rem;
+     }
     img{
-        width: 80%;
+        width: 100%;
         max-width: 1440px;
        height: auto;
+       max-height: unset;
        margin: auto; 
        margin-top: 0;
     }
@@ -405,8 +414,10 @@
     grid-template-columns: repeat(3, 33.3%);
     @include max-width;
     padding: 15rem 7rem;
+    padding-left: 1rem;
     @include respond(tab-port){
         padding: 15rem 5rem;
+        padding-left: 0rem;
      }
 
     &-img{
@@ -416,13 +427,13 @@
             margin-left: 7rem;
             z-index: 2;
             width: 110%;
-            transition: .2s;
+            transition: .1s;
         }
         &-2{
             margin-top: 10rem;
             width: 110%;
             margin-left: -4rem;
-            transition: .2s;
+            transition: .1s;
         }
         &-3{
             grid-row-start: 1;
@@ -430,7 +441,7 @@
             grid-column-start: 2;
             width: 110%;
             z-index: 1;
-            transition: .2s;
+            transition: .1s;
             //height: 170vh;
 
         }
@@ -445,7 +456,7 @@
             margin-top: -12rem;
             margin-left: -14rem;
             z-index: 0;
-            transition: .2s;
+            transition: .1s;
         }
     }
 }
