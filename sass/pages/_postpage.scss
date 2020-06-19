@@ -120,7 +120,7 @@
 
             &__text1{
                 color: #222222;
-                //margin-top: 4rem;
+                line-height: 4rem;
                 margin-bottom: 5rem;
                 font-weight: bold;
                 @include respond(tab-port){
